@@ -66,6 +66,43 @@ const SEARCH_ALIASES = {
   信息: ["信息技术", "计算机"],
 };
 
+const REGION_PRIORITY = [
+  "市直",
+  "保定市",
+  "莲池区",
+  "竞秀区",
+  "高新区",
+  "满城区",
+  "清苑区",
+  "徐水区",
+  "白沟新城",
+  "涞水县",
+  "定兴县",
+  "唐县",
+  "高阳县",
+  "涞源县",
+  "望都县",
+  "易县",
+  "曲阳县",
+  "蠡县",
+  "顺平县",
+  "博野县",
+  "阜平县",
+  "涿州市",
+  "安国市",
+  "高碑店市",
+  "定州市",
+  "雄安新区",
+  "容城县",
+  "安新县",
+  "雄县",
+  "多县区",
+  "地区待核实",
+];
+const CENTRAL_BAODING_REGIONS = new Set([
+  "市直", "保定市", "莲池区", "竞秀区", "高新区",
+]);
+
 function formatTime(value) {
   if (!value) return "更新时间未知";
   const date = new Date(value);
@@ -155,6 +192,34 @@ function fuzzyTokenMatches(rawToken, haystack, searchFields) {
   });
 }
 
+function regionPriority(region) {
+  const index = REGION_PRIORITY.indexOf(region);
+  return index === -1 ? REGION_PRIORITY.length : index;
+}
+
+function jobRegionPriority(job) {
+  const regions = job.regions || ["地区待核实"];
+  return Math.min(...regions.map(regionPriority));
+}
+
+function isCentralBaodingJob(job) {
+  return (job.regions || []).some(region => CENTRAL_BAODING_REGIONS.has(region));
+}
+
+function compareJobs(left, right) {
+  const regionDifference = jobRegionPriority(left) - jobRegionPriority(right);
+  if (regionDifference !== 0) return regionDifference;
+
+  const leftTime = Date.parse(`${left.date || "1900-01-01"}T00:00:00+08:00`) || 0;
+  const rightTime = Date.parse(`${right.date || "1900-01-01"}T00:00:00+08:00`) || 0;
+  if (leftTime !== rightTime) return rightTime - leftTime;
+
+  if (left.source_type !== right.source_type) {
+    return left.source_type === "official" ? -1 : 1;
+  }
+  return String(left.title || "").localeCompare(String(right.title || ""), "zh-CN");
+}
+
 function enableDesktopHorizontalScroll(container) {
   container.addEventListener("wheel", event => {
     if (container.scrollWidth <= container.clientWidth) return;
@@ -241,7 +306,7 @@ function render() {
     matchesTime(job) &&
     matchesSource(job) &&
     passesExclusions(job)
-  );
+  ).sort(compareJobs);
   elements.list.replaceChildren();
   elements.resultCount.textContent = `${jobs.length} 条`;
   elements.empty.classList.toggle("hidden", jobs.length !== 0);
@@ -257,6 +322,7 @@ function render() {
     const [label, badgeClass] = labels[job.classification] || labels.needs_review;
 
     card.style.animationDelay = `${Math.min(index * 45, 250)}ms`;
+    card.classList.toggle("central-priority", isCentralBaodingJob(job));
     badge.textContent = label;
     if (badgeClass) badge.classList.add(badgeClass);
     const isHistory = job.record_group === "history";
@@ -303,7 +369,10 @@ function render() {
 function populateRegions() {
   const current = state.region;
   const regions = [...new Set(state.jobs.flatMap(job => job.regions || []))]
-    .sort((a, b) => a.localeCompare(b, "zh-CN"));
+    .sort((a, b) => {
+      const priorityDifference = regionPriority(a) - regionPriority(b);
+      return priorityDifference || a.localeCompare(b, "zh-CN");
+    });
   if (current !== "all" && !regions.includes(current)) state.region = "all";
   elements.regionChips.replaceChildren();
   ["all", ...regions].forEach(region => {
@@ -311,11 +380,12 @@ function populateRegions() {
     button.className = "region-chip";
     button.dataset.region = region;
     button.textContent = region === "all" ? "全部地区" : region;
+    button.classList.toggle("central-region", CENTRAL_BAODING_REGIONS.has(region));
     button.classList.toggle("active", region === state.region);
     elements.regionChips.append(button);
   });
   elements.selectedRegionText.textContent =
-    state.region === "all" ? "全部地区" : state.region;
+    state.region === "all" ? "市区优先" : state.region;
 }
 
 function buildExclusionOptions() {
@@ -411,7 +481,7 @@ elements.regionChips.addEventListener("click", event => {
     chip.classList.toggle("active", chip === button);
   });
   elements.selectedRegionText.textContent =
-    state.region === "all" ? "全部地区" : state.region;
+    state.region === "all" ? "市区优先" : state.region;
   render();
 });
 elements.levelChips.addEventListener("click", event => {
