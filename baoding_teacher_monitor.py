@@ -518,33 +518,58 @@ def build_report(items, failures):
     return "\n".join(lines)
 
 
-def save_public_data(items, failures):
+def public_item(item, record_group):
+    return {
+        "title": item.get("title", ""),
+        "url": item.get("url", ""),
+        "source": item.get("source", ""),
+        "source_type": item.get("source_type", "official"),
+        "source_url": item.get("source_url", ""),
+        "date": item.get("date", ""),
+        "classification": item.get("classification", "needs_review"),
+        "matched_terms": item.get("matched_terms", []),
+        "employment_terms": item.get("employment_terms", []),
+        "regions": item.get("regions", ["地区待核实"]),
+        "school_levels": item.get("school_levels", ["学段待核实"]),
+        "subjects": item.get("subjects", []),
+        "school_names": item.get("school_names", []),
+        "checked_at": item.get("checked_at", ""),
+        "archived_at": item.get("archived_at", ""),
+        "record_group": record_group,
+        "source_temporarily_unavailable": bool(
+            item.get("source_temporarily_unavailable", False)
+        ),
+    }
+
+
+def save_public_data(latest_items, history_items, failures):
     """输出给 PWA 使用的公开数据，不包含邮箱、密码等配置。"""
-    public_items = []
+    latest_public = []
     for item in sorted(
-        items,
+        latest_items,
         key=lambda value: (value.get("date", ""), value.get("title", "")),
         reverse=True,
     ):
-        public_items.append({
-            "title": item.get("title", ""),
-            "url": item.get("url", ""),
-            "source": item.get("source", ""),
-            "source_type": item.get("source_type", "official"),
-            "source_url": item.get("source_url", ""),
-            "date": item.get("date", ""),
-            "classification": item.get("classification", "needs_review"),
-            "matched_terms": item.get("matched_terms", []),
-            "employment_terms": item.get("employment_terms", []),
-            "regions": item.get("regions", ["地区待核实"]),
-            "school_levels": item.get("school_levels", ["学段待核实"]),
-            "subjects": item.get("subjects", []),
-            "school_names": item.get("school_names", []),
-            "checked_at": item.get("checked_at", ""),
-        })
+        latest_public.append(public_item(item, "latest"))
+
+    history_public = []
+    for item in sorted(
+        history_items.values(),
+        key=lambda value: (
+            value.get("archived_at", ""),
+            value.get("date", ""),
+            value.get("title", ""),
+        ),
+        reverse=True,
+    ):
+        history_public.append(public_item(item, "history"))
+
+    public_items = latest_public + history_public
     save_json(PUBLIC_DATA_FILE, {
         "generated_at": datetime.now().isoformat(timespec="seconds"),
         "total": len(public_items),
+        "latest_total": len(latest_public),
+        "history_total": len(history_public),
         "items": public_items,
         "source_failures": failures,
     })
@@ -639,18 +664,45 @@ def main():
     old_state = load_json(STATE_FILE, {"initialized": False, "items": {}})
     monitor = Monitor(config, args.verbose)
     items, failures = monitor.run()
-    save_public_data(items, failures)
 
     old_items = old_state.get("items", {})
+    history_items = old_state.get("history", {})
+    failed_sources = set(failure["source"] for failure in failures)
+    current_items = {item["url"]: item for item in items}
     changed = []
     for item in items:
         previous = old_items.get(item["url"])
         if previous is None or previous.get("content_hash") != item.get("content_hash"):
+            if previous is not None:
+                archived = dict(previous)
+                archived["archived_at"] = datetime.now().isoformat(timespec="seconds")
+                history_key = "{0}|{1}".format(
+                    previous["url"], previous.get("content_hash", stable_hash(previous["url"]))
+                )
+                history_items[history_key] = archived
             changed_item = dict(item)
             changed_item["notification_status"] = (
                 "新增公告" if previous is None else "公告更新"
             )
             changed.append(changed_item)
+
+    for url, previous in old_items.items():
+        if url in current_items:
+            continue
+        if previous.get("source") in failed_sources:
+            retained = dict(previous)
+            retained["source_temporarily_unavailable"] = True
+            current_items[url] = retained
+            continue
+        archived = dict(previous)
+        archived["archived_at"] = datetime.now().isoformat(timespec="seconds")
+        history_key = "{0}|{1}".format(
+            previous["url"], previous.get("content_hash", stable_hash(previous["url"]))
+        )
+        history_items[history_key] = archived
+
+    latest_items = list(current_items.values())
+    save_public_data(latest_items, history_items, failures)
 
     first_run = not old_state.get("initialized", False)
     notify_items = [
@@ -680,17 +732,19 @@ def main():
             print("微信推送失败：{0}".format(exc), file=sys.stderr)
 
     if not args.dry_run:
-        merged = dict(old_items)
-        for item in items:
-            merged[item["url"]] = item
         save_json(STATE_FILE, {
             "initialized": True,
             "last_run": datetime.now().isoformat(timespec="seconds"),
-            "items": merged,
+            "items": current_items,
+            "history": history_items,
             "failures": failures,
         })
 
-    print("有效公告 {0} 条；新增或更新 {1} 条。".format(len(items), len(changed)))
+    print(
+        "最新公告 {0} 条；历史版本 {1} 条；新增或更新 {2} 条。".format(
+            len(latest_items), len(history_items), len(changed)
+        )
+    )
     return 0
 
 

@@ -9,6 +9,7 @@ const EXCLUSION_OPTIONS = [
 
 const state = {
   jobs: [],
+  recordGroup: "latest",
   filter: "all",
   region: "all",
   level: "all",
@@ -31,6 +32,9 @@ const elements = {
   search: document.querySelector("#searchInput"),
   refresh: document.querySelector("#refreshButton"),
   chips: document.querySelector("#filterChips"),
+  recordSwitch: document.querySelector("#recordSwitch"),
+  latestInfoCount: document.querySelector("#latestInfoCount"),
+  historyInfoCount: document.querySelector("#historyInfoCount"),
   regionChips: document.querySelector("#regionChips"),
   selectedRegionText: document.querySelector("#selectedRegionText"),
   levelChips: document.querySelector("#levelChips"),
@@ -169,6 +173,10 @@ function matchesFilter(job) {
   return job.classification === state.filter;
 }
 
+function matchesRecordGroup(job) {
+  return (job.record_group || "latest") === state.recordGroup;
+}
+
 function matchesRegion(job) {
   return state.region === "all" || (job.regions || []).includes(state.region);
 }
@@ -225,6 +233,7 @@ function matchesQuery(job) {
 
 function render() {
   const jobs = state.jobs.filter(job =>
+    matchesRecordGroup(job) &&
     matchesFilter(job) &&
     matchesQuery(job) &&
     matchesRegion(job) &&
@@ -244,11 +253,15 @@ function render() {
     const badge = fragment.querySelector(".badge");
     const favorite = fragment.querySelector(".favorite-button");
     const sourceBadge = fragment.querySelector(".source-badge");
+    const recordBadge = fragment.querySelector(".record-badge");
     const [label, badgeClass] = labels[job.classification] || labels.needs_review;
 
     card.style.animationDelay = `${Math.min(index * 45, 250)}ms`;
     badge.textContent = label;
     if (badgeClass) badge.classList.add(badgeClass);
+    const isHistory = job.record_group === "history";
+    recordBadge.textContent = isHistory ? "历史版本" : "当前版本";
+    recordBadge.classList.toggle("history", isHistory);
     sourceBadge.textContent = job.source_type === "aggregator" ? "第三方线索" : "官方来源";
     if (job.source_type === "aggregator") sourceBadge.classList.add("aggregator");
     link.href = job.url;
@@ -323,11 +336,14 @@ function buildExclusionOptions() {
 }
 
 function updateSummary() {
-  elements.total.textContent = state.jobs.length;
+  const currentJobs = state.jobs.filter(job =>
+    (job.record_group || "latest") === state.recordGroup
+  );
+  elements.total.textContent = currentJobs.length;
   elements.confirmed.textContent =
-    state.jobs.filter(job => job.classification === "confirmed").length;
+    currentJobs.filter(job => job.classification === "confirmed").length;
   elements.review.textContent =
-    state.jobs.filter(job => ["uncertain", "needs_review"].includes(job.classification)).length;
+    currentJobs.filter(job => ["uncertain", "needs_review"].includes(job.classification)).length;
 }
 
 async function loadJobs({ fresh = false } = {}) {
@@ -338,6 +354,10 @@ async function loadJobs({ fresh = false } = {}) {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
     state.jobs = Array.isArray(data.items) ? data.items : [];
+    elements.latestInfoCount.textContent =
+      data.latest_total ?? state.jobs.filter(job => job.record_group !== "history").length;
+    elements.historyInfoCount.textContent =
+      data.history_total ?? state.jobs.filter(job => job.record_group === "history").length;
     const failureCount = Array.isArray(data.source_failures) ? data.source_failures.length : 0;
     elements.updateText.textContent =
       `${formatTime(data.generated_at)}${failureCount ? ` · ${failureCount} 个来源暂不可用` : ""}`;
@@ -359,6 +379,17 @@ elements.search.addEventListener("input", event => {
   state.query = event.target.value;
   clearTimeout(searchTimer);
   searchTimer = setTimeout(render, 100);
+});
+
+elements.recordSwitch.addEventListener("click", event => {
+  const button = event.target.closest("[data-record-group]");
+  if (!button) return;
+  state.recordGroup = button.dataset.recordGroup;
+  elements.recordSwitch.querySelectorAll(".record-option").forEach(option => {
+    option.classList.toggle("active", option === button);
+  });
+  updateSummary();
+  render();
 });
 
 elements.chips.addEventListener("click", event => {

@@ -155,6 +155,50 @@ h1 {
 
 .controls { margin-bottom: 27px; }
 
+.record-switch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 11px;
+  padding: 5px;
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.record-option {
+  min-height: 43px;
+  border: 0;
+  border-radius: 13px;
+  color: var(--muted);
+  background: transparent;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.record-option span {
+  display: inline-grid;
+  place-items: center;
+  min-width: 22px;
+  height: 22px;
+  margin-left: 4px;
+  padding: 0 5px;
+  border-radius: 11px;
+  background: rgba(23, 33, 29, .07);
+  font-size: 10px;
+}
+
+.record-option.active {
+  color: #fff;
+  background: var(--green);
+}
+
+.record-option.active span {
+  color: var(--green);
+  background: #fff;
+}
+
 .search-box {
   display: flex;
   align-items: center;
@@ -409,6 +453,21 @@ h1 {
   background: rgba(23, 33, 29, .06);
   font-size: 10px;
   font-weight: 700;
+}
+
+.record-badge {
+  display: inline-flex;
+  padding: 5px 9px;
+  border-radius: 999px;
+  color: #fff;
+  background: var(--green);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.record-badge.history {
+  color: #76551f;
+  background: #f4e6ca;
 }
 
 .source-badge.aggregator {

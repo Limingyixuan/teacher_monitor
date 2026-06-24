@@ -50,6 +50,14 @@
       </section>
 
       <section class="controls">
+        <div class="record-switch" id="recordSwitch" aria-label="最新与历史信息">
+          <button class="record-option active" data-record-group="latest">
+            最新信息 <span id="latestInfoCount">0</span>
+          </button>
+          <button class="record-option" data-record-group="history">
+            历史信息 <span id="historyInfoCount">0</span>
+          </button>
+        </div>
         <label class="search-box">
           <span aria-hidden="true">⌕</span>
           <input id="searchInput" type="search" placeholder="搜索学校、区县、学科…（支持模糊搜索）" autocomplete="off">
@@ -159,6 +167,7 @@
     <article class="job-card">
       <div class="card-head">
         <div class="badges">
+          <span class="record-badge"></span>
           <span class="badge"></span>
           <span class="source-badge"></span>
         </div>

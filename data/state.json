@@ -1,34 +1,23 @@
 {
   "failures": [
     {
-      "error": "HTTPSConnectionPool(host='jyj.baoding.gov.cn', port=443): Max retries exceeded with url: /ejzwgk-159-more.html (Caused by NewConnectionError(\"HTTPSConnection(host='jyj.baoding.gov.cn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
-      "source": "保定市教育局－通知通告"
-    },
-    {
-      "error": "HTTPSConnectionPool(host='www.mancheng.gov.cn', port=443): Max retries exceeded with url: /list-zhaoluxinxi.html (Caused by NewConnectionError(\"HTTPSConnection(host='www.mancheng.gov.cn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+      "error": "HTTPSConnectionPool(host='www.mancheng.gov.cn', port=443): Max retries exceeded with url: /list-zhaoluxinxi.html (Caused by SSLError(SSLError(\"bad handshake: SysCallError(-1, 'Unexpected EOF')\")))",
       "source": "满城区人民政府－招录信息"
     },
     {
-      "error": "HTTPSConnectionPool(host='rst.hebei.gov.cn', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='rst.hebei.gov.cn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
-      "source": "河北人社网"
-    },
-    {
-      "error": "HTTPSConnectionPool(host='www.hebpta.com.cn', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.hebpta.com.cn', port=443) at 0x7fb33d339210>, 'Connection to www.hebpta.com.cn timed out. (connect timeout=25)'))",
-      "source": "河北省人事考试网"
-    },
-    {
-      "error": "HTTPSConnectionPool(host='job.mohrss.gov.cn', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='job.mohrss.gov.cn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+      "error": "HTTPSConnectionPool(host='job.mohrss.gov.cn', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(\"bad handshake: SysCallError(-1, 'Unexpected EOF')\")))",
       "source": "中国公共招聘网"
     },
     {
-      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-      "source": "河北163－招考信息"
+      "error": "403 Client Error: Forbidden for url: https://www.gaoxiaojob.com/company/detail/30087.html",
+      "source": "高校人才网－保定市教育局专区"
     }
   ],
+  "history": {},
   "initialized": true,
   "items": {
     "http://m.baoding.huatu.com/2025/0815/1555604.html": {
-      "checked_at": "2026-06-24T08:54:06",
+      "checked_at": "2026-06-24T17:01:44",
       "classification": "likely",
       "content_hash": "f20bf24736f058465cab7dd03f9d03ad54de1b514ed6a55aa87a0f4c2b598671",
       "date": "2025-08-15",
@@ -77,7 +66,7 @@
       "url": "http://m.baoding.huatu.com/2025/0815/1555604.html"
     },
     "http://m.baoding.huatu.com/2025/0821/1555723.html": {
-      "checked_at": "2026-06-24T08:54:05",
+      "checked_at": "2026-06-24T17:01:43",
       "classification": "likely",
       "content_hash": "0a244b8f5728d7e059de32832c93b7375ec941dc779696412bbbc262346c189d",
       "date": "2025-08-21",
@@ -127,7 +116,7 @@
       "url": "http://m.baoding.huatu.com/2025/0821/1555723.html"
     },
     "http://m.baoding.huatu.com/2026/0114/1658040.html": {
-      "checked_at": "2026-06-24T08:54:04",
+      "checked_at": "2026-06-24T17:01:43",
       "classification": "likely",
       "content_hash": "419bad979cca26f4860c8a3c7f5fe1387b3fc54bddf385c29141b62bc945833d",
       "date": "2026-01-14",
@@ -177,7 +166,7 @@
       "url": "http://m.baoding.huatu.com/2026/0114/1658040.html"
     },
     "http://m.baoding.huatu.com/2026/0223/1700663.html": {
-      "checked_at": "2026-06-24T08:54:03",
+      "checked_at": "2026-06-24T17:01:42",
       "classification": "confirmed",
       "content_hash": "49b414d1ab31bc7a1d808cef994f89ff6fcbcbd96a4c70448f42de02b00857aa",
       "date": "2026-02-23",
@@ -221,7 +210,7 @@
       "url": "http://m.baoding.huatu.com/2026/0223/1700663.html"
     },
     "http://m.baoding.huatu.com/2026/0223/1700665.html": {
-      "checked_at": "2026-06-24T08:54:02",
+      "checked_at": "2026-06-24T17:01:42",
       "classification": "likely",
       "content_hash": "0c711d1001f0d9f3027e75e65b58da52402b394a82495eed3e1462ddf75e0ce5",
       "date": "2026-02-23",
@@ -262,7 +251,7 @@
       "url": "http://m.baoding.huatu.com/2026/0223/1700665.html"
     },
     "http://m.baoding.huatu.com/2026/0304/1700786.html": {
-      "checked_at": "2026-06-24T08:54:01",
+      "checked_at": "2026-06-24T17:01:41",
       "classification": "likely",
       "content_hash": "137d78bf7560b8214e590ff1dc1bf967881a8b1cc0a2d43146416267d3136646",
       "date": "2026-03-04",
@@ -311,7 +300,7 @@
       "url": "http://m.baoding.huatu.com/2026/0304/1700786.html"
     },
     "http://m.baoding.huatu.com/2026/0305/1700789.html": {
-      "checked_at": "2026-06-24T08:54:00",
+      "checked_at": "2026-06-24T17:01:41",
       "classification": "confirmed",
       "content_hash": "87bd73fe0de5efb1246daf26f4e71289c42e63df573ef5fc8026b1aa3fc9af97",
       "date": "2026-03-05",
@@ -362,7 +351,7 @@
       "url": "http://m.baoding.huatu.com/2026/0305/1700789.html"
     },
     "http://m.baoding.huatu.com/2026/0305/1700791.html": {
-      "checked_at": "2026-06-24T08:54:00",
+      "checked_at": "2026-06-24T17:01:40",
       "classification": "confirmed",
       "content_hash": "1db4b46b76e23595f2276ee66d2b320074a54f0ffe47f2af20b0fbaad9d8b954",
       "date": "2026-03-05",
@@ -411,7 +400,7 @@
       "url": "http://m.baoding.huatu.com/2026/0305/1700791.html"
     },
     "http://m.baoding.huatu.com/2026/0305/1700794.html": {
-      "checked_at": "2026-06-24T08:53:59",
+      "checked_at": "2026-06-24T17:01:40",
       "classification": "needs_review",
       "content_hash": "9942207f36f3b41bb5354de7184ce07794a6084b3e08b386204bf4e91f079890",
       "date": "2026-03-05",
@@ -458,7 +447,7 @@
       "url": "http://m.baoding.huatu.com/2026/0305/1700794.html"
     },
     "http://m.baoding.huatu.com/2026/0326/1701064.html": {
-      "checked_at": "2026-06-24T08:53:58",
+      "checked_at": "2026-06-24T17:01:39",
       "classification": "likely",
       "content_hash": "d8aa9cefd8b4477b8c4de237afbb7a590045d221c98fa904acb3bcb7f02be304",
       "date": "2026-03-26",
@@ -512,7 +501,7 @@
       "url": "http://m.baoding.huatu.com/2026/0326/1701064.html"
     },
     "http://m.baoding.huatu.com/2026/0429/1707815.html": {
-      "checked_at": "2026-06-24T08:53:57",
+      "checked_at": "2026-06-24T17:01:38",
       "classification": "likely",
       "content_hash": "4c1f5b568f32e955df23f10b6ccc9110878e7a4c8e4243435f70d25d6fa4df04",
       "date": "2026-04-29",
@@ -562,7 +551,7 @@
       "url": "http://m.baoding.huatu.com/2026/0429/1707815.html"
     },
     "http://m.baoding.huatu.com/2026/0609/1711969.html": {
-      "checked_at": "2026-06-24T08:53:56",
+      "checked_at": "2026-06-24T17:01:38",
       "classification": "likely",
       "content_hash": "69beb8442b399015773c83eb2923ba6c9219dc581c22c5ad3e6de043e38ba4e1",
       "date": "2026-06-09",
@@ -615,7 +604,7 @@
       "url": "http://m.baoding.huatu.com/2026/0609/1711969.html"
     },
     "https://jyj.baoding.gov.cn/content-159-4882.html": {
-      "checked_at": "2026-06-24T15:12:59",
+      "checked_at": "2026-06-24T17:01:11",
       "classification": "likely",
       "content_hash": "3e32236da785dca31785e3776bb3b1201dffcf2794ef669cd83c12e815d6bef6",
       "date": "2026-06-08",
@@ -643,14 +632,19 @@
       "regions": [
         "市直"
       ],
+      "school_levels": [
+        "学段待核实"
+      ],
+      "school_names": [],
       "source": "保定市教育局－通知通告",
       "source_type": "official",
       "source_url": "https://jyj.baoding.gov.cn/ejzwgk-159-more.html",
+      "subjects": [],
       "title": "保定市教育局关于2026年14家市直教育事业单位选聘教师的公告",
       "url": "https://jyj.baoding.gov.cn/content-159-4882.html"
     },
     "https://jyj.baoding.gov.cn/content-159-4903.html": {
-      "checked_at": "2026-06-24T15:12:58",
+      "checked_at": "2026-06-24T17:01:10",
       "classification": "likely",
       "content_hash": "f99bfb7e19f703e07fe9a4203c2ea9255503f653d303d074a653271bce61f78c",
       "date": "2026-06-17",
@@ -665,14 +659,19 @@
       "regions": [
         "市直"
       ],
+      "school_levels": [
+        "学段待核实"
+      ],
+      "school_names": [],
       "source": "保定市教育局－通知通告",
       "source_type": "official",
       "source_url": "https://jyj.baoding.gov.cn/ejzwgk-159-more.html",
+      "subjects": [],
       "title": "保定市教育局2026年14家市直教育事业单位选聘教师部分岗位取消的公告",
       "url": "https://jyj.baoding.gov.cn/content-159-4903.html"
     },
     "https://m.bd.bendibao.com/job/36128.shtm": {
-      "checked_at": "2026-06-24T08:53:43",
+      "checked_at": "2026-06-24T17:01:35",
       "classification": "likely",
       "content_hash": "eaabf395cbdbd4c77d7a6e3bf3051e9bb02f80ffe450eb4c8e9dfb6772f0dc22",
       "date": "2026-04-29",
@@ -723,7 +722,7 @@
       "url": "https://m.bd.bendibao.com/job/36128.shtm"
     },
     "https://m.bd.bendibao.com/job/36433.shtm": {
-      "checked_at": "2026-06-24T08:53:42",
+      "checked_at": "2026-06-24T17:01:35",
       "classification": "likely",
       "content_hash": "81aefc9d81026ccacdde632621cde2b7a87e0c48130d46901ea24e621801548f",
       "date": "2026-06-10",
@@ -777,7 +776,7 @@
       "url": "https://m.bd.bendibao.com/job/36433.shtm"
     },
     "https://m.bd.bendibao.com/job/36471.shtm": {
-      "checked_at": "2026-06-24T08:53:42",
+      "checked_at": "2026-06-24T17:01:34",
       "classification": "likely",
       "content_hash": "6563b27538ea49cba60754bb49a4ce72565b27f8532bbf495e9abe3061f70b32",
       "date": "2026-06-16",
@@ -816,7 +815,7 @@
       "url": "https://m.bd.bendibao.com/job/36471.shtm"
     },
     "https://m.bd.bendibao.com/job/36472.shtm": {
-      "checked_at": "2026-06-24T08:53:41",
+      "checked_at": "2026-06-24T17:01:33",
       "classification": "likely",
       "content_hash": "91a33c3b964248e258bd9128d8f1287730db295499205b2684badf17c402d21f",
       "date": "2026-06-16",
@@ -876,7 +875,7 @@
       "url": "https://m.bd.bendibao.com/job/36472.shtm"
     },
     "https://m.bd.bendibao.com/job/36488.shtm": {
-      "checked_at": "2026-06-24T08:53:40",
+      "checked_at": "2026-06-24T17:01:32",
       "classification": "likely",
       "content_hash": "f776234c8c8333f6654fe6cb035d9fd4e80815ea37e740396fa41b641554a752",
       "date": "2026-06-18",
@@ -928,7 +927,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=13#/examinee/mobileHostPage/home": {
       "api_hash": "76f167aadb58ff6e6f2dfe17622bd924bc2580dfdbd9ff3336558b25e1e5d028",
-      "checked_at": "2026-06-24T08:51:55",
+      "checked_at": "2026-06-24T17:01:09",
       "classification": "needs_review",
       "content_hash": "76f167aadb58ff6e6f2dfe17622bd924bc2580dfdbd9ff3336558b25e1e5d028",
       "date": "2026-02-12",
@@ -957,7 +956,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=15#/examinee/mobileHostPage/home": {
       "api_hash": "4c4781d1090d96415bed51e3971bd9e673092589b674c7c8601c7529b696a01c",
-      "checked_at": "2026-06-24T08:51:55",
+      "checked_at": "2026-06-24T17:01:09",
       "classification": "needs_review",
       "content_hash": "4c4781d1090d96415bed51e3971bd9e673092589b674c7c8601c7529b696a01c",
       "date": "2026-03-04",
@@ -983,7 +982,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=16#/examinee/mobileHostPage/home": {
       "api_hash": "6a834654123fe065e186bc6cadb13bd1c3d36f6d03a2cddb706cae1f2227fa16",
-      "checked_at": "2026-06-24T08:51:55",
+      "checked_at": "2026-06-24T17:01:09",
       "classification": "needs_review",
       "content_hash": "6a834654123fe065e186bc6cadb13bd1c3d36f6d03a2cddb706cae1f2227fa16",
       "date": "2026-03-05",
@@ -1010,7 +1009,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=20#/examinee/mobileHostPage/home": {
       "api_hash": "682512defb50d4bf46abfb088616530b1cca88f5263fcfe88f23eeefc160ff92",
-      "checked_at": "2026-06-24T08:51:55",
+      "checked_at": "2026-06-24T17:01:09",
       "classification": "needs_review",
       "content_hash": "682512defb50d4bf46abfb088616530b1cca88f5263fcfe88f23eeefc160ff92",
       "date": "2026-04-29",
@@ -1036,7 +1035,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=22#/examinee/mobileHostPage/home": {
       "api_hash": "daebf582b661e9063474e4866471bf597fa919bbbaf173db7b646ded4bc15791",
-      "checked_at": "2026-06-24T08:51:55",
+      "checked_at": "2026-06-24T17:01:09",
       "classification": "needs_review",
       "content_hash": "daebf582b661e9063474e4866471bf597fa919bbbaf173db7b646ded4bc15791",
       "date": "2026-05-11",
@@ -1063,7 +1062,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=25#/examinee/mobileHostPage/home": {
       "api_hash": "11779c92d8ddec070e93fd3e0d6e1556c477f52f67a866bcedf41e096485331c",
-      "checked_at": "2026-06-24T08:51:55",
+      "checked_at": "2026-06-24T17:01:09",
       "classification": "likely",
       "content_hash": "11779c92d8ddec070e93fd3e0d6e1556c477f52f67a866bcedf41e096485331c",
       "date": "2026-06-08",
@@ -1090,7 +1089,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=26#/examinee/mobileHostPage/home": {
       "api_hash": "a54342914e4a577a2d77f6c1aff94710b6c9434149ad13ac17b675ef5c112b33",
-      "checked_at": "2026-06-24T08:51:55",
+      "checked_at": "2026-06-24T17:01:09",
       "classification": "needs_review",
       "content_hash": "a54342914e4a577a2d77f6c1aff94710b6c9434149ad13ac17b675ef5c112b33",
       "date": "2026-06-08",
@@ -1118,7 +1117,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=27#/examinee/mobileHostPage/home": {
       "api_hash": "d8497757ba7af06c3f2fb60f0f7ea8d89a424e3de22d83ebbb8b5a8d8c143ef1",
-      "checked_at": "2026-06-24T08:51:55",
+      "checked_at": "2026-06-24T17:01:09",
       "classification": "needs_review",
       "content_hash": "d8497757ba7af06c3f2fb60f0f7ea8d89a424e3de22d83ebbb8b5a8d8c143ef1",
       "date": "2026-06-09",
@@ -1147,7 +1146,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=28#/examinee/mobileHostPage/home": {
       "api_hash": "a9bb7c8f245eb46a2a9028c3b67d91d1e9fc9169068edf15dda2e53f3f1ae69a",
-      "checked_at": "2026-06-24T08:51:55",
+      "checked_at": "2026-06-24T17:01:09",
       "classification": "likely",
       "content_hash": "a9bb7c8f245eb46a2a9028c3b67d91d1e9fc9169068edf15dda2e53f3f1ae69a",
       "date": "2026-06-09",
@@ -1175,7 +1174,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=3#/examinee/mobileHostPage/home": {
       "api_hash": "0b4628400c770f00b0bfed8a385e08f4ae743b22b068deee4921597b52ab9489",
-      "checked_at": "2026-06-24T08:51:55",
+      "checked_at": "2026-06-24T17:01:09",
       "classification": "needs_review",
       "content_hash": "0b4628400c770f00b0bfed8a385e08f4ae743b22b068deee4921597b52ab9489",
       "date": "2026-01-14",
@@ -1203,7 +1202,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=33#/examinee/mobileHostPage/home": {
       "api_hash": "d65a7ad76323dde7c3a54c358ef3c651dba9387f140c25cb1e22082f683ac297",
-      "checked_at": "2026-06-24T08:51:55",
+      "checked_at": "2026-06-24T17:01:09",
       "classification": "likely",
       "content_hash": "d65a7ad76323dde7c3a54c358ef3c651dba9387f140c25cb1e22082f683ac297",
       "date": "2026-06-15",
@@ -1231,7 +1230,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=35#/examinee/mobileHostPage/home": {
       "api_hash": "b42549353c5caf04959500aaf77322d42eae45e2a394424808da27d51e60a560",
-      "checked_at": "2026-06-24T08:51:55",
+      "checked_at": "2026-06-24T17:01:09",
       "classification": "needs_review",
       "content_hash": "b42549353c5caf04959500aaf77322d42eae45e2a394424808da27d51e60a560",
       "date": "2026-06-17",
@@ -1257,7 +1256,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=36#/examinee/mobileHostPage/home": {
       "api_hash": "31a267d0edbe9dd720ca24fa615191b90c4605da68246f838c84b28e62587c56",
-      "checked_at": "2026-06-24T08:51:55",
+      "checked_at": "2026-06-24T17:01:09",
       "classification": "likely",
       "content_hash": "31a267d0edbe9dd720ca24fa615191b90c4605da68246f838c84b28e62587c56",
       "date": "2026-06-17",
@@ -1285,7 +1284,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=39#/examinee/mobileHostPage/home": {
       "api_hash": "4da465c4a6fd312de4682cc19a115bf279a52aa2c1c4c253a1056d481f5f5c58",
-      "checked_at": "2026-06-24T08:51:55",
+      "checked_at": "2026-06-24T17:01:09",
       "classification": "needs_review",
       "content_hash": "4da465c4a6fd312de4682cc19a115bf279a52aa2c1c4c253a1056d481f5f5c58",
       "date": "2026-06-22",
@@ -1312,7 +1311,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=4#/examinee/mobileHostPage/home": {
       "api_hash": "a21e5b3b89b40196bfb1ee3e9a47c5badb7faadb7ef6bd6a09476b880ce6c56d",
-      "checked_at": "2026-06-24T08:51:55",
+      "checked_at": "2026-06-24T17:01:09",
       "classification": "needs_review",
       "content_hash": "a21e5b3b89b40196bfb1ee3e9a47c5badb7faadb7ef6bd6a09476b880ce6c56d",
       "date": "2026-01-22",
@@ -1338,7 +1337,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=40#/examinee/mobileHostPage/home": {
       "api_hash": "b1c99375f9307075c3ae5f3767a49f3423d00be850274ec30771f2413364aba0",
-      "checked_at": "2026-06-24T08:51:55",
+      "checked_at": "2026-06-24T17:01:09",
       "classification": "likely",
       "content_hash": "b1c99375f9307075c3ae5f3767a49f3423d00be850274ec30771f2413364aba0",
       "date": "2026-06-24",
@@ -1366,7 +1365,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=41#/examinee/mobileHostPage/home": {
       "api_hash": "1580c2a553e5ff1907da119ddb9ef98716f98823831ed6b099e517ec375530c8",
-      "checked_at": "2026-06-24T08:51:55",
+      "checked_at": "2026-06-24T17:01:09",
       "classification": "needs_review",
       "content_hash": "1580c2a553e5ff1907da119ddb9ef98716f98823831ed6b099e517ec375530c8",
       "date": "2026-06-24",
@@ -1395,7 +1394,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=42#/examinee/mobileHostPage/home": {
       "api_hash": "2b38c1597f47689ea24df0253f449e45be7d07071350c0b0906034c54aca090e",
-      "checked_at": "2026-06-24T08:51:55",
+      "checked_at": "2026-06-24T17:01:09",
       "classification": "likely",
       "content_hash": "2b38c1597f47689ea24df0253f449e45be7d07071350c0b0906034c54aca090e",
       "date": "2026-06-24",
@@ -1423,7 +1422,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=6#/examinee/mobileHostPage/home": {
       "api_hash": "21b95afd7fe8e4a352a7c1af367aab788d8d14730f660372a190fd0b4c844606",
-      "checked_at": "2026-06-24T08:51:55",
+      "checked_at": "2026-06-24T17:01:09",
       "classification": "needs_review",
       "content_hash": "21b95afd7fe8e4a352a7c1af367aab788d8d14730f660372a190fd0b4c844606",
       "date": "2026-01-25",
@@ -1449,7 +1448,7 @@
       "url": "https://rsj.baoding.gov.cn/sydwzp?noticeId=6#/examinee/mobileHostPage/home"
     },
     "https://www.163hebei.com/article/4442.html": {
-      "checked_at": "2026-06-24T15:13:35",
+      "checked_at": "2026-06-24T17:01:52",
       "classification": "uncertain",
       "content_hash": "234a3b8a65bd50ea3de457dd97c6717b6c5e9d9702c2f7932652b6a5493a1022",
       "date": "2025-04-21",
@@ -1468,14 +1467,19 @@
       "regions": [
         "曲阳县"
       ],
+      "school_levels": [
+        "高中"
+      ],
+      "school_names": [],
       "source": "河北163－招考信息",
       "source_type": "aggregator",
       "source_url": "https://www.163hebei.com/list/6-3.html",
+      "subjects": [],
       "title": "【事业编】曲阳县教育和体育局关于公开选聘曲阳县职教中心教师的公告(招若干人，04月21日~04月22日报名)",
       "url": "https://www.163hebei.com/article/4442.html"
     },
     "https://www.163hebei.com/article/4544.html": {
-      "checked_at": "2026-06-24T15:13:34",
+      "checked_at": "2026-06-24T17:01:51",
       "classification": "uncertain",
       "content_hash": "7142376a25dd98e8dac543b58bc63a06c088e406f1fa2adb5a14288d100ff9bc",
       "date": "2025-05-08",
@@ -1495,14 +1499,19 @@
       "regions": [
         "顺平县"
       ],
+      "school_levels": [
+        "学段待核实"
+      ],
+      "school_names": [],
       "source": "河北163－招考信息",
       "source_type": "aggregator",
       "source_url": "https://www.163hebei.com/list/6-3.html",
+      "subjects": [],
       "title": "【合同制】顺平县青少年校外活动中心公开选聘外聘教师的公告(招若干人，05月08日~05月31日报名)",
       "url": "https://www.163hebei.com/article/4544.html"
     },
     "https://www.163hebei.com/article/4729.html": {
-      "checked_at": "2026-06-24T15:13:34",
+      "checked_at": "2026-06-24T17:01:51",
       "classification": "uncertain",
       "content_hash": "d6ea11f2003a489c3a056a930d384a36e3af86588995602f2f08cabb8c088be5",
       "date": "2025-06-16",
@@ -1529,14 +1538,19 @@
       "regions": [
         "高阳县"
       ],
+      "school_levels": [
+        "学段待核实"
+      ],
+      "school_names": [],
       "source": "河北163－招考信息",
       "source_type": "aggregator",
       "source_url": "https://www.163hebei.com/list/6-3.html",
+      "subjects": [],
       "title": "【事业编】高阳县2025年公开选聘教师公告(招30人，06月25日~06月27日报名)",
       "url": "https://www.163hebei.com/article/4729.html"
     },
     "https://www.163hebei.com/article/4734.html": {
-      "checked_at": "2026-06-24T15:13:33",
+      "checked_at": "2026-06-24T17:01:50",
       "classification": "uncertain",
       "content_hash": "4ec834f7bfe3a7ca7f5109af2feaf03f5f04783b48a4d9289588b3643e945543",
       "date": "2025-06-17",
@@ -1564,14 +1578,19 @@
       "regions": [
         "高阳县"
       ],
+      "school_levels": [
+        "中学未细分"
+      ],
+      "school_names": [],
       "source": "河北163－招考信息",
       "source_type": "aggregator",
       "source_url": "https://www.163hebei.com/list/6-3.html",
+      "subjects": [],
       "title": "【合同制】高阳县2025年公开招聘农村中小学教师公告(招40人，06月25日~06月27日报名)",
       "url": "https://www.163hebei.com/article/4734.html"
     },
     "https://www.163hebei.com/article/4904.html": {
-      "checked_at": "2026-06-24T15:13:33",
+      "checked_at": "2026-06-24T17:01:50",
       "classification": "uncertain",
       "content_hash": "e5a3469975efb3a7c5aa997ea2bcca747c48d5763a75099cf70819290d9d2c26",
       "date": "2025-07-22",
@@ -1600,14 +1619,21 @@
       "regions": [
         "高碑店市"
       ],
+      "school_levels": [
+        "中学未细分"
+      ],
+      "school_names": [
+        "公开招聘中学"
+      ],
       "source": "河北163－招考信息",
       "source_type": "aggregator",
       "source_url": "https://www.163hebei.com/list/6-3.html",
+      "subjects": [],
       "title": "【事业编】2025年高碑店市公开招聘中学教师公告(招80人，07月24日~07月30日报名)",
       "url": "https://www.163hebei.com/article/4904.html"
     },
     "https://www.163hebei.com/article/4981.html": {
-      "checked_at": "2026-06-24T15:13:32",
+      "checked_at": "2026-06-24T17:01:49",
       "classification": "uncertain",
       "content_hash": "1c8c64d4625ef1a9730695e241e5b254d3c15d0d7592b1f6b39817c3403e0c6d",
       "date": "2025-08-04",
@@ -1636,14 +1662,19 @@
       "regions": [
         "望都县"
       ],
+      "school_levels": [
+        "高中"
+      ],
+      "school_names": [],
       "source": "河北163－招考信息",
       "source_type": "aggregator",
       "source_url": "https://www.163hebei.com/list/6-3.html",
+      "subjects": [],
       "title": "【事业编】望都县人力资源和社会保障局望都县教育和体育局望都县2025年公开选聘高中学校教师公告(招20人，07月30日~08月06日报名)",
       "url": "https://www.163hebei.com/article/4981.html"
     },
     "https://www.163hebei.com/article/4984.html": {
-      "checked_at": "2026-06-24T15:13:32",
+      "checked_at": "2026-06-24T17:01:49",
       "classification": "uncertain",
       "content_hash": "28c359d30d71d3c6713778052ed016016557d30dff5c8f9725cde5476db93fab",
       "date": "2025-08-04",
@@ -1663,14 +1694,19 @@
       "regions": [
         "涞水县"
       ],
+      "school_levels": [
+        "学段待核实"
+      ],
+      "school_names": [],
       "source": "河北163－招考信息",
       "source_type": "aggregator",
       "source_url": "https://www.163hebei.com/list/6-3.html",
+      "subjects": [],
       "title": "【合同制】涞水县银龄讲学教师招募公告​(招11人，08月04日~08月10日报名)",
       "url": "https://www.163hebei.com/article/4984.html"
     },
     "https://www.163hebei.com/article/5636.html": {
-      "checked_at": "2026-06-24T15:13:31",
+      "checked_at": "2026-06-24T17:01:48",
       "classification": "uncertain",
       "content_hash": "f5bb9f6d2162388c958ae6b3c638a6c507d892cc27995a2fe6c9f1e0d521a6bf",
       "date": "2025-11-28",
@@ -1698,14 +1734,19 @@
       "regions": [
         "保定市"
       ],
+      "school_levels": [
+        "中学未细分"
+      ],
+      "school_names": [],
       "source": "河北163－招考信息",
       "source_type": "aggregator",
       "source_url": "https://www.163hebei.com/list/6-3.html",
+      "subjects": [],
       "title": "【事业编】保定市教育局保定市人力资源和社会保障局关于2025年保定市第一中学选聘教师的(招14人，11月29日~12月08日报名)",
       "url": "https://www.163hebei.com/article/5636.html"
     },
     "https://www.163hebei.com/article/5638.html": {
-      "checked_at": "2026-06-24T15:13:31",
+      "checked_at": "2026-06-24T17:01:48",
       "classification": "uncertain",
       "content_hash": "89c89c0038b93cdab03e2a19efbbced0953248f1dc836f43823e7fd80a9e460c",
       "date": "2025-11-28",
@@ -1733,14 +1774,19 @@
       "regions": [
         "保定市"
       ],
+      "school_levels": [
+        "中学未细分"
+      ],
+      "school_names": [],
       "source": "河北163－招考信息",
       "source_type": "aggregator",
       "source_url": "https://www.163hebei.com/list/6-3.html",
+      "subjects": [],
       "title": "【事业编】保定市教育局、保定市人力资源和社会保障局关于2025年保定市第一中学选聘教师的公告(招14人，11月29日~12月08日报名)",
       "url": "https://www.163hebei.com/article/5638.html"
     },
     "https://www.163hebei.com/article/5785.html": {
-      "checked_at": "2026-06-24T15:13:30",
+      "checked_at": "2026-06-24T17:01:47",
       "classification": "uncertain",
       "content_hash": "4006ca5cf57afea270579bd7d5c65547537a28a951cd94abc9c3c878d692c9ab",
       "date": "2026-01-15",
@@ -1768,14 +1814,19 @@
       "regions": [
         "高碑店市"
       ],
+      "school_levels": [
+        "学段待核实"
+      ],
+      "school_names": [],
       "source": "河北163－招考信息",
       "source_type": "aggregator",
       "source_url": "https://www.163hebei.com/list/6-3.html",
+      "subjects": [],
       "title": "【事业编】高碑店市人力资源和社会保障2026年高碑店一中选聘教师公告(招20人，01月15日~01月22日报名)",
       "url": "https://www.163hebei.com/article/5785.html"
     },
     "https://www.163hebei.com/article/5841.html": {
-      "checked_at": "2026-06-24T15:13:30",
+      "checked_at": "2026-06-24T17:01:47",
       "classification": "uncertain",
       "content_hash": "e4bb96051da47a68bf7072f490de53c747d3ba3bda36063bd47740ef8c763dd9",
       "date": "2026-02-04",
@@ -1793,14 +1844,23 @@
       "regions": [
         "雄县"
       ],
+      "school_levels": [
+        "中学未细分"
+      ],
+      "school_names": [
+        "雄县板东中学"
+      ],
       "source": "河北163－招考信息",
       "source_type": "aggregator",
       "source_url": "https://www.163hebei.com/list/6-3.html",
+      "subjects": [
+        "体育"
+      ],
       "title": "【合同制】雄县板东中学面向在校大学生招聘实习体育教师公告(招若干人，02月03日~03月01日报名)",
       "url": "https://www.163hebei.com/article/5841.html"
     },
     "https://www.163hebei.com/article/5893.html": {
-      "checked_at": "2026-06-24T15:13:30",
+      "checked_at": "2026-06-24T17:01:46",
       "classification": "uncertain",
       "content_hash": "e8b4c9e1a3ba0f4523d317d90f4ea31829c4e812a9db78426ae1362ff0bf5ae8",
       "date": "2026-02-26",
@@ -1819,14 +1879,19 @@
       "regions": [
         "曲阳县"
       ],
+      "school_levels": [
+        "学段待核实"
+      ],
+      "school_names": [],
       "source": "河北163－招考信息",
       "source_type": "aggregator",
       "source_url": "https://www.163hebei.com/list/6-3.html",
+      "subjects": [],
       "title": "【合同制】曲阳县教育和体育局关于德宁幼儿园公开选调教师公告(招13人，02月26日~02月27日报名)",
       "url": "https://www.163hebei.com/article/5893.html"
     },
     "https://www.163hebei.com/article/5915.html": {
-      "checked_at": "2026-06-24T15:13:29",
+      "checked_at": "2026-06-24T17:01:46",
       "classification": "uncertain",
       "content_hash": "237380cb5a8e319650c0969ded74e996dbac1af8c1e3575b7f26aa72c48b6509",
       "date": "2026-03-06",
@@ -1854,14 +1919,19 @@
       "regions": [
         "顺平县"
       ],
+      "school_levels": [
+        "高中"
+      ],
+      "school_names": [],
       "source": "河北163－招考信息",
       "source_type": "aggregator",
       "source_url": "https://www.163hebei.com/list/6-3.html",
+      "subjects": [],
       "title": "【事业编】顺平县人力资源和社会保障局 2026年公开选聘高中教师公告(招20人，03月05日~03月12日报名)",
       "url": "https://www.163hebei.com/article/5915.html"
     },
     "https://www.163hebei.com/article/5987.html": {
-      "checked_at": "2026-06-24T15:13:29",
+      "checked_at": "2026-06-24T17:01:45",
       "classification": "uncertain",
       "content_hash": "219f1e5057e3405ca11d5d6de41a1193b71a997e1167099d2d335e1d706d4ec5",
       "date": "2026-03-26",
@@ -1879,9 +1949,14 @@
       "regions": [
         "保定市"
       ],
+      "school_levels": [
+        "学段待核实"
+      ],
+      "school_names": [],
       "source": "河北163－招考信息",
       "source_type": "aggregator",
       "source_url": "https://www.163hebei.com/list/6-3.html",
+      "subjects": [],
       "title": "【合同制】保定市青少年宫关于常态化选拔全学科兼职教师的公告(招若干人，03月26日~04月10日报名)",
       "url": "https://www.163hebei.com/article/5987.html"
     },
@@ -1919,6 +1994,7 @@
         "保定市市直属部分学校"
       ],
       "source": "高校人才网－保定市教育局专区",
+      "source_temporarily_unavailable": true,
       "source_type": "aggregator",
       "source_url": "https://www.gaoxiaojob.com/company/detail/30087.html",
       "subjects": [],
@@ -1956,6 +2032,7 @@
       ],
       "school_names": [],
       "source": "高校人才网－保定市教育局专区",
+      "source_temporarily_unavailable": true,
       "source_type": "aggregator",
       "source_url": "https://www.gaoxiaojob.com/company/detail/30087.html",
       "subjects": [],
@@ -1996,6 +2073,7 @@
       ],
       "school_names": [],
       "source": "高校人才网－保定市教育局专区",
+      "source_temporarily_unavailable": true,
       "source_type": "aggregator",
       "source_url": "https://www.gaoxiaojob.com/company/detail/30087.html",
       "subjects": [],
@@ -2023,6 +2101,7 @@
       ],
       "school_names": [],
       "source": "高校人才网－保定市教育局专区",
+      "source_temporarily_unavailable": true,
       "source_type": "aggregator",
       "source_url": "https://www.gaoxiaojob.com/company/detail/30087.html",
       "subjects": [
@@ -2052,6 +2131,7 @@
       ],
       "school_names": [],
       "source": "高校人才网－保定市教育局专区",
+      "source_temporarily_unavailable": true,
       "source_type": "aggregator",
       "source_url": "https://www.gaoxiaojob.com/company/detail/30087.html",
       "subjects": [
@@ -2081,6 +2161,7 @@
       ],
       "school_names": [],
       "source": "高校人才网－保定市教育局专区",
+      "source_temporarily_unavailable": true,
       "source_type": "aggregator",
       "source_url": "https://www.gaoxiaojob.com/company/detail/30087.html",
       "subjects": [
@@ -2112,6 +2193,7 @@
         "组织关系仍保留在原毕业学校"
       ],
       "source": "高校人才网－保定市教育局专区",
+      "source_temporarily_unavailable": true,
       "source_type": "aggregator",
       "source_url": "https://www.gaoxiaojob.com/company/detail/30087.html",
       "subjects": [
@@ -2141,6 +2223,7 @@
       ],
       "school_names": [],
       "source": "高校人才网－保定市教育局专区",
+      "source_temporarily_unavailable": true,
       "source_type": "aggregator",
       "source_url": "https://www.gaoxiaojob.com/company/detail/30087.html",
       "subjects": [
@@ -2173,6 +2256,7 @@
         "组织关系仍保留在原毕业学校"
       ],
       "source": "高校人才网－保定市教育局专区",
+      "source_temporarily_unavailable": true,
       "source_type": "aggregator",
       "source_url": "https://www.gaoxiaojob.com/company/detail/30087.html",
       "subjects": [
@@ -2182,7 +2266,7 @@
       "url": "https://www.gaoxiaojob.com/job/detail/2210004.html"
     },
     "https://www.tangxian.gov.cn/zwgknr-888888647-394991.html": {
-      "checked_at": "2026-06-24T08:52:29",
+      "checked_at": "2026-06-24T17:01:19",
       "classification": "likely",
       "content_hash": "959d3b49b9f41c7c98b93576f4f9f4dca14a280ad913a6d7142222b207a1ee82",
       "date": "2026-04-29",
@@ -2222,5 +2306,5 @@
       "url": "https://www.tangxian.gov.cn/zwgknr-888888647-394991.html"
     }
   },
-  "last_run": "2026-06-24T08:54:09"
+  "last_run": "2026-06-24T17:01:52"
 }
