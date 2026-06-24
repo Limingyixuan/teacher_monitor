@@ -26,15 +26,42 @@ STATE_FILE = ROOT / "data" / "state.json"
 REPORT_DIR = ROOT / "reports"
 PUBLIC_DATA_FILE = ROOT / "docs" / "data" / "latest_jobs.json"
 
-BAODING_WORDS = [
-    "保定", "莲池", "竞秀", "满城", "清苑", "徐水", "涞水", "定兴",
-    "唐县", "高阳", "容城", "涞源", "望都", "安新", "易县", "曲阳",
-    "蠡县", "顺平", "博野", "雄县", "涿州", "安国", "高碑店",
-    "白沟", "阜平", "定州",
+REGION_ALIASES = [
+    ("市直", ["市直"]),
+    ("高新区", ["高新区", "高新技术产业开发区"]),
+    ("白沟新城", ["白沟新城", "白沟"]),
+    ("莲池区", ["莲池区", "莲池"]),
+    ("竞秀区", ["竞秀区", "竞秀"]),
+    ("满城区", ["满城区", "满城"]),
+    ("清苑区", ["清苑区", "清苑"]),
+    ("徐水区", ["徐水区", "徐水"]),
+    ("涞水县", ["涞水县", "涞水"]),
+    ("阜平县", ["阜平县", "阜平"]),
+    ("定兴县", ["定兴县", "定兴"]),
+    ("唐县", ["唐县"]),
+    ("高阳县", ["高阳县", "高阳"]),
+    ("涞源县", ["涞源县", "涞源"]),
+    ("望都县", ["望都县", "望都"]),
+    ("易县", ["易县"]),
+    ("曲阳县", ["曲阳县", "曲阳"]),
+    ("蠡县", ["蠡县"]),
+    ("顺平县", ["顺平县", "顺平"]),
+    ("博野县", ["博野县", "博野"]),
+    ("涿州市", ["涿州市", "涿州"]),
+    ("安国市", ["安国市", "安国"]),
+    ("高碑店市", ["高碑店市", "高碑店"]),
+    ("定州市", ["定州市", "定州"]),
+    ("雄安新区", ["雄安新区", "雄安"]),
+    ("容城县", ["容城县", "容城"]),
+    ("安新县", ["安新县", "安新"]),
+    ("雄县", ["雄县"]),
+]
+BAODING_WORDS = ["保定", "多县", "县市区"] + [
+    alias for _, aliases in REGION_ALIASES for alias in aliases
 ]
 SCHOOL_WORDS = [
     "教师", "中学", "初中", "高中", "完全中学", "教育事业单位",
-    "教体局", "教育局", "学校",
+    "教体局", "教育局", "学校", "教育类", "中小学", "教职", "教研员",
 ]
 RECRUIT_WORDS = [
     "公开招聘", "公开选聘", "专项招聘", "招聘教师", "选聘教师",
@@ -57,6 +84,26 @@ EXCLUDE_WORDS = [
     "人事代理", "购买服务", "政府购买服务", "临聘", "编外", "校聘",
     "派遣制", "见习", "实习", "劳务外包",
 ]
+EMPLOYMENT_PHRASES = {
+    "民办": ["民办学校", "民办普通高中", "民办高级中学", "民办中学"],
+    "私立": ["私立学校", "私立中学"],
+    "培训机构": ["培训机构招聘", "教育培训机构"],
+    "代课": ["代课教师", "招聘代课"],
+    "合同制": ["合同制教师", "招聘合同制", "合同制工作人员"],
+    "劳务派遣": ["劳务派遣", "派遣用工"],
+    "人事代理": ["人事代理"],
+    "购买服务": ["政府购买服务岗位", "购买服务人员", "购买服务教师"],
+    "临聘": ["临聘教师", "招聘临聘"],
+    "编外": ["编外教师", "编外人员"],
+    "校聘": ["校聘教师"],
+    "派遣制": ["派遣制教师", "派遣制工作人员"],
+    "见习": ["见习岗位", "就业见习"],
+    "实习": ["实习教师", "实习岗位"],
+    "备案制": ["备案制教师", "人员备案制"],
+    "控制数": ["人员控制数", "控制数教师"],
+    "员额制": ["员额制教师", "员额制人员"],
+    "聘用制": ["聘用制教师"],
+}
 FOLLOWUP_WORDS = [
     "资格复审", "面试", "笔试", "体检", "考察", "公示", "递补",
     "岗位取消", "岗位核减", "拟聘用", "报名",
@@ -98,6 +145,56 @@ def extract_date(text):
     )
 
 
+def detect_regions(title_context, body=""):
+    """优先用标题判断地区，避免正文导航栏中的区县名造成误判。"""
+    primary = title_context or ""
+    regions = [
+        name for name, aliases in REGION_ALIASES
+        if any(alias in primary for alias in aliases)
+    ]
+    if regions:
+        return list(dict.fromkeys(regions))
+    if "市直" in primary:
+        return ["市直"]
+    if "保定" in primary:
+        return ["保定市"]
+    if not regions:
+        secondary = (body or "")[:6000]
+        regions = [
+            name for name, aliases in REGION_ALIASES
+            if any(alias in secondary for alias in aliases)
+        ]
+    regions = list(dict.fromkeys(regions))
+    if len(regions) >= 4 or any(word in primary for word in ["多县", "七县", "县市区"]):
+        return ["多县区"]
+    if regions:
+        return regions
+    return ["地区待核实"]
+
+
+def detect_employment_terms(title_text, main_text=""):
+    found = set(word for word in EXCLUDE_WORDS + UNCERTAIN_WORDS if word in title_text)
+    for label, phrases in EMPLOYMENT_PHRASES.items():
+        if any(phrase in main_text for phrase in phrases):
+            found.add(label)
+    return sorted(found)
+
+
+def extract_main_text(soup):
+    selectors = [
+        "article", ".TRS_Editor", ".article-content", ".article_content",
+        ".content-detail", ".detail-content", ".news-content", ".zwxl-content",
+        "#zoom", "#content",
+    ]
+    candidates = []
+    for selector in selectors:
+        for node in soup.select(selector):
+            text = normalize(node.get_text(" ", strip=True))
+            if len(text) >= 100:
+                candidates.append(text)
+    return max(candidates, key=len) if candidates else ""
+
+
 class Monitor(object):
     def __init__(self, config, verbose=False):
         self.config = config
@@ -125,6 +222,8 @@ class Monitor(object):
         return response.text
 
     def links_from_source(self, source):
+        if source.get("mode") == "baoding_rsj_api":
+            return self.links_from_baoding_rsj_api(source)
         html = self.fetch(source["url"])
         soup = BeautifulSoup(html, "lxml")
         host = urlparse(source["url"]).netloc
@@ -137,6 +236,9 @@ class Monitor(object):
             parsed = urlparse(url)
             if parsed.scheme not in ("http", "https") or parsed.netloc != host:
                 continue
+            if source.get("source_type") == "aggregator":
+                if url.rstrip("/") == source["url"].rstrip("/") or "/list/" in parsed.path:
+                    continue
             context = title
             if anchor.parent:
                 context += " " + normalize(anchor.parent.get_text(" ", strip=True))
@@ -146,10 +248,45 @@ class Monitor(object):
                 "title": title,
                 "url": url,
                 "source": source["name"],
+                "source_type": source.get("source_type", "official"),
+                "source_url": source["url"],
                 "listing_context": normalize(context)[:1000],
             }
         limit = int(source.get("max_detail_pages", 30))
         return list(candidates.values())[:limit]
+
+    def links_from_baoding_rsj_api(self, source):
+        endpoint = source["api_url"]
+        response = self.session.post(
+            endpoint,
+            json={"pageNum": 1, "pageSize": int(source.get("max_items", 100)),
+                  "publishOrNot": "1"},
+            timeout=self.timeout,
+        )
+        response.raise_for_status()
+        payload = response.json()
+        records = ((payload.get("data") or {}).get("list") or [])
+        items = []
+        for record in records:
+            title = normalize(record.get("noticeTitle", ""))
+            if not title or not self.looks_like_recruitment(title):
+                continue
+            notice_id = record.get("id")
+            url = "{0}?noticeId={1}#/examinee/mobileHostPage/home".format(
+                source["url"].rstrip("/"), notice_id
+            )
+            raw = json.dumps(record, ensure_ascii=False, sort_keys=True)
+            items.append({
+                "title": title,
+                "url": url,
+                "source": source["name"],
+                "source_type": source.get("source_type", "official"),
+                "source_url": source["url"],
+                "listing_context": title + " " + (record.get("publishTime") or ""),
+                "api_record": record,
+                "api_hash": stable_hash(raw),
+            })
+        return items
 
     @staticmethod
     def looks_like_recruitment(text):
@@ -158,35 +295,68 @@ class Monitor(object):
         return has_school and has_recruit
 
     def inspect_item(self, item):
+        if item.get("api_record"):
+            title_context = normalize(
+                item["title"] + " " + item["listing_context"] + " " + item["source"]
+            )
+            combined = title_context
+            result = dict(item)
+            result.pop("api_record", None)
+            result.update({
+                "date": extract_date(item["listing_context"]),
+                "classification": self.classify(combined),
+                "matched_terms": self.matched_terms(combined),
+                "employment_terms": detect_employment_terms(title_context),
+                "regions": detect_regions(item["title"] + " " + item["source"]),
+                "content_hash": item["api_hash"],
+                "checked_at": datetime.now().isoformat(timespec="seconds"),
+            })
+            return result
         try:
             html = self.fetch(item["url"])
             soup = BeautifulSoup(html, "lxml")
             for tag in soup(["script", "style", "noscript", "svg"]):
                 tag.decompose()
             body = normalize(soup.get_text(" ", strip=True))
+            main_text = extract_main_text(soup)
             title = item["title"]
             page_title = normalize(soup.title.get_text(" ", strip=True)) if soup.title else ""
             if len(title) < 10 and page_title:
                 title = page_title
-            combined = normalize(title + " " + item["listing_context"] + " " + body)
+            title_context = normalize(title + " " + item["source"])
+            combined = normalize(
+                title_context + " " + item["listing_context"] + " " + body
+            )
             result = dict(item)
+            employment_context = title
+            if item.get("source_type") != "aggregator":
+                employment_context += " " + item["listing_context"]
             result.update({
                 "title": title,
                 "date": extract_date(item["listing_context"] + " " + body[:2000]),
                 "classification": self.classify(combined),
                 "matched_terms": self.matched_terms(combined),
+                "employment_terms": detect_employment_terms(
+                    employment_context, main_text
+                ),
+                "regions": detect_regions(title_context, body),
                 "content_hash": stable_hash(body),
                 "checked_at": datetime.now().isoformat(timespec="seconds"),
             })
             return result
         except Exception as exc:
             self.log("  正文读取失败：{0} ({1})".format(item["url"], exc))
-            combined = item["title"] + " " + item["listing_context"]
+            combined = item["title"] + " " + item["listing_context"] + " " + item["source"]
             result = dict(item)
+            employment_context = item["title"]
+            if item.get("source_type") != "aggregator":
+                employment_context += " " + item["listing_context"]
             result.update({
                 "date": extract_date(combined),
                 "classification": self.classify(combined),
                 "matched_terms": self.matched_terms(combined),
+                "employment_terms": detect_employment_terms(employment_context),
+                "regions": detect_regions(item["title"] + " " + item["source"]),
                 "content_hash": stable_hash(combined),
                 "checked_at": datetime.now().isoformat(timespec="seconds"),
                 "detail_error": str(exc),
@@ -196,13 +366,11 @@ class Monitor(object):
     @staticmethod
     def matched_terms(text):
         groups = STRONG_COMPILE_WORDS + LIKELY_COMPILE_WORDS + UNCERTAIN_WORDS
-        groups += EXCLUDE_WORDS + RECRUIT_WORDS + FOLLOWUP_WORDS
+        groups += RECRUIT_WORDS + FOLLOWUP_WORDS
         return sorted(set(word for word in groups if word in text))
 
     @staticmethod
     def classify(text):
-        if any(word in text for word in EXCLUDE_WORDS):
-            return "excluded"
         in_baoding = any(word in text for word in BAODING_WORDS)
         is_school = any(word in text for word in SCHOOL_WORDS)
         is_recruitment = any(word in text for word in RECRUIT_WORDS + FOLLOWUP_WORDS)
@@ -228,7 +396,7 @@ class Monitor(object):
                 self.log("  找到 {0} 个候选公告".format(len(links)))
                 for item in links:
                     inspected = self.inspect_item(item)
-                    if inspected["classification"] not in ("irrelevant", "excluded"):
+                    if inspected["classification"] != "irrelevant":
                         results.append(inspected)
             except Exception as exc:
                 failures.append({"source": source["name"], "error": str(exc)})
@@ -285,9 +453,13 @@ def save_public_data(items, failures):
             "title": item.get("title", ""),
             "url": item.get("url", ""),
             "source": item.get("source", ""),
+            "source_type": item.get("source_type", "official"),
+            "source_url": item.get("source_url", ""),
             "date": item.get("date", ""),
             "classification": item.get("classification", "needs_review"),
             "matched_terms": item.get("matched_terms", []),
+            "employment_terms": item.get("employment_terms", []),
+            "regions": item.get("regions", ["地区待核实"]),
             "checked_at": item.get("checked_at", ""),
         })
     save_json(PUBLIC_DATA_FILE, {

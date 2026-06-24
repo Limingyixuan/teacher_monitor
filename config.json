@@ -3,33 +3,131 @@
   "request_delay_seconds": 0.4,
   "sources": [
     {
+      "name": "保定市人社局－事业单位招聘专题",
+      "url": "https://rsj.baoding.gov.cn/sydwzp",
+      "api_url": "https://rsj.baoding.gov.cn/sydwzp/kaoshi/examKsNoticeInfo/getNoticeInfoList",
+      "mode": "baoding_rsj_api",
+      "source_type": "official",
+      "max_items": 100,
+      "enabled": true
+    },
+    {
       "name": "保定市教育局－通知通告",
       "url": "https://jyj.baoding.gov.cn/ejzwgk-159-more.html",
+      "source_type": "official",
       "max_detail_pages": 40,
+      "enabled": true
+    },
+    {
+      "name": "满城区人民政府－招录信息",
+      "url": "https://www.mancheng.gov.cn/list-zhaoluxinxi.html",
+      "source_type": "official",
+      "max_detail_pages": 40,
+      "enabled": true
+    },
+    {
+      "name": "清苑区人民政府",
+      "url": "https://www.qingyuanqu.gov.cn/",
+      "source_type": "official",
+      "max_detail_pages": 30,
+      "enabled": true
+    },
+    {
+      "name": "涞水县人民政府",
+      "url": "https://www.laishui.gov.cn/",
+      "source_type": "official",
+      "max_detail_pages": 30,
       "enabled": true
     },
     {
       "name": "唐县人民政府－人社局信息公开",
       "url": "https://www.tangxian.gov.cn/zwgkwzlist-888888647-888888001-list.html",
+      "source_type": "official",
       "max_detail_pages": 30,
       "enabled": true
     },
     {
       "name": "高阳县人民政府－公开信息",
       "url": "https://www.gaoyang.gov.cn/",
+      "source_type": "official",
       "max_detail_pages": 30,
       "enabled": true
     },
     {
       "name": "阜平县人民政府",
       "url": "https://www.bdfuping.gov.cn/",
+      "source_type": "official",
       "max_detail_pages": 30,
       "enabled": true
     },
     {
       "name": "徐水区人民政府－公告公示",
       "url": "https://xushui.gov.cn/zfxxgk/fdzdgknr/gggs/",
+      "source_type": "official",
       "max_detail_pages": 30,
+      "enabled": true
+    },
+    {
+      "name": "河北人社网",
+      "url": "https://rst.hebei.gov.cn/",
+      "source_type": "official",
+      "max_detail_pages": 40,
+      "enabled": true
+    },
+    {
+      "name": "河北省人事考试网",
+      "url": "https://www.hebpta.com.cn/",
+      "source_type": "official",
+      "max_detail_pages": 40,
+      "enabled": true
+    },
+    {
+      "name": "中国公共招聘网",
+      "url": "https://job.mohrss.gov.cn/",
+      "source_type": "official",
+      "max_detail_pages": 40,
+      "enabled": true
+    },
+    {
+      "name": "保定本地宝－事业单位招聘",
+      "url": "https://m.bd.bendibao.com/job/shiyedangweizhaopin/",
+      "source_type": "aggregator",
+      "max_detail_pages": 40,
+      "enabled": true
+    },
+    {
+      "name": "高校人才网－保定市教育局专区",
+      "url": "https://www.gaoxiaojob.com/company/detail/30087.html",
+      "source_type": "aggregator",
+      "max_detail_pages": 30,
+      "enabled": true
+    },
+    {
+      "name": "粉笔－河北招考",
+      "url": "https://fenbi.com/page/fenxiaozhaokao/16",
+      "source_type": "aggregator",
+      "max_detail_pages": 40,
+      "enabled": true
+    },
+    {
+      "name": "华图－保定招考",
+      "url": "https://m.baoding.huatu.com/",
+      "source_type": "aggregator",
+      "max_detail_pages": 40,
+      "enabled": true
+    },
+    {
+      "name": "中公－保定招聘",
+      "url": "https://www.eoffcn.com/hrss/hebei/baoding/2.html",
+      "source_type": "aggregator",
+      "max_detail_pages": 40,
+      "enabled": true
+    },
+    {
+      "name": "河北163－招考信息",
+      "url": "https://www.163hebei.com/list/6-3.html",
+      "source_type": "aggregator",
+      "max_detail_pages": 40,
       "enabled": true
     }
   ]

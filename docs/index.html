@@ -54,6 +54,25 @@
           <span aria-hidden="true">⌕</span>
           <input id="searchInput" type="search" placeholder="搜索学校、区县、学科…" autocomplete="off">
         </label>
+        <div class="select-row">
+          <label class="select-control">
+            <span>地区</span>
+            <select id="regionSelect">
+              <option value="all">全部地区</option>
+            </select>
+          </label>
+          <label class="select-control">
+            <span>来源</span>
+            <select id="sourceTypeSelect">
+              <option value="all">全部来源</option>
+              <option value="official">仅官方源</option>
+              <option value="aggregator">第三方线索</option>
+            </select>
+          </label>
+          <button class="filter-button" id="excludeSettings">
+            排除项 <span id="excludeCount">0</span>
+          </button>
+        </div>
         <div class="chips" id="filterChips" aria-label="筛选">
           <button class="chip active" data-filter="all">全部</button>
           <button class="chip" data-filter="confirmed">明确事业编</button>
@@ -95,16 +114,33 @@
     <p class="dialog-note">以后直接点桌面图标即可打开，数据会自动更新。</p>
   </dialog>
 
+  <dialog id="filterDialog">
+    <button class="dialog-close" id="closeFilterDialog" aria-label="关闭">×</button>
+    <p class="eyebrow">个性化筛选</p>
+    <h2>选择不想看的类型</h2>
+    <p class="dialog-intro">默认全部展示。勾选后，只在你的手机上隐藏对应公告，不影响抓取。</p>
+    <div class="exclude-grid" id="excludeOptions"></div>
+    <div class="dialog-actions">
+      <button class="text-button" id="clearExclusions">清空</button>
+      <button class="primary-button" id="applyExclusions">应用筛选</button>
+    </div>
+  </dialog>
+
   <template id="jobTemplate">
     <article class="job-card">
       <div class="card-head">
-        <span class="badge"></span>
+        <div class="badges">
+          <span class="badge"></span>
+          <span class="source-badge"></span>
+        </div>
         <button class="favorite-button" aria-label="收藏公告">☆</button>
       </div>
       <a class="job-link" target="_blank" rel="noopener">
         <h3 class="job-title"></h3>
         <div class="meta">
           <span class="job-date"></span>
+          <span class="separator">·</span>
+          <span class="job-region"></span>
           <span class="separator">·</span>
           <span class="job-source"></span>
         </div>
