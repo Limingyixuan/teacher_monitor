@@ -14,6 +14,12 @@ on:
     # UTC 00:30/06:30/12:30/18:30 = 北京时间 08:30/14:30/20:30/02:30
     - cron: "30 0,6,12,18 * * *"
   workflow_dispatch:
+    inputs:
+      send_test:
+        description: "仅发送一条微信测试消息"
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: write
@@ -41,7 +47,12 @@ jobs:
       - name: Run monitor
         env:
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
-        run: python baoding_teacher_monitor.py
+        run: |
+          if [ "${{ inputs.send_test }}" = "true" ]; then
+            python baoding_teacher_monitor.py --test-push
+          else
+            python baoding_teacher_monitor.py
+          fi
 
       - name: Persist monitor state
         run: |

@@ -601,8 +601,25 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--notify-existing", action="store_true", help="首次运行也提醒已有公告")
     parser.add_argument("--dry-run", action="store_true", help="生成报告但不发邮件、不更新状态")
+    parser.add_argument("--test-push", action="store_true", help="仅发送一条微信测试消息")
     parser.add_argument("--verbose", action="store_true")
     args = parser.parse_args()
+
+    if args.test_push:
+        test_item = {
+            "title": "保定教师招聘微信通知测试",
+            "school_names": ["测试学校"],
+            "regions": ["保定市"],
+            "school_levels": ["高中"],
+            "date": datetime.now().strftime("%Y-%m-%d"),
+            "source": "保定教师编监控程序",
+            "source_type": "official",
+            "url": PWA_URL,
+        }
+        if send_wechat_push([test_item]):
+            print("微信测试消息已提交。")
+            return 0
+        return 1
 
     if not CONFIG_FILE.exists():
         print("缺少配置文件：{0}".format(CONFIG_FILE), file=sys.stderr)
