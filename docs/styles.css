@@ -183,9 +183,61 @@ h1 {
 
 .select-row {
   display: grid;
-  grid-template-columns: 1fr 1fr auto;
+  grid-template-columns: 1fr auto;
   gap: 8px;
   margin-top: 10px;
+}
+
+.region-filter {
+  margin-top: 11px;
+  padding: 13px 12px 10px;
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.filter-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.filter-heading strong {
+  font-size: 13px;
+}
+
+.filter-heading span {
+  color: var(--green);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.region-chips {
+  display: flex;
+  gap: 7px;
+  padding-bottom: 3px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.region-chips::-webkit-scrollbar { display: none; }
+
+.region-chip {
+  flex: 0 0 auto;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  background: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.region-chip.active {
+  color: #fff;
+  border-color: var(--green);
+  background: var(--green);
 }
 
 .select-control {
@@ -543,8 +595,8 @@ dialog ol {
 @media (max-width: 520px) {
   .summary-grid { grid-template-columns: 1fr 1fr; }
   .summary-card.primary { grid-column: 1 / -1; min-height: 88px; }
-  .select-row { grid-template-columns: 1fr 1fr; }
-  .filter-button { grid-column: 1 / -1; height: 40px; }
+  .select-row { grid-template-columns: 1fr auto; }
+  .filter-button { height: 42px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

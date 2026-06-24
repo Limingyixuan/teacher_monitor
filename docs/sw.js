@@ -1,4 +1,4 @@
-const CACHE_NAME = "baoding-teacher-pwa-v2";
+const CACHE_NAME = "baoding-teacher-pwa-v3";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -26,7 +26,14 @@ self.addEventListener("activate", event => {
 self.addEventListener("fetch", event => {
   if (event.request.method !== "GET") return;
 
-  if (event.request.url.includes("/data/latest_jobs.json")) {
+  const isFreshAsset =
+    event.request.mode === "navigate" ||
+    event.request.url.includes("/data/latest_jobs.json") ||
+    event.request.url.endsWith("/app.js") ||
+    event.request.url.endsWith("/styles.css") ||
+    event.request.url.endsWith("/index.html");
+
+  if (isFreshAsset) {
     event.respondWith(
       fetch(event.request)
         .then(response => {

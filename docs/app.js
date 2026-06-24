@@ -29,7 +29,8 @@ const elements = {
   search: document.querySelector("#searchInput"),
   refresh: document.querySelector("#refreshButton"),
   chips: document.querySelector("#filterChips"),
-  region: document.querySelector("#regionSelect"),
+  regionChips: document.querySelector("#regionChips"),
+  selectedRegionText: document.querySelector("#selectedRegionText"),
   sourceType: document.querySelector("#sourceTypeSelect"),
   excludeCount: document.querySelector("#excludeCount"),
   excludeOptions: document.querySelector("#excludeOptions"),
@@ -157,9 +158,18 @@ function populateRegions() {
   const current = state.region;
   const regions = [...new Set(state.jobs.flatMap(job => job.regions || []))]
     .sort((a, b) => a.localeCompare(b, "zh-CN"));
-  elements.region.replaceChildren(new Option("全部地区", "all"));
-  regions.forEach(region => elements.region.add(new Option(region, region)));
-  elements.region.value = regions.includes(current) ? current : "all";
+  if (current !== "all" && !regions.includes(current)) state.region = "all";
+  elements.regionChips.replaceChildren();
+  ["all", ...regions].forEach(region => {
+    const button = document.createElement("button");
+    button.className = "region-chip";
+    button.dataset.region = region;
+    button.textContent = region === "all" ? "全部地区" : region;
+    button.classList.toggle("active", region === state.region);
+    elements.regionChips.append(button);
+  });
+  elements.selectedRegionText.textContent =
+    state.region === "all" ? "全部地区" : state.region;
 }
 
 function buildExclusionOptions() {
@@ -227,8 +237,15 @@ elements.chips.addEventListener("click", event => {
 });
 
 elements.refresh.addEventListener("click", () => loadJobs({ fresh: true }));
-elements.region.addEventListener("change", event => {
-  state.region = event.target.value;
+elements.regionChips.addEventListener("click", event => {
+  const button = event.target.closest("[data-region]");
+  if (!button) return;
+  state.region = button.dataset.region;
+  elements.regionChips.querySelectorAll(".region-chip").forEach(chip => {
+    chip.classList.toggle("active", chip === button);
+  });
+  elements.selectedRegionText.textContent =
+    state.region === "all" ? "全部地区" : state.region;
   render();
 });
 elements.sourceType.addEventListener("change", event => {

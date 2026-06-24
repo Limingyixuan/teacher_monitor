@@ -54,13 +54,16 @@
           <span aria-hidden="true">⌕</span>
           <input id="searchInput" type="search" placeholder="搜索学校、区县、学科…" autocomplete="off">
         </label>
+        <div class="region-filter">
+          <div class="filter-heading">
+            <strong>选择地区</strong>
+            <span id="selectedRegionText">全部地区</span>
+          </div>
+          <div class="region-chips" id="regionChips" aria-label="按地区筛选">
+            <button class="region-chip active" data-region="all">全部地区</button>
+          </div>
+        </div>
         <div class="select-row">
-          <label class="select-control">
-            <span>地区</span>
-            <select id="regionSelect">
-              <option value="all">全部地区</option>
-            </select>
-          </label>
           <label class="select-control">
             <span>来源</span>
             <select id="sourceTypeSelect">
