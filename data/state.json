@@ -13,7 +13,7 @@
       "source": "河北人社网"
     },
     {
-      "error": "HTTPSConnectionPool(host='www.hebpta.com.cn', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.hebpta.com.cn', port=443) at 0x7f383854abd0>, 'Connection to www.hebpta.com.cn timed out. (connect timeout=25)'))",
+      "error": "HTTPSConnectionPool(host='www.hebpta.com.cn', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.hebpta.com.cn', port=443) at 0x7fb0215a8210>, 'Connection to www.hebpta.com.cn timed out. (connect timeout=25)'))",
       "source": "河北省人事考试网"
     },
     {
@@ -21,7 +21,7 @@
       "source": "中国公共招聘网"
     },
     {
-      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "error": "403 Client Error: Forbidden for url: https://www.gaoxiaojob.com/company/detail/30087.html",
       "source": "高校人才网－保定市教育局专区"
     },
     {
@@ -32,9 +32,9 @@
   "initialized": true,
   "items": {
     "http://m.baoding.huatu.com/2025/0815/1555604.html": {
-      "checked_at": "2026-06-24T08:34:47",
+      "checked_at": "2026-06-24T08:43:35",
       "classification": "likely",
-      "content_hash": "027ddaaee9c92497439b7c7d5d39fb44a039fe6da4c077d78abe00796b5ff70b",
+      "content_hash": "16ea4a996f76548f629d2c1cb26fad4d80d26317e946cc2c2d9ba0a82d934546",
       "date": "2025-08-15",
       "employment_terms": [
         "人事代理",
@@ -63,6 +63,13 @@
       "school_levels": [
         "高中"
       ],
+      "school_names": [
+        "阜平职教中心",
+        "有在职业教育学校",
+        "由阜平职教中心",
+        "00前将体检报告交至阜平职教中心",
+        "岗前培训工作由阜平职教中心"
+      ],
       "source": "华图－保定招考",
       "source_type": "aggregator",
       "source_url": "https://m.baoding.huatu.com/",
@@ -73,9 +80,9 @@
       "url": "http://m.baoding.huatu.com/2025/0815/1555604.html"
     },
     "http://m.baoding.huatu.com/2025/0821/1555723.html": {
-      "checked_at": "2026-06-24T08:34:46",
+      "checked_at": "2026-06-24T08:43:34",
       "classification": "likely",
-      "content_hash": "0c366505b1faa6012a9236cd400e7df5ce4266cb137cbbd870a15aed0a3c8bae",
+      "content_hash": "0e87971b5a524f55aab0632809e7a22ecd880e953d11d4eba72d91fc5c2dcf4a",
       "date": "2025-08-21",
       "employment_terms": [],
       "listing_context": "2025年保定市蠡县公开招聘教师80人公告 教师 2025年保定市蠡县公开招聘教师80人公告",
@@ -105,6 +112,9 @@
       "school_levels": [
         "学段待核实"
       ],
+      "school_names": [
+        "普通高等学校"
+      ],
       "source": "华图－保定招考",
       "source_type": "aggregator",
       "source_url": "https://m.baoding.huatu.com/",
@@ -120,9 +130,9 @@
       "url": "http://m.baoding.huatu.com/2025/0821/1555723.html"
     },
     "http://m.baoding.huatu.com/2026/0114/1658040.html": {
-      "checked_at": "2026-06-24T08:34:45",
+      "checked_at": "2026-06-24T08:43:33",
       "classification": "likely",
-      "content_hash": "17c4e0f2010d6152cf0ca5d3772cc48e3da3c4d728b873284abf91ec43e0e3c7",
+      "content_hash": "de41b080e1232dc3ede0367f9877b45511ccdd6d50269576558844675bda0ecc",
       "date": "2026-01-14",
       "employment_terms": [],
       "listing_context": "2026年保定市高碑店一中选聘教师20名公告 教师 2026年保定市高碑店一中选聘教师20名公告",
@@ -140,7 +150,9 @@
         "招聘工作人员",
         "招聘教师",
         "拟聘用",
+        "笔试",
         "考察",
+        "资格复审",
         "选聘教师",
         "递补",
         "面试"
@@ -150,6 +162,12 @@
       ],
       "school_levels": [
         "中学未细分"
+      ],
+      "school_names": [
+        "高碑店一中",
+        "决定面向社会公开选聘高碑店一中",
+        "高碑店市第二中学",
+        "度高碑店一中"
       ],
       "source": "华图－保定招考",
       "source_type": "aggregator",
@@ -163,9 +181,9 @@
       "url": "http://m.baoding.huatu.com/2026/0114/1658040.html"
     },
     "http://m.baoding.huatu.com/2026/0223/1700663.html": {
-      "checked_at": "2026-06-24T08:34:44",
+      "checked_at": "2026-06-24T08:43:32",
       "classification": "confirmed",
-      "content_hash": "38782ee1710de4c524d4083860a66bb62e399faae3528036727caa4d87c1dc7c",
+      "content_hash": "e8131a41b44b45830904f32770603858743573761afbb54a0e3975b71e6d5bbf",
       "date": "2026-02-23",
       "employment_terms": [],
       "listing_context": "2026年度河北雄安新区新建片区学校选聘教师30名公告 教师 2026年度河北雄安新区新建片区学校选聘教师30名公告",
@@ -192,6 +210,10 @@
       "school_levels": [
         "学段待核实"
       ],
+      "school_names": [
+        "度河北雄安新区新建片区学校",
+        "度雄安新区新建片区学校"
+      ],
       "source": "华图－保定招考",
       "source_type": "aggregator",
       "source_url": "https://m.baoding.huatu.com/",
@@ -203,9 +225,9 @@
       "url": "http://m.baoding.huatu.com/2026/0223/1700663.html"
     },
     "http://m.baoding.huatu.com/2026/0223/1700665.html": {
-      "checked_at": "2026-06-24T08:34:43",
+      "checked_at": "2026-06-24T08:43:31",
       "classification": "likely",
-      "content_hash": "7e44facb97960b873ea9188163505af71d1157f62350c963c12e7c472359524b",
+      "content_hash": "e7a8168bbfa74e6e425f8d04a124f082bbfeb42caec2dacd004d49c3ea4a9228",
       "date": "2026-02-23",
       "employment_terms": [],
       "listing_context": "2026年度北京市丰台区职业教育中心学校雄安分校选聘教师36人公告 教师 2026年度北京市丰台区职业教育中心学校雄安分校选聘教师36人公告",
@@ -229,6 +251,10 @@
       "school_levels": [
         "学段待核实"
       ],
+      "school_names": [
+        "度北京市丰台区职业教育中心学校",
+        "全体教职员工接受北京市丰台区职业教育中心学校"
+      ],
       "source": "华图－保定招考",
       "source_type": "aggregator",
       "source_url": "https://m.baoding.huatu.com/",
@@ -240,9 +266,9 @@
       "url": "http://m.baoding.huatu.com/2026/0223/1700665.html"
     },
     "http://m.baoding.huatu.com/2026/0304/1700786.html": {
-      "checked_at": "2026-06-24T08:34:42",
+      "checked_at": "2026-06-24T08:43:29",
       "classification": "likely",
-      "content_hash": "29417e0e5de36daef8518bd9072732c6e06987d83c7b2333f21b61c294911e6e",
+      "content_hash": "48d8d56b4519bb77fa3cc7dc26e23005e84023dbcbccf5101fe2ad694abc5d81",
       "date": "2026-03-04",
       "employment_terms": [],
       "listing_context": "2026年保定市顺平县人力资源和社会保障局公开选聘高中教师20名公告 事业单位 2026年保定市顺平县人力资源和社会保障局公开选聘高中教师20名公告",
@@ -270,6 +296,12 @@
       "school_levels": [
         "高中"
       ],
+      "school_names": [
+        "取得报考岗位要求的高级中学",
+        "顺平县中学",
+        "如期取得毕业证等内容的学校",
+        "原顺平县实验中学"
+      ],
       "source": "华图－保定招考",
       "source_type": "aggregator",
       "source_url": "https://m.baoding.huatu.com/",
@@ -283,9 +315,9 @@
       "url": "http://m.baoding.huatu.com/2026/0304/1700786.html"
     },
     "http://m.baoding.huatu.com/2026/0305/1700789.html": {
-      "checked_at": "2026-06-24T08:34:41",
+      "checked_at": "2026-06-24T08:43:28",
       "classification": "confirmed",
-      "content_hash": "bbed88786916ca2506739c43bd1563b66a38f471bd548f31b9b59ebeab570b6b",
+      "content_hash": "e5c20113b6ae251f5ad126ef8d3976616e84cb2a0fcb3fb4a78cfba5533bf4fd",
       "date": "2026-03-05",
       "employment_terms": [
         "民办"
@@ -314,6 +346,13 @@
         "初中",
         "高中"
       ],
+      "school_names": [
+        "北京四中",
+        "结合北京四中",
+        "国家级三等奖及以上荣誉可放宽至中学",
+        "如公办示范校或优质民办学校",
+        "有地市级及以上公办示范校或优质民办学校"
+      ],
       "source": "华图－保定招考",
       "source_type": "aggregator",
       "source_url": "https://m.baoding.huatu.com/",
@@ -327,9 +366,9 @@
       "url": "http://m.baoding.huatu.com/2026/0305/1700789.html"
     },
     "http://m.baoding.huatu.com/2026/0305/1700791.html": {
-      "checked_at": "2026-06-24T08:34:40",
+      "checked_at": "2026-06-24T08:43:27",
       "classification": "confirmed",
-      "content_hash": "750d06aefccf3bfe44e942b87983d6dbfda3f3c5a00e0ce4a7d649ac57b3891f",
+      "content_hash": "a27e5e9264cc85e875fff84fb1ca816f75cef9120d80e0f18483f160adea5714",
       "date": "2026-03-05",
       "employment_terms": [
         "民办"
@@ -356,6 +395,13 @@
       "school_levels": [
         "中学未细分"
       ],
+      "school_names": [
+        "北京四中雄安校区第二实验学校",
+        "结合北京四中雄安校区第二实验学校",
+        "国家级三等奖及以上荣誉可放宽至中学",
+        "如公办示范校或优质民办学校",
+        "有地市级及以上公办示范校或优质民办学校"
+      ],
       "source": "华图－保定招考",
       "source_type": "aggregator",
       "source_url": "https://m.baoding.huatu.com/",
@@ -369,9 +415,9 @@
       "url": "http://m.baoding.huatu.com/2026/0305/1700791.html"
     },
     "http://m.baoding.huatu.com/2026/0305/1700794.html": {
-      "checked_at": "2026-06-24T08:34:39",
+      "checked_at": "2026-06-24T08:43:27",
       "classification": "needs_review",
-      "content_hash": "9ba6ff268eba85e75b0e31729ccdad9b959f1a4b0bcae3dd4619b8f9e71f1bb9",
+      "content_hash": "45cdf4c06bfd503842f6a71bf29a980c2301a43b0829b93df39b42c1cffbc987",
       "date": "2026-03-05",
       "employment_terms": [],
       "listing_context": "2026年保定市顺平县博文高级中学招聘教师33名公告 2026年保定市顺平县博文高级中学招聘教师33名公告",
@@ -381,14 +427,20 @@
         "公开选聘",
         "报名",
         "招聘教师",
-        "选聘教师",
-        "面试"
+        "选聘教师"
       ],
       "regions": [
         "顺平县"
       ],
       "school_levels": [
         "高中"
+      ],
+      "school_names": [
+        "博文高级中学",
+        "博文高级中学是保定朗宸教育科技有限公司投资建设的一所民办全日制寄宿学校",
+        "是在当地政府正确领导和亲切关怀下建设的窗口学校",
+        "毕业学校",
+        "自选所应聘学科高中学"
       ],
       "source": "华图－保定招考",
       "source_type": "aggregator",
@@ -409,9 +461,9 @@
       "url": "http://m.baoding.huatu.com/2026/0305/1700794.html"
     },
     "http://m.baoding.huatu.com/2026/0326/1701064.html": {
-      "checked_at": "2026-06-24T08:34:39",
+      "checked_at": "2026-06-24T08:43:26",
       "classification": "likely",
-      "content_hash": "3544f1d7bf25e398fe90faa010799f82224ca4fda55d4e33ed66efca75a54ffd",
+      "content_hash": "0a196651d1263b607aa6641e7eb47b17cc803500ea3846303629deef0112fd9f",
       "date": "2026-03-26",
       "employment_terms": [],
       "listing_context": "2026年北京师范大学保定实验学校公开招聘教师50名公告 2026年北京师范大学保定实验学校公开招聘教师50名公告",
@@ -437,6 +489,13 @@
       "school_levels": [
         "初中"
       ],
+      "school_names": [
+        "北京师范大学保定实验学校",
+        "北京师范大学保定实验学校是一所九年一贯制公办学校",
+        "具体以报考学校",
+        "以报考学校",
+        "考核形式以报考学校"
+      ],
       "source": "华图－保定招考",
       "source_type": "aggregator",
       "source_url": "https://m.baoding.huatu.com/",
@@ -456,9 +515,9 @@
       "url": "http://m.baoding.huatu.com/2026/0326/1701064.html"
     },
     "http://m.baoding.huatu.com/2026/0429/1707815.html": {
-      "checked_at": "2026-06-24T08:34:38",
+      "checked_at": "2026-06-24T08:43:25",
       "classification": "likely",
-      "content_hash": "3218fdf575f480a5d5e629d6afc1e2a1476ccd3fd8135e7860af590e5761026e",
+      "content_hash": "3a95bb833f12bd70abd60444d2019a3d23cad4b3f0e5f11eb9f49e76397bba0b",
       "date": "2026-04-29",
       "employment_terms": [],
       "listing_context": "2026年保定市唐县教育和体育局公开选聘高中教师15名公告 2026年保定市唐县教育和体育局公开选聘高中教师15名公告",
@@ -488,6 +547,11 @@
       "school_levels": [
         "高中"
       ],
+      "school_names": [
+        "取得报考岗位要求的高级中学",
+        "如期取得毕业证等内容的学校",
+        "唐县第一中学"
+      ],
       "source": "华图－保定招考",
       "source_type": "aggregator",
       "source_url": "https://m.baoding.huatu.com/",
@@ -501,9 +565,9 @@
       "url": "http://m.baoding.huatu.com/2026/0429/1707815.html"
     },
     "http://m.baoding.huatu.com/2026/0609/1711969.html": {
-      "checked_at": "2026-06-24T08:34:37",
+      "checked_at": "2026-06-24T08:43:24",
       "classification": "likely",
-      "content_hash": "742cc4c5e2d217bfd6bc938ee8ba3d360013903428d6b7b58aea18bc4f2cfe42",
+      "content_hash": "0b908437302baa44154ed6b3b7742953be03ef45aafd58919bc65a75732249ef",
       "date": "2026-06-09",
       "employment_terms": [],
       "listing_context": "2026年北京师范大学保定实验学校选聘教师30名（事业编）公告 2026年北京师范大学保定实验学校选聘教师30名（事业编）公告",
@@ -532,6 +596,13 @@
       ],
       "school_levels": [
         "中学未细分"
+      ],
+      "school_names": [
+        "北京师范大学保定实验学校",
+        "为满足北京师范大学保定实验学校",
+        "现为北京师范大学保定实验学校",
+        "旭阳路158号北京师范大学保定实验学校",
+        "北师大保定实验学校"
       ],
       "source": "华图－保定招考",
       "source_type": "aggregator",
@@ -604,7 +675,7 @@
       "url": "https://jyj.baoding.gov.cn/content-159-4903.html"
     },
     "https://m.bd.bendibao.com/job/36128.shtm": {
-      "checked_at": "2026-06-24T08:34:26",
+      "checked_at": "2026-06-24T08:43:18",
       "classification": "likely",
       "content_hash": "eaabf395cbdbd4c77d7a6e3bf3051e9bb02f80ffe450eb4c8e9dfb6772f0dc22",
       "date": "2026-04-29",
@@ -637,6 +708,11 @@
       "school_levels": [
         "高中"
       ],
+      "school_names": [
+        "取得报考岗位要求的高级中学",
+        "如期取得毕业证等内容的学校",
+        "唐县第一中学"
+      ],
       "source": "保定本地宝－事业单位招聘",
       "source_type": "aggregator",
       "source_url": "https://m.bd.bendibao.com/job/shiyedangweizhaopin/",
@@ -650,7 +726,7 @@
       "url": "https://m.bd.bendibao.com/job/36128.shtm"
     },
     "https://m.bd.bendibao.com/job/36433.shtm": {
-      "checked_at": "2026-06-24T08:34:26",
+      "checked_at": "2026-06-24T08:43:18",
       "classification": "likely",
       "content_hash": "81aefc9d81026ccacdde632621cde2b7a87e0c48130d46901ea24e621801548f",
       "date": "2026-06-10",
@@ -683,6 +759,13 @@
       "school_levels": [
         "中学未细分"
       ],
+      "school_names": [
+        "现为保定市第二中学",
+        "第三中学",
+        "河北保定外国语学校",
+        "保定中学",
+        "物探中心学校"
+      ],
       "source": "保定本地宝－事业单位招聘",
       "source_type": "aggregator",
       "source_url": "https://m.bd.bendibao.com/job/shiyedangweizhaopin/",
@@ -697,7 +780,7 @@
       "url": "https://m.bd.bendibao.com/job/36433.shtm"
     },
     "https://m.bd.bendibao.com/job/36471.shtm": {
-      "checked_at": "2026-06-24T08:34:25",
+      "checked_at": "2026-06-24T08:43:17",
       "classification": "likely",
       "content_hash": "6563b27538ea49cba60754bb49a4ce72565b27f8532bbf495e9abe3061f70b32",
       "date": "2026-06-16",
@@ -723,6 +806,9 @@
       "school_levels": [
         "中学未细分"
       ],
+      "school_names": [
+        "幼儿师范高等专科学校"
+      ],
       "source": "保定本地宝－事业单位招聘",
       "source_type": "aggregator",
       "source_url": "https://m.bd.bendibao.com/job/shiyedangweizhaopin/",
@@ -733,7 +819,7 @@
       "url": "https://m.bd.bendibao.com/job/36471.shtm"
     },
     "https://m.bd.bendibao.com/job/36472.shtm": {
-      "checked_at": "2026-06-24T08:34:24",
+      "checked_at": "2026-06-24T08:43:16",
       "classification": "likely",
       "content_hash": "91a33c3b964248e258bd9128d8f1287730db295499205b2684badf17c402d21f",
       "date": "2026-06-16",
@@ -757,6 +843,13 @@
       "school_levels": [
         "初中",
         "高中"
+      ],
+      "school_names": [
+        "体育运动学校",
+        "中等职业学校",
+        "融星实验学校",
+        "全日制培智学校",
+        "培智学校"
       ],
       "source": "保定本地宝－事业单位招聘",
       "source_type": "aggregator",
@@ -786,7 +879,7 @@
       "url": "https://m.bd.bendibao.com/job/36472.shtm"
     },
     "https://m.bd.bendibao.com/job/36488.shtm": {
-      "checked_at": "2026-06-24T08:34:24",
+      "checked_at": "2026-06-24T08:43:15",
       "classification": "likely",
       "content_hash": "f776234c8c8333f6654fe6cb035d9fd4e80815ea37e740396fa41b641554a752",
       "date": "2026-06-18",
@@ -819,6 +912,11 @@
       "school_levels": [
         "高中"
       ],
+      "school_names": [
+        "取得报考岗位要求的高级中学",
+        "如期取得毕业证等内容的学校",
+        "河北祖冲之中学"
+      ],
       "source": "保定本地宝－事业单位招聘",
       "source_type": "aggregator",
       "source_url": "https://m.bd.bendibao.com/job/shiyedangweizhaopin/",
@@ -833,7 +931,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=13#/examinee/mobileHostPage/home": {
       "api_hash": "76f167aadb58ff6e6f2dfe17622bd924bc2580dfdbd9ff3336558b25e1e5d028",
-      "checked_at": "2026-06-24T08:32:32",
+      "checked_at": "2026-06-24T08:41:13",
       "classification": "needs_review",
       "content_hash": "76f167aadb58ff6e6f2dfe17622bd924bc2580dfdbd9ff3336558b25e1e5d028",
       "date": "2026-02-12",
@@ -850,6 +948,9 @@
       "school_levels": [
         "学段待核实"
       ],
+      "school_names": [
+        "高碑店一中"
+      ],
       "source": "保定市人社局－事业单位招聘专题",
       "source_type": "official",
       "source_url": "https://rsj.baoding.gov.cn/sydwzp",
@@ -859,7 +960,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=15#/examinee/mobileHostPage/home": {
       "api_hash": "4c4781d1090d96415bed51e3971bd9e673092589b674c7c8601c7529b696a01c",
-      "checked_at": "2026-06-24T08:32:32",
+      "checked_at": "2026-06-24T08:41:13",
       "classification": "needs_review",
       "content_hash": "4c4781d1090d96415bed51e3971bd9e673092589b674c7c8601c7529b696a01c",
       "date": "2026-03-04",
@@ -875,6 +976,7 @@
       "school_levels": [
         "高中"
       ],
+      "school_names": [],
       "source": "保定市人社局－事业单位招聘专题",
       "source_type": "official",
       "source_url": "https://rsj.baoding.gov.cn/sydwzp",
@@ -884,7 +986,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=16#/examinee/mobileHostPage/home": {
       "api_hash": "6a834654123fe065e186bc6cadb13bd1c3d36f6d03a2cddb706cae1f2227fa16",
-      "checked_at": "2026-06-24T08:32:32",
+      "checked_at": "2026-06-24T08:41:13",
       "classification": "needs_review",
       "content_hash": "6a834654123fe065e186bc6cadb13bd1c3d36f6d03a2cddb706cae1f2227fa16",
       "date": "2026-03-05",
@@ -901,6 +1003,7 @@
       "school_levels": [
         "高中"
       ],
+      "school_names": [],
       "source": "保定市人社局－事业单位招聘专题",
       "source_type": "official",
       "source_url": "https://rsj.baoding.gov.cn/sydwzp",
@@ -910,7 +1013,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=20#/examinee/mobileHostPage/home": {
       "api_hash": "682512defb50d4bf46abfb088616530b1cca88f5263fcfe88f23eeefc160ff92",
-      "checked_at": "2026-06-24T08:32:32",
+      "checked_at": "2026-06-24T08:41:13",
       "classification": "needs_review",
       "content_hash": "682512defb50d4bf46abfb088616530b1cca88f5263fcfe88f23eeefc160ff92",
       "date": "2026-04-29",
@@ -926,6 +1029,7 @@
       "school_levels": [
         "高中"
       ],
+      "school_names": [],
       "source": "保定市人社局－事业单位招聘专题",
       "source_type": "official",
       "source_url": "https://rsj.baoding.gov.cn/sydwzp",
@@ -935,7 +1039,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=22#/examinee/mobileHostPage/home": {
       "api_hash": "daebf582b661e9063474e4866471bf597fa919bbbaf173db7b646ded4bc15791",
-      "checked_at": "2026-06-24T08:32:32",
+      "checked_at": "2026-06-24T08:41:13",
       "classification": "needs_review",
       "content_hash": "daebf582b661e9063474e4866471bf597fa919bbbaf173db7b646ded4bc15791",
       "date": "2026-05-11",
@@ -952,6 +1056,7 @@
       "school_levels": [
         "高中"
       ],
+      "school_names": [],
       "source": "保定市人社局－事业单位招聘专题",
       "source_type": "official",
       "source_url": "https://rsj.baoding.gov.cn/sydwzp",
@@ -961,7 +1066,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=25#/examinee/mobileHostPage/home": {
       "api_hash": "11779c92d8ddec070e93fd3e0d6e1556c477f52f67a866bcedf41e096485331c",
-      "checked_at": "2026-06-24T08:32:32",
+      "checked_at": "2026-06-24T08:41:13",
       "classification": "likely",
       "content_hash": "11779c92d8ddec070e93fd3e0d6e1556c477f52f67a866bcedf41e096485331c",
       "date": "2026-06-08",
@@ -978,6 +1083,7 @@
       "school_levels": [
         "学段待核实"
       ],
+      "school_names": [],
       "source": "保定市人社局－事业单位招聘专题",
       "source_type": "official",
       "source_url": "https://rsj.baoding.gov.cn/sydwzp",
@@ -987,7 +1093,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=26#/examinee/mobileHostPage/home": {
       "api_hash": "a54342914e4a577a2d77f6c1aff94710b6c9434149ad13ac17b675ef5c112b33",
-      "checked_at": "2026-06-24T08:32:32",
+      "checked_at": "2026-06-24T08:41:13",
       "classification": "needs_review",
       "content_hash": "a54342914e4a577a2d77f6c1aff94710b6c9434149ad13ac17b675ef5c112b33",
       "date": "2026-06-08",
@@ -1003,6 +1109,9 @@
       "school_levels": [
         "学段待核实"
       ],
+      "school_names": [
+        "关于2026年北京师范大学保定实验学校"
+      ],
       "source": "保定市人社局－事业单位招聘专题",
       "source_type": "official",
       "source_url": "https://rsj.baoding.gov.cn/sydwzp",
@@ -1012,7 +1121,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=27#/examinee/mobileHostPage/home": {
       "api_hash": "d8497757ba7af06c3f2fb60f0f7ea8d89a424e3de22d83ebbb8b5a8d8c143ef1",
-      "checked_at": "2026-06-24T08:32:32",
+      "checked_at": "2026-06-24T08:41:13",
       "classification": "needs_review",
       "content_hash": "d8497757ba7af06c3f2fb60f0f7ea8d89a424e3de22d83ebbb8b5a8d8c143ef1",
       "date": "2026-06-09",
@@ -1029,6 +1138,9 @@
       "school_levels": [
         "学段待核实"
       ],
+      "school_names": [
+        "2026年北京师范大学保定实验学校"
+      ],
       "source": "保定市人社局－事业单位招聘专题",
       "source_type": "official",
       "source_url": "https://rsj.baoding.gov.cn/sydwzp",
@@ -1038,7 +1150,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=28#/examinee/mobileHostPage/home": {
       "api_hash": "a9bb7c8f245eb46a2a9028c3b67d91d1e9fc9169068edf15dda2e53f3f1ae69a",
-      "checked_at": "2026-06-24T08:32:32",
+      "checked_at": "2026-06-24T08:41:13",
       "classification": "likely",
       "content_hash": "a9bb7c8f245eb46a2a9028c3b67d91d1e9fc9169068edf15dda2e53f3f1ae69a",
       "date": "2026-06-09",
@@ -1056,6 +1168,7 @@
       "school_levels": [
         "学段待核实"
       ],
+      "school_names": [],
       "source": "保定市人社局－事业单位招聘专题",
       "source_type": "official",
       "source_url": "https://rsj.baoding.gov.cn/sydwzp",
@@ -1065,7 +1178,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=3#/examinee/mobileHostPage/home": {
       "api_hash": "0b4628400c770f00b0bfed8a385e08f4ae743b22b068deee4921597b52ab9489",
-      "checked_at": "2026-06-24T08:32:32",
+      "checked_at": "2026-06-24T08:41:13",
       "classification": "needs_review",
       "content_hash": "0b4628400c770f00b0bfed8a385e08f4ae743b22b068deee4921597b52ab9489",
       "date": "2026-01-14",
@@ -1081,6 +1194,9 @@
       "school_levels": [
         "学段待核实"
       ],
+      "school_names": [
+        "高碑店一中"
+      ],
       "source": "保定市人社局－事业单位招聘专题",
       "source_type": "official",
       "source_url": "https://rsj.baoding.gov.cn/sydwzp",
@@ -1090,7 +1206,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=33#/examinee/mobileHostPage/home": {
       "api_hash": "d65a7ad76323dde7c3a54c358ef3c651dba9387f140c25cb1e22082f683ac297",
-      "checked_at": "2026-06-24T08:32:32",
+      "checked_at": "2026-06-24T08:41:13",
       "classification": "likely",
       "content_hash": "d65a7ad76323dde7c3a54c358ef3c651dba9387f140c25cb1e22082f683ac297",
       "date": "2026-06-15",
@@ -1108,6 +1224,7 @@
       "school_levels": [
         "学段待核实"
       ],
+      "school_names": [],
       "source": "保定市人社局－事业单位招聘专题",
       "source_type": "official",
       "source_url": "https://rsj.baoding.gov.cn/sydwzp",
@@ -1117,7 +1234,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=35#/examinee/mobileHostPage/home": {
       "api_hash": "b42549353c5caf04959500aaf77322d42eae45e2a394424808da27d51e60a560",
-      "checked_at": "2026-06-24T08:32:32",
+      "checked_at": "2026-06-24T08:41:13",
       "classification": "needs_review",
       "content_hash": "b42549353c5caf04959500aaf77322d42eae45e2a394424808da27d51e60a560",
       "date": "2026-06-17",
@@ -1133,6 +1250,7 @@
       "school_levels": [
         "高中"
       ],
+      "school_names": [],
       "source": "保定市人社局－事业单位招聘专题",
       "source_type": "official",
       "source_url": "https://rsj.baoding.gov.cn/sydwzp",
@@ -1142,7 +1260,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=36#/examinee/mobileHostPage/home": {
       "api_hash": "31a267d0edbe9dd720ca24fa615191b90c4605da68246f838c84b28e62587c56",
-      "checked_at": "2026-06-24T08:32:32",
+      "checked_at": "2026-06-24T08:41:13",
       "classification": "likely",
       "content_hash": "31a267d0edbe9dd720ca24fa615191b90c4605da68246f838c84b28e62587c56",
       "date": "2026-06-17",
@@ -1160,6 +1278,7 @@
       "school_levels": [
         "学段待核实"
       ],
+      "school_names": [],
       "source": "保定市人社局－事业单位招聘专题",
       "source_type": "official",
       "source_url": "https://rsj.baoding.gov.cn/sydwzp",
@@ -1169,7 +1288,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=39#/examinee/mobileHostPage/home": {
       "api_hash": "4da465c4a6fd312de4682cc19a115bf279a52aa2c1c4c253a1056d481f5f5c58",
-      "checked_at": "2026-06-24T08:32:32",
+      "checked_at": "2026-06-24T08:41:13",
       "classification": "needs_review",
       "content_hash": "4da465c4a6fd312de4682cc19a115bf279a52aa2c1c4c253a1056d481f5f5c58",
       "date": "2026-06-22",
@@ -1186,6 +1305,7 @@
       "school_levels": [
         "高中"
       ],
+      "school_names": [],
       "source": "保定市人社局－事业单位招聘专题",
       "source_type": "official",
       "source_url": "https://rsj.baoding.gov.cn/sydwzp",
@@ -1195,7 +1315,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=4#/examinee/mobileHostPage/home": {
       "api_hash": "a21e5b3b89b40196bfb1ee3e9a47c5badb7faadb7ef6bd6a09476b880ce6c56d",
-      "checked_at": "2026-06-24T08:32:32",
+      "checked_at": "2026-06-24T08:41:13",
       "classification": "needs_review",
       "content_hash": "a21e5b3b89b40196bfb1ee3e9a47c5badb7faadb7ef6bd6a09476b880ce6c56d",
       "date": "2026-01-22",
@@ -1211,6 +1331,7 @@
       "school_levels": [
         "高中"
       ],
+      "school_names": [],
       "source": "保定市人社局－事业单位招聘专题",
       "source_type": "official",
       "source_url": "https://rsj.baoding.gov.cn/sydwzp",
@@ -1220,7 +1341,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=40#/examinee/mobileHostPage/home": {
       "api_hash": "b1c99375f9307075c3ae5f3767a49f3423d00be850274ec30771f2413364aba0",
-      "checked_at": "2026-06-24T08:32:32",
+      "checked_at": "2026-06-24T08:41:13",
       "classification": "likely",
       "content_hash": "b1c99375f9307075c3ae5f3767a49f3423d00be850274ec30771f2413364aba0",
       "date": "2026-06-24",
@@ -1238,6 +1359,7 @@
       "school_levels": [
         "学段待核实"
       ],
+      "school_names": [],
       "source": "保定市人社局－事业单位招聘专题",
       "source_type": "official",
       "source_url": "https://rsj.baoding.gov.cn/sydwzp",
@@ -1247,7 +1369,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=41#/examinee/mobileHostPage/home": {
       "api_hash": "1580c2a553e5ff1907da119ddb9ef98716f98823831ed6b099e517ec375530c8",
-      "checked_at": "2026-06-24T08:32:32",
+      "checked_at": "2026-06-24T08:41:13",
       "classification": "needs_review",
       "content_hash": "1580c2a553e5ff1907da119ddb9ef98716f98823831ed6b099e517ec375530c8",
       "date": "2026-06-24",
@@ -1264,6 +1386,9 @@
       "school_levels": [
         "学段待核实"
       ],
+      "school_names": [
+        "北京师范大学保定实验学校"
+      ],
       "source": "保定市人社局－事业单位招聘专题",
       "source_type": "official",
       "source_url": "https://rsj.baoding.gov.cn/sydwzp",
@@ -1273,7 +1398,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=42#/examinee/mobileHostPage/home": {
       "api_hash": "2b38c1597f47689ea24df0253f449e45be7d07071350c0b0906034c54aca090e",
-      "checked_at": "2026-06-24T08:32:32",
+      "checked_at": "2026-06-24T08:41:13",
       "classification": "likely",
       "content_hash": "2b38c1597f47689ea24df0253f449e45be7d07071350c0b0906034c54aca090e",
       "date": "2026-06-24",
@@ -1291,6 +1416,7 @@
       "school_levels": [
         "学段待核实"
       ],
+      "school_names": [],
       "source": "保定市人社局－事业单位招聘专题",
       "source_type": "official",
       "source_url": "https://rsj.baoding.gov.cn/sydwzp",
@@ -1300,7 +1426,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=6#/examinee/mobileHostPage/home": {
       "api_hash": "21b95afd7fe8e4a352a7c1af367aab788d8d14730f660372a190fd0b4c844606",
-      "checked_at": "2026-06-24T08:32:32",
+      "checked_at": "2026-06-24T08:41:13",
       "classification": "needs_review",
       "content_hash": "21b95afd7fe8e4a352a7c1af367aab788d8d14730f660372a190fd0b4c844606",
       "date": "2026-01-25",
@@ -1317,6 +1443,7 @@
       "school_levels": [
         "高中"
       ],
+      "school_names": [],
       "source": "保定市人社局－事业单位招聘专题",
       "source_type": "official",
       "source_url": "https://rsj.baoding.gov.cn/sydwzp",
@@ -2043,7 +2170,7 @@
       "url": "https://www.gaoxiaojob.com/job/detail/2210004.html"
     },
     "https://www.tangxian.gov.cn/zwgknr-888888647-394991.html": {
-      "checked_at": "2026-06-24T08:33:06",
+      "checked_at": "2026-06-24T08:41:49",
       "classification": "likely",
       "content_hash": "959d3b49b9f41c7c98b93576f4f9f4dca14a280ad913a6d7142222b207a1ee82",
       "date": "2026-04-29",
@@ -2074,6 +2201,7 @@
       "school_levels": [
         "高中"
       ],
+      "school_names": [],
       "source": "唐县人民政府－人社局信息公开",
       "source_type": "official",
       "source_url": "https://www.tangxian.gov.cn/zwgkwzlist-888888647-888888001-list.html",
@@ -2082,5 +2210,5 @@
       "url": "https://www.tangxian.gov.cn/zwgknr-888888647-394991.html"
     }
   },
-  "last_run": "2026-06-24T08:34:49"
+  "last_run": "2026-06-24T08:43:39"
 }
