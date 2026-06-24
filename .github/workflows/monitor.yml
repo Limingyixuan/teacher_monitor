@@ -11,7 +11,8 @@ on:
       - "requirements.txt"
       - ".github/workflows/monitor.yml"
   schedule:
-    - cron: "30 0 * * *"
+    # UTC 00:30/06:30/12:30/18:30 = 北京时间 08:30/14:30/20:30/02:30
+    - cron: "30 0,6,12,18 * * *"
   workflow_dispatch:
 
 permissions:

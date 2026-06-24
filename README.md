@@ -47,7 +47,12 @@ setx MAIL_TO "接收提醒的邮箱@qq.com"
 
 默认使用 `smtp.qq.com:465`。其他邮箱可另设 `SMTP_HOST` 和 `SMTP_PORT`。
 
-## 4. 设置每天 8:30 自动运行
+## 4. 设置自动运行
+
+GitHub Actions 默认每 6 小时运行一次，对应北京时间每天
+`02:30、08:30、14:30、20:30`。电脑无需开机。
+
+下面是可选的 Windows 本地定时任务设置：
 
 用普通 PowerShell 执行：
 
