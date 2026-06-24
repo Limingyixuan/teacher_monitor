@@ -228,14 +228,42 @@ h1 {
 .time-chips {
   display: flex;
   gap: 7px;
-  padding-bottom: 3px;
+  padding-bottom: 10px;
   overflow-x: auto;
-  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(31, 103, 78, 0.55) rgba(23, 33, 29, 0.08);
 }
 
 .region-chips::-webkit-scrollbar,
 .level-chips::-webkit-scrollbar,
-.time-chips::-webkit-scrollbar { display: none; }
+.time-chips::-webkit-scrollbar {
+  height: 8px;
+}
+
+.region-chips::-webkit-scrollbar-track,
+.level-chips::-webkit-scrollbar-track,
+.time-chips::-webkit-scrollbar-track {
+  border-radius: 999px;
+  background: rgba(23, 33, 29, 0.08);
+}
+
+.region-chips::-webkit-scrollbar-thumb,
+.level-chips::-webkit-scrollbar-thumb,
+.time-chips::-webkit-scrollbar-thumb {
+  min-width: 42px;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  background: rgba(31, 103, 78, 0.62);
+  background-clip: padding-box;
+}
+
+.region-chips::-webkit-scrollbar-thumb:hover,
+.level-chips::-webkit-scrollbar-thumb:hover,
+.time-chips::-webkit-scrollbar-thumb:hover {
+  background: var(--green);
+  background-clip: padding-box;
+}
 
 .region-chip,
 .level-chip,
@@ -311,12 +339,18 @@ h1 {
   display: flex;
   gap: 8px;
   margin-top: 12px;
-  padding-bottom: 4px;
+  padding-bottom: 9px;
   overflow-x: auto;
-  scrollbar-width: none;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(31, 103, 78, 0.45) transparent;
 }
 
-.chips::-webkit-scrollbar { display: none; }
+.chips::-webkit-scrollbar { height: 6px; }
+.chips::-webkit-scrollbar-track { background: transparent; }
+.chips::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(31, 103, 78, 0.45);
+}
 
 .chip {
   flex: 0 0 auto;

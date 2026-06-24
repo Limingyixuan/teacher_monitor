@@ -72,6 +72,15 @@ function saveExclusions() {
   elements.excludeCount.textContent = state.exclusions.size;
 }
 
+function enableDesktopHorizontalScroll(container) {
+  container.addEventListener("wheel", event => {
+    if (container.scrollWidth <= container.clientWidth) return;
+    if (Math.abs(event.deltaY) <= Math.abs(event.deltaX)) return;
+    event.preventDefault();
+    container.scrollLeft += event.deltaY;
+  }, { passive: false });
+}
+
 function matchesFilter(job) {
   if (state.filter === "all") return true;
   if (state.filter === "favorite") return state.favorites.has(job.url);
@@ -349,4 +358,10 @@ if ("serviceWorker" in navigator) {
 }
 
 buildExclusionOptions();
+[
+  elements.regionChips,
+  elements.levelChips,
+  elements.timeChips,
+  elements.chips,
+].forEach(enableDesktopHorizontalScroll);
 loadJobs();
