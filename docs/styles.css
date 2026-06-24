@@ -189,7 +189,8 @@ h1 {
 }
 
 .region-filter,
-.level-filter {
+.level-filter,
+.time-filter {
   margin-top: 11px;
   padding: 13px 12px 10px;
   border: 1px solid var(--line);
@@ -198,6 +199,10 @@ h1 {
 }
 
 .level-filter {
+  margin-top: 9px;
+}
+
+.time-filter {
   margin-top: 9px;
 }
 
@@ -219,7 +224,8 @@ h1 {
 }
 
 .region-chips,
-.level-chips {
+.level-chips,
+.time-chips {
   display: flex;
   gap: 7px;
   padding-bottom: 3px;
@@ -228,10 +234,12 @@ h1 {
 }
 
 .region-chips::-webkit-scrollbar,
-.level-chips::-webkit-scrollbar { display: none; }
+.level-chips::-webkit-scrollbar,
+.time-chips::-webkit-scrollbar { display: none; }
 
 .region-chip,
-.level-chip {
+.level-chip,
+.time-chip {
   flex: 0 0 auto;
   padding: 8px 12px;
   border: 1px solid var(--line);
@@ -243,7 +251,8 @@ h1 {
 }
 
 .region-chip.active,
-.level-chip.active {
+.level-chip.active,
+.time-chip.active {
   color: #fff;
   border-color: var(--green);
   background: var(--green);

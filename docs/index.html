@@ -21,7 +21,7 @@
         <div>
           <p class="eyebrow">BAODING · TEACHER JOBS</p>
           <h1>保定教师编</h1>
-          <p class="subtitle">只看初高中事业编招聘，少一点噪音。</p>
+          <p class="subtitle">祝最好的思宇早日找到离家近的工作。</p>
         </div>
         <button class="icon-button" id="refreshButton" aria-label="刷新数据" title="刷新">
           <span aria-hidden="true">↻</span>
@@ -74,6 +74,19 @@
             <button class="level-chip" data-level="高中">高中</button>
             <button class="level-chip" data-level="both">初高中</button>
             <button class="level-chip" data-level="unknown">待核实</button>
+          </div>
+        </div>
+        <div class="time-filter">
+          <div class="filter-heading">
+            <strong>发布时间</strong>
+            <span id="selectedTimeText">全部时间</span>
+          </div>
+          <div class="time-chips" id="timeChips" aria-label="按发布时间筛选">
+            <button class="time-chip active" data-months="all">全部时间</button>
+            <button class="time-chip" data-months="1">一个月内</button>
+            <button class="time-chip" data-months="3">三个月内</button>
+            <button class="time-chip" data-months="6">半年内</button>
+            <button class="time-chip" data-months="12">一年内</button>
           </div>
         </div>
         <div class="select-row">

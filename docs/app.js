@@ -12,6 +12,7 @@ const state = {
   filter: "all",
   region: "all",
   level: "all",
+  months: "all",
   sourceType: "all",
   query: "",
   favorites: new Set(JSON.parse(localStorage.getItem(FAVORITES_KEY) || "[]")),
@@ -34,6 +35,8 @@ const elements = {
   selectedRegionText: document.querySelector("#selectedRegionText"),
   levelChips: document.querySelector("#levelChips"),
   selectedLevelText: document.querySelector("#selectedLevelText"),
+  timeChips: document.querySelector("#timeChips"),
+  selectedTimeText: document.querySelector("#selectedTimeText"),
   sourceType: document.querySelector("#sourceTypeSelect"),
   excludeCount: document.querySelector("#excludeCount"),
   excludeOptions: document.querySelector("#excludeOptions"),
@@ -92,6 +95,19 @@ function matchesLevel(job) {
   return levels.includes(state.level);
 }
 
+function matchesTime(job) {
+  if (state.months === "all") return true;
+  if (!job.date || !/^\d{4}-\d{2}-\d{2}$/.test(job.date)) return false;
+
+  const published = new Date(`${job.date}T00:00:00+08:00`);
+  if (Number.isNaN(published.getTime())) return false;
+
+  const cutoff = new Date();
+  cutoff.setHours(0, 0, 0, 0);
+  cutoff.setMonth(cutoff.getMonth() - Number(state.months));
+  return published >= cutoff;
+}
+
 function matchesSource(job) {
   return state.sourceType === "all" || job.source_type === state.sourceType;
 }
@@ -117,6 +133,7 @@ function render() {
     matchesQuery(job) &&
     matchesRegion(job) &&
     matchesLevel(job) &&
+    matchesTime(job) &&
     matchesSource(job) &&
     passesExclusions(job)
   );
@@ -279,6 +296,23 @@ elements.levelChips.addEventListener("click", event => {
     unknown: "学段待核实",
   };
   elements.selectedLevelText.textContent = labels[state.level];
+  render();
+});
+elements.timeChips.addEventListener("click", event => {
+  const button = event.target.closest("[data-months]");
+  if (!button) return;
+  state.months = button.dataset.months;
+  elements.timeChips.querySelectorAll(".time-chip").forEach(chip => {
+    chip.classList.toggle("active", chip === button);
+  });
+  const labels = {
+    all: "全部时间",
+    1: "一个月内",
+    3: "三个月内",
+    6: "半年内",
+    12: "一年内",
+  };
+  elements.selectedTimeText.textContent = labels[state.months];
   render();
 });
 elements.sourceType.addEventListener("change", event => {
