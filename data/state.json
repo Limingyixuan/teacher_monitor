@@ -1,24 +1,40 @@
 {
   "failures": [
     {
-      "error": "HTTPSConnectionPool(host='www.mancheng.gov.cn', port=443): Max retries exceeded with url: /list-zhaoluxinxi.html (Caused by SSLError(SSLError(\"bad handshake: SysCallError(-1, 'Unexpected EOF')\")))",
+      "error": "HTTPSConnectionPool(host='jyj.baoding.gov.cn', port=443): Max retries exceeded with url: /ejzwgk-159-more.html (Caused by NewConnectionError(\"HTTPSConnection(host='jyj.baoding.gov.cn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+      "source": "保定市教育局－通知通告"
+    },
+    {
+      "error": "HTTPSConnectionPool(host='www.mancheng.gov.cn', port=443): Max retries exceeded with url: /list-zhaoluxinxi.html (Caused by NewConnectionError(\"HTTPSConnection(host='www.mancheng.gov.cn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
       "source": "满城区人民政府－招录信息"
     },
     {
-      "error": "HTTPSConnectionPool(host='job.mohrss.gov.cn', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(\"bad handshake: SysCallError(-1, 'Unexpected EOF')\")))",
+      "error": "HTTPSConnectionPool(host='rst.hebei.gov.cn', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='rst.hebei.gov.cn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+      "source": "河北人社网"
+    },
+    {
+      "error": "HTTPSConnectionPool(host='www.hebpta.com.cn', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.hebpta.com.cn', port=443) at 0x7f21113e1710>, 'Connection to www.hebpta.com.cn timed out. (connect timeout=25)'))",
+      "source": "河北省人事考试网"
+    },
+    {
+      "error": "HTTPSConnectionPool(host='job.mohrss.gov.cn', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='job.mohrss.gov.cn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
       "source": "中国公共招聘网"
     },
     {
-      "error": "403 Client Error: Forbidden for url: https://www.gaoxiaojob.com/company/detail/30087.html",
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
       "source": "高校人才网－保定市教育局专区"
+    },
+    {
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "source": "河北163－招考信息"
     }
   ],
   "initialized": true,
   "items": {
     "http://m.baoding.huatu.com/2025/0815/1555604.html": {
-      "checked_at": "2026-06-24T15:13:27",
+      "checked_at": "2026-06-24T07:16:38",
       "classification": "likely",
-      "content_hash": "7e7868bb80f4da37c273cc6e7789d7613b277dedd47cb26671c797560553818a",
+      "content_hash": "1bac790e87ee814857eb67097b0a7eeb3826b2e1d8438e988d92934cfd24b505",
       "date": "2025-08-15",
       "employment_terms": [
         "人事代理",
@@ -37,7 +53,6 @@
         "招聘教师",
         "拟聘用",
         "笔试",
-        "资格复审",
         "选聘教师",
         "递补",
         "面试"
@@ -52,9 +67,9 @@
       "url": "http://m.baoding.huatu.com/2025/0815/1555604.html"
     },
     "http://m.baoding.huatu.com/2025/0821/1555723.html": {
-      "checked_at": "2026-06-24T15:13:26",
+      "checked_at": "2026-06-24T07:16:37",
       "classification": "likely",
-      "content_hash": "fe0ef50425257bba372074f03855fbea56d2ff942b11991626732d581a683c9a",
+      "content_hash": "3fe0434c2eacf55557b71efef5e82ce7659b48ff151f9fa5703fd18cdf32c402",
       "date": "2025-08-21",
       "employment_terms": [],
       "listing_context": "2025年保定市蠡县公开招聘教师80人公告 教师 2025年保定市蠡县公开招聘教师80人公告",
@@ -88,9 +103,9 @@
       "url": "http://m.baoding.huatu.com/2025/0821/1555723.html"
     },
     "http://m.baoding.huatu.com/2026/0114/1658040.html": {
-      "checked_at": "2026-06-24T15:13:26",
+      "checked_at": "2026-06-24T07:16:36",
       "classification": "likely",
-      "content_hash": "b102d695ca18b8ef447eb8414389805504dd96f5ced7d3d4381b75a8fe57f8da",
+      "content_hash": "98c052e05aab15872f7529966830d1d7e600eb4ed5fd96b88caa9dcd5382bacc",
       "date": "2026-01-14",
       "employment_terms": [],
       "listing_context": "2026年保定市高碑店一中选聘教师20名公告 教师 2026年保定市高碑店一中选聘教师20名公告",
@@ -110,7 +125,6 @@
         "拟聘用",
         "笔试",
         "考察",
-        "资格复审",
         "选聘教师",
         "递补",
         "面试"
@@ -125,9 +139,9 @@
       "url": "http://m.baoding.huatu.com/2026/0114/1658040.html"
     },
     "http://m.baoding.huatu.com/2026/0223/1700663.html": {
-      "checked_at": "2026-06-24T15:13:25",
+      "checked_at": "2026-06-24T07:16:35",
       "classification": "confirmed",
-      "content_hash": "9c40c6855a584d429eacef53405b0b759f0f2cb57120779031607ec3eb09bf31",
+      "content_hash": "b12c9839e3ab41f5d18a7b92723fb86d4ba0abb40087e542047809d23705573d",
       "date": "2026-02-23",
       "employment_terms": [],
       "listing_context": "2026年度河北雄安新区新建片区学校选聘教师30名公告 教师 2026年度河北雄安新区新建片区学校选聘教师30名公告",
@@ -158,9 +172,9 @@
       "url": "http://m.baoding.huatu.com/2026/0223/1700663.html"
     },
     "http://m.baoding.huatu.com/2026/0223/1700665.html": {
-      "checked_at": "2026-06-24T15:13:25",
+      "checked_at": "2026-06-24T07:16:34",
       "classification": "likely",
-      "content_hash": "cc36c8307a4d217bf14a09ef0d64410489052ecd8ce2b6d8fa7d20513fd41b60",
+      "content_hash": "a8336ee86ff15f971421b672cc8109f1e2bbbaef1caa46bd0f4f674952e7b41d",
       "date": "2026-02-23",
       "employment_terms": [],
       "listing_context": "2026年度北京市丰台区职业教育中心学校雄安分校选聘教师36人公告 教师 2026年度北京市丰台区职业教育中心学校雄安分校选聘教师36人公告",
@@ -188,9 +202,9 @@
       "url": "http://m.baoding.huatu.com/2026/0223/1700665.html"
     },
     "http://m.baoding.huatu.com/2026/0304/1700786.html": {
-      "checked_at": "2026-06-24T15:13:24",
+      "checked_at": "2026-06-24T07:16:32",
       "classification": "likely",
-      "content_hash": "784e3245b42dfc7ac3e7d49fb7a42129ac3bd26fe136be3318df7f22dce1e02f",
+      "content_hash": "d2a5a5bb36d2c28d2c5945709ec9e5d52b5d1c1ddacf4338270292581fafecfb",
       "date": "2026-03-04",
       "employment_terms": [],
       "listing_context": "2026年保定市顺平县人力资源和社会保障局公开选聘高中教师20名公告 事业单位 2026年保定市顺平县人力资源和社会保障局公开选聘高中教师20名公告",
@@ -222,9 +236,9 @@
       "url": "http://m.baoding.huatu.com/2026/0304/1700786.html"
     },
     "http://m.baoding.huatu.com/2026/0305/1700789.html": {
-      "checked_at": "2026-06-24T15:13:24",
+      "checked_at": "2026-06-24T07:16:31",
       "classification": "confirmed",
-      "content_hash": "8b6c400008671930f1b8687c5db28067c20416b732fe4583860602ff9db031fb",
+      "content_hash": "a0a3201525c8e1606de301a933fc92806e3dd9fee4de9a533117f3c79dcafc88",
       "date": "2026-03-05",
       "employment_terms": [
         "民办"
@@ -256,9 +270,9 @@
       "url": "http://m.baoding.huatu.com/2026/0305/1700789.html"
     },
     "http://m.baoding.huatu.com/2026/0305/1700791.html": {
-      "checked_at": "2026-06-24T15:13:23",
+      "checked_at": "2026-06-24T07:16:30",
       "classification": "confirmed",
-      "content_hash": "91a7434058898c209380eecbd9e9849887250dcf7e9b09dd886d6609381e68ef",
+      "content_hash": "94c4668a45a900b619a1fa343ca39acce2d56d3039cb22fe6599508e446acb8f",
       "date": "2026-03-05",
       "employment_terms": [
         "民办"
@@ -289,9 +303,9 @@
       "url": "http://m.baoding.huatu.com/2026/0305/1700791.html"
     },
     "http://m.baoding.huatu.com/2026/0305/1700794.html": {
-      "checked_at": "2026-06-24T15:13:22",
+      "checked_at": "2026-06-24T07:16:29",
       "classification": "needs_review",
-      "content_hash": "a7d804d68723f02f8dd97d25c5a5228d63dcd586b346f938439c44b7c1f9b8c5",
+      "content_hash": "22ba3f36246ecdf124dd1256d8ca835191cdeac05b2d01dc61353be6f30cdd2d",
       "date": "2026-03-05",
       "employment_terms": [],
       "listing_context": "2026年保定市顺平县博文高级中学招聘教师33名公告 2026年保定市顺平县博文高级中学招聘教师33名公告",
@@ -301,7 +315,7 @@
         "公开选聘",
         "报名",
         "招聘教师",
-        "资格复审",
+        "笔试",
         "选聘教师",
         "面试"
       ],
@@ -315,9 +329,9 @@
       "url": "http://m.baoding.huatu.com/2026/0305/1700794.html"
     },
     "http://m.baoding.huatu.com/2026/0326/1701064.html": {
-      "checked_at": "2026-06-24T15:13:22",
+      "checked_at": "2026-06-24T07:16:28",
       "classification": "likely",
-      "content_hash": "0de535625a518f0fc7582aa1d4b3a9a8fa481d68b18c20bbd99ce89ae027cc96",
+      "content_hash": "0b9669daaa5b775df4eafc772a3f317fb057d77728de3f0f65698356371ffeec",
       "date": "2026-03-26",
       "employment_terms": [],
       "listing_context": "2026年北京师范大学保定实验学校公开招聘教师50名公告 2026年北京师范大学保定实验学校公开招聘教师50名公告",
@@ -333,6 +347,7 @@
         "招聘教师",
         "拟聘用",
         "笔试",
+        "资格复审",
         "选聘教师",
         "递补",
         "面试"
@@ -347,9 +362,9 @@
       "url": "http://m.baoding.huatu.com/2026/0326/1701064.html"
     },
     "http://m.baoding.huatu.com/2026/0429/1707815.html": {
-      "checked_at": "2026-06-24T15:13:21",
+      "checked_at": "2026-06-24T07:16:27",
       "classification": "likely",
-      "content_hash": "f67007746fc7534a6bfb5491eca513f1e33a63ee1858ff58cd9514d0a78c61cf",
+      "content_hash": "efa1888d0e703b89f9deefa3b7857c4a3ea30a1a24f25470efacab70c0effc13",
       "date": "2026-04-29",
       "employment_terms": [],
       "listing_context": "2026年保定市唐县教育和体育局公开选聘高中教师15名公告 2026年保定市唐县教育和体育局公开选聘高中教师15名公告",
@@ -383,9 +398,9 @@
       "url": "http://m.baoding.huatu.com/2026/0429/1707815.html"
     },
     "http://m.baoding.huatu.com/2026/0609/1711969.html": {
-      "checked_at": "2026-06-24T15:13:21",
+      "checked_at": "2026-06-24T07:16:26",
       "classification": "likely",
-      "content_hash": "e4395fab65694110af4fee84c1350c0428353dc8cb2937a9cd34c6c4c307c6f7",
+      "content_hash": "b0dcf01faa81430e7df8f09bddb73d372ad4b0b2d2e037662047682d9110c758",
       "date": "2026-06-09",
       "employment_terms": [],
       "listing_context": "2026年北京师范大学保定实验学校选聘教师30名（事业编）公告 2026年北京师范大学保定实验学校选聘教师30名（事业编）公告",
@@ -476,7 +491,7 @@
       "url": "https://jyj.baoding.gov.cn/content-159-4903.html"
     },
     "https://m.bd.bendibao.com/job/36128.shtm": {
-      "checked_at": "2026-06-24T15:13:19",
+      "checked_at": "2026-06-24T07:16:19",
       "classification": "likely",
       "content_hash": "eaabf395cbdbd4c77d7a6e3bf3051e9bb02f80ffe450eb4c8e9dfb6772f0dc22",
       "date": "2026-04-29",
@@ -513,7 +528,7 @@
       "url": "https://m.bd.bendibao.com/job/36128.shtm"
     },
     "https://m.bd.bendibao.com/job/36433.shtm": {
-      "checked_at": "2026-06-24T15:13:18",
+      "checked_at": "2026-06-24T07:16:18",
       "classification": "likely",
       "content_hash": "81aefc9d81026ccacdde632621cde2b7a87e0c48130d46901ea24e621801548f",
       "date": "2026-06-10",
@@ -550,7 +565,7 @@
       "url": "https://m.bd.bendibao.com/job/36433.shtm"
     },
     "https://m.bd.bendibao.com/job/36471.shtm": {
-      "checked_at": "2026-06-24T15:13:17",
+      "checked_at": "2026-06-24T07:16:17",
       "classification": "likely",
       "content_hash": "6563b27538ea49cba60754bb49a4ce72565b27f8532bbf495e9abe3061f70b32",
       "date": "2026-06-16",
@@ -580,7 +595,7 @@
       "url": "https://m.bd.bendibao.com/job/36471.shtm"
     },
     "https://m.bd.bendibao.com/job/36472.shtm": {
-      "checked_at": "2026-06-24T15:13:17",
+      "checked_at": "2026-06-24T07:16:17",
       "classification": "likely",
       "content_hash": "91a33c3b964248e258bd9128d8f1287730db295499205b2684badf17c402d21f",
       "date": "2026-06-16",
@@ -608,7 +623,7 @@
       "url": "https://m.bd.bendibao.com/job/36472.shtm"
     },
     "https://m.bd.bendibao.com/job/36488.shtm": {
-      "checked_at": "2026-06-24T15:13:16",
+      "checked_at": "2026-06-24T07:16:16",
       "classification": "likely",
       "content_hash": "f776234c8c8333f6654fe6cb035d9fd4e80815ea37e740396fa41b641554a752",
       "date": "2026-06-18",
@@ -646,7 +661,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=13#/examinee/mobileHostPage/home": {
       "api_hash": "76f167aadb58ff6e6f2dfe17622bd924bc2580dfdbd9ff3336558b25e1e5d028",
-      "checked_at": "2026-06-24T15:12:57",
+      "checked_at": "2026-06-24T07:14:19",
       "classification": "needs_review",
       "content_hash": "76f167aadb58ff6e6f2dfe17622bd924bc2580dfdbd9ff3336558b25e1e5d028",
       "date": "2026-02-12",
@@ -668,7 +683,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=15#/examinee/mobileHostPage/home": {
       "api_hash": "4c4781d1090d96415bed51e3971bd9e673092589b674c7c8601c7529b696a01c",
-      "checked_at": "2026-06-24T15:12:57",
+      "checked_at": "2026-06-24T07:14:19",
       "classification": "needs_review",
       "content_hash": "4c4781d1090d96415bed51e3971bd9e673092589b674c7c8601c7529b696a01c",
       "date": "2026-03-04",
@@ -689,7 +704,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=16#/examinee/mobileHostPage/home": {
       "api_hash": "6a834654123fe065e186bc6cadb13bd1c3d36f6d03a2cddb706cae1f2227fa16",
-      "checked_at": "2026-06-24T15:12:57",
+      "checked_at": "2026-06-24T07:14:19",
       "classification": "needs_review",
       "content_hash": "6a834654123fe065e186bc6cadb13bd1c3d36f6d03a2cddb706cae1f2227fa16",
       "date": "2026-03-05",
@@ -711,7 +726,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=20#/examinee/mobileHostPage/home": {
       "api_hash": "682512defb50d4bf46abfb088616530b1cca88f5263fcfe88f23eeefc160ff92",
-      "checked_at": "2026-06-24T15:12:57",
+      "checked_at": "2026-06-24T07:14:19",
       "classification": "needs_review",
       "content_hash": "682512defb50d4bf46abfb088616530b1cca88f5263fcfe88f23eeefc160ff92",
       "date": "2026-04-29",
@@ -732,7 +747,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=22#/examinee/mobileHostPage/home": {
       "api_hash": "daebf582b661e9063474e4866471bf597fa919bbbaf173db7b646ded4bc15791",
-      "checked_at": "2026-06-24T15:12:57",
+      "checked_at": "2026-06-24T07:14:19",
       "classification": "needs_review",
       "content_hash": "daebf582b661e9063474e4866471bf597fa919bbbaf173db7b646ded4bc15791",
       "date": "2026-05-11",
@@ -754,7 +769,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=25#/examinee/mobileHostPage/home": {
       "api_hash": "11779c92d8ddec070e93fd3e0d6e1556c477f52f67a866bcedf41e096485331c",
-      "checked_at": "2026-06-24T15:12:57",
+      "checked_at": "2026-06-24T07:14:19",
       "classification": "likely",
       "content_hash": "11779c92d8ddec070e93fd3e0d6e1556c477f52f67a866bcedf41e096485331c",
       "date": "2026-06-08",
@@ -776,7 +791,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=26#/examinee/mobileHostPage/home": {
       "api_hash": "a54342914e4a577a2d77f6c1aff94710b6c9434149ad13ac17b675ef5c112b33",
-      "checked_at": "2026-06-24T15:12:57",
+      "checked_at": "2026-06-24T07:14:19",
       "classification": "needs_review",
       "content_hash": "a54342914e4a577a2d77f6c1aff94710b6c9434149ad13ac17b675ef5c112b33",
       "date": "2026-06-08",
@@ -797,7 +812,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=27#/examinee/mobileHostPage/home": {
       "api_hash": "d8497757ba7af06c3f2fb60f0f7ea8d89a424e3de22d83ebbb8b5a8d8c143ef1",
-      "checked_at": "2026-06-24T15:12:57",
+      "checked_at": "2026-06-24T07:14:19",
       "classification": "needs_review",
       "content_hash": "d8497757ba7af06c3f2fb60f0f7ea8d89a424e3de22d83ebbb8b5a8d8c143ef1",
       "date": "2026-06-09",
@@ -819,7 +834,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=28#/examinee/mobileHostPage/home": {
       "api_hash": "a9bb7c8f245eb46a2a9028c3b67d91d1e9fc9169068edf15dda2e53f3f1ae69a",
-      "checked_at": "2026-06-24T15:12:57",
+      "checked_at": "2026-06-24T07:14:19",
       "classification": "likely",
       "content_hash": "a9bb7c8f245eb46a2a9028c3b67d91d1e9fc9169068edf15dda2e53f3f1ae69a",
       "date": "2026-06-09",
@@ -842,7 +857,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=3#/examinee/mobileHostPage/home": {
       "api_hash": "0b4628400c770f00b0bfed8a385e08f4ae743b22b068deee4921597b52ab9489",
-      "checked_at": "2026-06-24T15:12:57",
+      "checked_at": "2026-06-24T07:14:19",
       "classification": "needs_review",
       "content_hash": "0b4628400c770f00b0bfed8a385e08f4ae743b22b068deee4921597b52ab9489",
       "date": "2026-01-14",
@@ -863,7 +878,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=33#/examinee/mobileHostPage/home": {
       "api_hash": "d65a7ad76323dde7c3a54c358ef3c651dba9387f140c25cb1e22082f683ac297",
-      "checked_at": "2026-06-24T15:12:57",
+      "checked_at": "2026-06-24T07:14:19",
       "classification": "likely",
       "content_hash": "d65a7ad76323dde7c3a54c358ef3c651dba9387f140c25cb1e22082f683ac297",
       "date": "2026-06-15",
@@ -886,7 +901,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=35#/examinee/mobileHostPage/home": {
       "api_hash": "b42549353c5caf04959500aaf77322d42eae45e2a394424808da27d51e60a560",
-      "checked_at": "2026-06-24T15:12:57",
+      "checked_at": "2026-06-24T07:14:19",
       "classification": "needs_review",
       "content_hash": "b42549353c5caf04959500aaf77322d42eae45e2a394424808da27d51e60a560",
       "date": "2026-06-17",
@@ -907,7 +922,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=36#/examinee/mobileHostPage/home": {
       "api_hash": "31a267d0edbe9dd720ca24fa615191b90c4605da68246f838c84b28e62587c56",
-      "checked_at": "2026-06-24T15:12:57",
+      "checked_at": "2026-06-24T07:14:19",
       "classification": "likely",
       "content_hash": "31a267d0edbe9dd720ca24fa615191b90c4605da68246f838c84b28e62587c56",
       "date": "2026-06-17",
@@ -930,7 +945,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=39#/examinee/mobileHostPage/home": {
       "api_hash": "4da465c4a6fd312de4682cc19a115bf279a52aa2c1c4c253a1056d481f5f5c58",
-      "checked_at": "2026-06-24T15:12:57",
+      "checked_at": "2026-06-24T07:14:19",
       "classification": "needs_review",
       "content_hash": "4da465c4a6fd312de4682cc19a115bf279a52aa2c1c4c253a1056d481f5f5c58",
       "date": "2026-06-22",
@@ -952,7 +967,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=4#/examinee/mobileHostPage/home": {
       "api_hash": "a21e5b3b89b40196bfb1ee3e9a47c5badb7faadb7ef6bd6a09476b880ce6c56d",
-      "checked_at": "2026-06-24T15:12:57",
+      "checked_at": "2026-06-24T07:14:19",
       "classification": "needs_review",
       "content_hash": "a21e5b3b89b40196bfb1ee3e9a47c5badb7faadb7ef6bd6a09476b880ce6c56d",
       "date": "2026-01-22",
@@ -973,7 +988,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=40#/examinee/mobileHostPage/home": {
       "api_hash": "b1c99375f9307075c3ae5f3767a49f3423d00be850274ec30771f2413364aba0",
-      "checked_at": "2026-06-24T15:12:57",
+      "checked_at": "2026-06-24T07:14:19",
       "classification": "likely",
       "content_hash": "b1c99375f9307075c3ae5f3767a49f3423d00be850274ec30771f2413364aba0",
       "date": "2026-06-24",
@@ -996,7 +1011,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=41#/examinee/mobileHostPage/home": {
       "api_hash": "1580c2a553e5ff1907da119ddb9ef98716f98823831ed6b099e517ec375530c8",
-      "checked_at": "2026-06-24T15:12:57",
+      "checked_at": "2026-06-24T07:14:19",
       "classification": "needs_review",
       "content_hash": "1580c2a553e5ff1907da119ddb9ef98716f98823831ed6b099e517ec375530c8",
       "date": "2026-06-24",
@@ -1018,7 +1033,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=42#/examinee/mobileHostPage/home": {
       "api_hash": "2b38c1597f47689ea24df0253f449e45be7d07071350c0b0906034c54aca090e",
-      "checked_at": "2026-06-24T15:12:57",
+      "checked_at": "2026-06-24T07:14:19",
       "classification": "likely",
       "content_hash": "2b38c1597f47689ea24df0253f449e45be7d07071350c0b0906034c54aca090e",
       "date": "2026-06-24",
@@ -1041,7 +1056,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=6#/examinee/mobileHostPage/home": {
       "api_hash": "21b95afd7fe8e4a352a7c1af367aab788d8d14730f660372a190fd0b4c844606",
-      "checked_at": "2026-06-24T15:12:57",
+      "checked_at": "2026-06-24T07:14:19",
       "classification": "needs_review",
       "content_hash": "21b95afd7fe8e4a352a7c1af367aab788d8d14730f660372a190fd0b4c844606",
       "date": "2026-01-25",
@@ -1499,7 +1514,7 @@
       "url": "https://www.163hebei.com/article/5987.html"
     },
     "https://www.tangxian.gov.cn/zwgknr-888888647-394991.html": {
-      "checked_at": "2026-06-24T15:13:06",
+      "checked_at": "2026-06-24T07:14:54",
       "classification": "likely",
       "content_hash": "959d3b49b9f41c7c98b93576f4f9f4dca14a280ad913a6d7142222b207a1ee82",
       "date": "2026-04-29",
@@ -1534,5 +1549,5 @@
       "url": "https://www.tangxian.gov.cn/zwgknr-888888647-394991.html"
     }
   },
-  "last_run": "2026-06-24T15:13:35"
+  "last_run": "2026-06-24T07:16:41"
 }
