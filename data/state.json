@@ -1,5 +1,10 @@
 {
-  "failures": [],
+  "failures": [
+    {
+      "error": "HTTPSConnectionPool(host='jyj.baoding.gov.cn', port=443): Max retries exceeded with url: /ejzwgk-159-more.html (Caused by NewConnectionError(\"HTTPSConnection(host='jyj.baoding.gov.cn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+      "source": "保定市教育局－通知通告"
+    }
+  ],
   "initialized": true,
   "items": {
     "https://jyj.baoding.gov.cn/content-159-4903.html": {
@@ -19,7 +24,7 @@
       "url": "https://jyj.baoding.gov.cn/content-159-4903.html"
     },
     "https://www.tangxian.gov.cn/zwgknr-888888647-394991.html": {
-      "checked_at": "2026-06-24T14:34:10",
+      "checked_at": "2026-06-24T06:49:27",
       "classification": "likely",
       "content_hash": "959d3b49b9f41c7c98b93576f4f9f4dca14a280ad913a6d7142222b207a1ee82",
       "date": "2026-04-29",
@@ -48,5 +53,5 @@
       "url": "https://www.tangxian.gov.cn/zwgknr-888888647-394991.html"
     }
   },
-  "last_run": "2026-06-24T14:34:14"
+  "last_run": "2026-06-24T06:49:33"
 }

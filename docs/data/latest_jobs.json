@@ -1,22 +1,8 @@
 {
-  "generated_at": "2026-06-24T14:40:50",
+  "generated_at": "2026-06-24T06:49:33",
   "items": [
     {
-      "checked_at": "2026-06-24T14:40:43",
-      "classification": "likely",
-      "date": "2026-06-17",
-      "matched_terms": [
-        "岗位取消",
-        "报名",
-        "教育事业单位",
-        "选聘教师"
-      ],
-      "source": "保定市教育局－通知通告",
-      "title": "保定市教育局2026年14家市直教育事业单位选聘教师部分岗位取消的公告",
-      "url": "https://jyj.baoding.gov.cn/content-159-4903.html"
-    },
-    {
-      "checked_at": "2026-06-24T14:40:45",
+      "checked_at": "2026-06-24T06:49:27",
       "classification": "likely",
       "date": "2026-04-29",
       "matched_terms": [
@@ -43,6 +29,11 @@
       "url": "https://www.tangxian.gov.cn/zwgknr-888888647-394991.html"
     }
   ],
-  "source_failures": [],
-  "total": 2
+  "source_failures": [
+    {
+      "error": "HTTPSConnectionPool(host='jyj.baoding.gov.cn', port=443): Max retries exceeded with url: /ejzwgk-159-more.html (Caused by NewConnectionError(\"HTTPSConnection(host='jyj.baoding.gov.cn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+      "source": "保定市教育局－通知通告"
+    }
+  ],
+  "total": 1
 }
