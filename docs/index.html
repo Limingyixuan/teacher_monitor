@@ -63,6 +63,19 @@
             <button class="region-chip active" data-region="all">全部地区</button>
           </div>
         </div>
+        <div class="level-filter">
+          <div class="filter-heading">
+            <strong>选择学段</strong>
+            <span id="selectedLevelText">全部学段</span>
+          </div>
+          <div class="level-chips" id="levelChips" aria-label="按学段筛选">
+            <button class="level-chip active" data-level="all">全部学段</button>
+            <button class="level-chip" data-level="初中">初中</button>
+            <button class="level-chip" data-level="高中">高中</button>
+            <button class="level-chip" data-level="both">初高中</button>
+            <button class="level-chip" data-level="unknown">待核实</button>
+          </div>
+        </div>
         <div class="select-row">
           <label class="select-control">
             <span>来源</span>
@@ -144,6 +157,8 @@
           <span class="job-date"></span>
           <span class="separator">·</span>
           <span class="job-region"></span>
+          <span class="separator">·</span>
+          <span class="job-level"></span>
           <span class="separator">·</span>
           <span class="job-source"></span>
         </div>

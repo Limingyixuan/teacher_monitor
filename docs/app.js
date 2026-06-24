@@ -11,6 +11,7 @@ const state = {
   jobs: [],
   filter: "all",
   region: "all",
+  level: "all",
   sourceType: "all",
   query: "",
   favorites: new Set(JSON.parse(localStorage.getItem(FAVORITES_KEY) || "[]")),
@@ -31,6 +32,8 @@ const elements = {
   chips: document.querySelector("#filterChips"),
   regionChips: document.querySelector("#regionChips"),
   selectedRegionText: document.querySelector("#selectedRegionText"),
+  levelChips: document.querySelector("#levelChips"),
+  selectedLevelText: document.querySelector("#selectedLevelText"),
   sourceType: document.querySelector("#sourceTypeSelect"),
   excludeCount: document.querySelector("#excludeCount"),
   excludeOptions: document.querySelector("#excludeOptions"),
@@ -79,6 +82,16 @@ function matchesRegion(job) {
   return state.region === "all" || (job.regions || []).includes(state.region);
 }
 
+function matchesLevel(job) {
+  const levels = job.school_levels || ["学段待核实"];
+  if (state.level === "all") return true;
+  if (state.level === "both") return levels.includes("初中") && levels.includes("高中");
+  if (state.level === "unknown") {
+    return levels.some(level => ["学段待核实", "中学未细分"].includes(level));
+  }
+  return levels.includes(state.level);
+}
+
 function matchesSource(job) {
   return state.sourceType === "all" || job.source_type === state.sourceType;
 }
@@ -103,6 +116,7 @@ function render() {
     matchesFilter(job) &&
     matchesQuery(job) &&
     matchesRegion(job) &&
+    matchesLevel(job) &&
     matchesSource(job) &&
     passesExclusions(job)
   );
@@ -128,6 +142,8 @@ function render() {
     fragment.querySelector(".job-title").textContent = job.title;
     fragment.querySelector(".job-date").textContent = job.date || "日期未识别";
     fragment.querySelector(".job-region").textContent = (job.regions || ["地区待核实"]).join("、");
+    fragment.querySelector(".job-level").textContent =
+      (job.school_levels || ["学段待核实"]).join("＋");
     fragment.querySelector(".job-source").textContent = job.source;
 
     const terms = fragment.querySelector(".terms");
@@ -246,6 +262,23 @@ elements.regionChips.addEventListener("click", event => {
   });
   elements.selectedRegionText.textContent =
     state.region === "all" ? "全部地区" : state.region;
+  render();
+});
+elements.levelChips.addEventListener("click", event => {
+  const button = event.target.closest("[data-level]");
+  if (!button) return;
+  state.level = button.dataset.level;
+  elements.levelChips.querySelectorAll(".level-chip").forEach(chip => {
+    chip.classList.toggle("active", chip === button);
+  });
+  const labels = {
+    all: "全部学段",
+    初中: "初中",
+    高中: "高中",
+    both: "初高中",
+    unknown: "学段待核实",
+  };
+  elements.selectedLevelText.textContent = labels[state.level];
   render();
 });
 elements.sourceType.addEventListener("change", event => {

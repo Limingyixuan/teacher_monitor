@@ -172,6 +172,27 @@ def detect_regions(title_context, body=""):
     return ["地区待核实"]
 
 
+def detect_school_levels(title_text, main_text=""):
+    """识别公告覆盖的学段；仅写“教师/教育类”的公告暂标为待核实。"""
+    text = normalize((title_text or "") + " " + (main_text or "")[:8000])
+    has_junior = any(word in text for word in [
+        "初中", "初级中学", "九年一贯制", "义务教育阶段",
+    ])
+    has_senior = any(word in text for word in [
+        "高中", "高级中学", "普通高中", "完全中学", "职教中心",
+        "职业高中", "中等职业学校", "中职",
+    ])
+    if has_junior and has_senior:
+        return ["初中", "高中"]
+    if has_junior:
+        return ["初中"]
+    if has_senior:
+        return ["高中"]
+    if "中学" in text or "中小学" in text:
+        return ["中学未细分"]
+    return ["学段待核实"]
+
+
 def detect_employment_terms(title_text, main_text=""):
     found = set(word for word in EXCLUDE_WORDS + UNCERTAIN_WORDS if word in title_text)
     for label, phrases in EMPLOYMENT_PHRASES.items():
@@ -308,6 +329,7 @@ class Monitor(object):
                 "matched_terms": self.matched_terms(combined),
                 "employment_terms": detect_employment_terms(title_context),
                 "regions": detect_regions(item["title"] + " " + item["source"]),
+                "school_levels": detect_school_levels(item["title"]),
                 "content_hash": item["api_hash"],
                 "checked_at": datetime.now().isoformat(timespec="seconds"),
             })
@@ -340,6 +362,7 @@ class Monitor(object):
                     employment_context, main_text
                 ),
                 "regions": detect_regions(title_context, body),
+                "school_levels": detect_school_levels(title, main_text),
                 "content_hash": stable_hash(body),
                 "checked_at": datetime.now().isoformat(timespec="seconds"),
             })
@@ -357,6 +380,7 @@ class Monitor(object):
                 "matched_terms": self.matched_terms(combined),
                 "employment_terms": detect_employment_terms(employment_context),
                 "regions": detect_regions(item["title"] + " " + item["source"]),
+                "school_levels": detect_school_levels(item["title"]),
                 "content_hash": stable_hash(combined),
                 "checked_at": datetime.now().isoformat(timespec="seconds"),
                 "detail_error": str(exc),
@@ -460,6 +484,7 @@ def save_public_data(items, failures):
             "matched_terms": item.get("matched_terms", []),
             "employment_terms": item.get("employment_terms", []),
             "regions": item.get("regions", ["地区待核实"]),
+            "school_levels": item.get("school_levels", ["学段待核实"]),
             "checked_at": item.get("checked_at", ""),
         })
     save_json(PUBLIC_DATA_FILE, {
