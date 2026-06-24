@@ -213,6 +213,7 @@ function matchesQuery(job) {
     ...(job.regions || []),
     ...(job.school_levels || []),
     ...(job.subjects || []),
+    ...(job.school_names || []),
     ...(job.matched_terms || []),
     ...(job.employment_terms || []),
   ];

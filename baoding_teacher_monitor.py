@@ -66,6 +66,11 @@ SUBJECT_WORDS = [
     "历史", "地理", "信息技术", "通用技术", "计算机", "科学", "体育",
     "音乐", "美术", "心理健康", "心理", "道德与法治", "劳动教育",
 ]
+SCHOOL_NAME_RE = re.compile(
+    r"([\u4e00-\u9fffA-Za-z0-9·]{2,36}"
+    r"(?:实验学校|高级中学|初级中学|完全中学|职业教育中心|职教中心|"
+    r"中等专业学校|中等职业学校|中学|学校|一中|二中|三中|四中))"
+)
 RECRUIT_WORDS = [
     "公开招聘", "公开选聘", "专项招聘", "招聘教师", "选聘教师",
     "事业单位招聘", "招聘工作人员", "人才引进", "校园招聘",
@@ -202,6 +207,28 @@ def detect_subjects(title_text, main_text=""):
     text = text.replace("教育体育局", "教育局")
     text = text.replace("科学技术", "科技")
     return sorted(set(subject for subject in SUBJECT_WORDS if subject in text))
+
+
+def detect_school_names(title_text, main_text=""):
+    """提取明确出现的学校名称；统一招聘未列学校时返回空列表。"""
+    text = normalize((title_text or "") + " " + (main_text or "")[:12000])
+    matches = []
+    for match in SCHOOL_NAME_RE.findall(text):
+        name = re.sub(r"^20\d{2}年", "", match)
+        name = re.sub(r"^(?:河北省|保定市|雄安新区)", "", name)
+        name = re.sub(
+            r"^(?:关于|年度|年|公开招聘|公开选聘|招聘|选聘)+", "", name
+        )
+        for _, aliases in REGION_ALIASES:
+            for alias in sorted(aliases, key=len, reverse=True):
+                if name.startswith(alias) and len(name) - len(alias) >= 6:
+                    name = name[len(alias):]
+                    break
+        if any(bad in name for bad in ["事业单位", "人力资源", "教育和体育局"]):
+            continue
+        if 3 <= len(name) <= 40 and name not in matches:
+            matches.append(name)
+    return matches[:5]
 
 
 def detect_employment_terms(title_text, main_text=""):
@@ -342,6 +369,7 @@ class Monitor(object):
                 "regions": detect_regions(item["title"] + " " + item["source"]),
                 "school_levels": detect_school_levels(item["title"]),
                 "subjects": detect_subjects(item["title"]),
+                "school_names": detect_school_names(item["title"]),
                 "content_hash": item["api_hash"],
                 "checked_at": datetime.now().isoformat(timespec="seconds"),
             })
@@ -376,6 +404,7 @@ class Monitor(object):
                 "regions": detect_regions(title_context, body),
                 "school_levels": detect_school_levels(title, main_text),
                 "subjects": detect_subjects(title, main_text),
+                "school_names": detect_school_names(title, main_text),
                 "content_hash": stable_hash(body),
                 "checked_at": datetime.now().isoformat(timespec="seconds"),
             })
@@ -395,6 +424,7 @@ class Monitor(object):
                 "regions": detect_regions(item["title"] + " " + item["source"]),
                 "school_levels": detect_school_levels(item["title"]),
                 "subjects": detect_subjects(item["title"]),
+                "school_names": detect_school_names(item["title"]),
                 "content_hash": stable_hash(combined),
                 "checked_at": datetime.now().isoformat(timespec="seconds"),
                 "detail_error": str(exc),
@@ -500,6 +530,7 @@ def save_public_data(items, failures):
             "regions": item.get("regions", ["地区待核实"]),
             "school_levels": item.get("school_levels", ["学段待核实"]),
             "subjects": item.get("subjects", []),
+            "school_names": item.get("school_names", []),
             "checked_at": item.get("checked_at", ""),
         })
     save_json(PUBLIC_DATA_FILE, {
@@ -516,36 +547,33 @@ def send_wechat_push(items):
         print("未配置 PUSHPLUS_TOKEN，已跳过微信推送。")
         return False
 
-    title = "保定教师招聘：发现 {0} 条新增/更新".format(len(items))
+    title = "有新的招聘岗位了（{0}条）".format(len(items))
     lines = [
-        "## 保定初高中教师招聘更新",
-        "",
-        "本次发现 **{0} 条** 新增或更新公告。".format(len(items)),
+        "## 有新的招聘岗位了",
         "",
     ]
-    for index, item in enumerate(items[:20], 1):
+    for index, item in enumerate(items[:10], 1):
         regions = "、".join(item.get("regions", [])) or "地区待核实"
         levels = "＋".join(item.get("school_levels", [])) or "学段待核实"
+        schools = "、".join(item.get("school_names", [])) or "岗位表中查看"
         source_kind = "第三方线索" if item.get("source_type") == "aggregator" else "官方来源"
         lines.extend([
-            "### {0}. {1}".format(index, item.get("title", "未命名公告")),
-            "",
+            "### {0}. {1}".format(index, schools),
             "- 地区：{0}".format(regions),
             "- 学段：{0}".format(levels),
             "- 日期：{0}".format(item.get("date") or "未识别"),
+            "- 公告：{0}".format(item.get("title", "未命名公告")),
             "- 来源：{0}（{1}）".format(item.get("source", ""), source_kind),
             "- [查看原文]({0})".format(item.get("url", PWA_URL)),
             "",
         ])
-    if len(items) > 20:
+    if len(items) > 10:
         lines.extend([
-            "还有 {0} 条未在消息中展开。".format(len(items) - 20),
+            "另外还有 {0} 条，请在网页中查看。".format(len(items) - 10),
             "",
         ])
     lines.extend([
-        "[打开保定教师编筛选全部公告]({0})".format(PWA_URL),
-        "",
-        "> 第三方信息仅作为线索，报名条件和编制性质请以官方公告为准。",
+        "[查看全部招聘信息]({0})".format(PWA_URL),
     ])
 
     response = requests.post(
