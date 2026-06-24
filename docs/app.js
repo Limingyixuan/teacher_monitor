@@ -51,6 +51,17 @@ const labels = {
   needs_review: ["需人工核实", "review"],
 };
 
+const SEARCH_ALIASES = {
+  北师大: ["北京师范大学", "北师大"],
+  北师: ["北京师范大学", "北师"],
+  事业编: ["事业编制", "事业单位", "事业编"],
+  教编: ["教师", "事业编制", "教编"],
+  中学: ["初中", "高中", "中学"],
+  政治: ["政治", "思想政治", "道德与法治"],
+  计算机: ["计算机", "信息技术"],
+  信息: ["信息技术", "计算机"],
+};
+
 function formatTime(value) {
   if (!value) return "更新时间未知";
   const date = new Date(value);
@@ -70,6 +81,74 @@ function saveFavorites() {
 function saveExclusions() {
   localStorage.setItem(EXCLUSIONS_KEY, JSON.stringify([...state.exclusions]));
   elements.excludeCount.textContent = state.exclusions.size;
+}
+
+function normalizeSearchText(value) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/[，。；、,.!！?？:：()（）[\]【】"'“”‘’_\-/\\]/g, "")
+    .replace(/\s+/g, "");
+}
+
+function isSubsequence(needle, haystack) {
+  let index = 0;
+  for (const character of haystack) {
+    if (character === needle[index]) index += 1;
+    if (index === needle.length) return true;
+  }
+  return false;
+}
+
+function editDistanceWithin(left, right, limit) {
+  if (Math.abs(left.length - right.length) > limit) return false;
+  let previous = Array.from({ length: right.length + 1 }, (_, index) => index);
+  for (let row = 1; row <= left.length; row += 1) {
+    const current = [row];
+    let rowMinimum = current[0];
+    for (let column = 1; column <= right.length; column += 1) {
+      const cost = left[row - 1] === right[column - 1] ? 0 : 1;
+      current[column] = Math.min(
+        previous[column] + 1,
+        current[column - 1] + 1,
+        previous[column - 1] + cost,
+      );
+      rowMinimum = Math.min(rowMinimum, current[column]);
+    }
+    if (rowMinimum > limit) return false;
+    previous = current;
+  }
+  return previous[right.length] <= limit;
+}
+
+function hasNearMatch(token, haystack) {
+  if (token.length < 3) return false;
+  const limit = token.length >= 6 ? 2 : 1;
+  const minimumLength = Math.max(1, token.length - limit);
+  const maximumLength = token.length + limit;
+  for (let size = minimumLength; size <= maximumLength; size += 1) {
+    for (let index = 0; index + size <= haystack.length; index += 1) {
+      if (editDistanceWithin(token, haystack.slice(index, index + size), limit)) {
+        return true;
+      }
+    }
+  }
+  return false;
+}
+
+function fuzzyTokenMatches(rawToken, haystack, searchFields) {
+  const token = normalizeSearchText(rawToken);
+  if (!token) return true;
+  const alternatives = SEARCH_ALIASES[token] || [token];
+  return alternatives.some(value => {
+    const candidate = normalizeSearchText(value);
+    return haystack.includes(candidate) ||
+      (candidate.length >= 3 && isSubsequence(candidate, haystack)) ||
+      (candidate.length === 2 && searchFields.some(field =>
+        field.length >= 2 && field.length <= 4 &&
+        editDistanceWithin(candidate, field, 1)
+      )) ||
+      hasNearMatch(candidate, haystack);
+  });
 }
 
 function enableDesktopHorizontalScroll(container) {
@@ -177,14 +256,21 @@ function passesExclusions(job) {
 }
 
 function matchesQuery(job) {
-  const query = state.query.trim().toLowerCase();
+  const query = state.query.trim();
   if (!query) return true;
-  const haystack = [
+  const searchableValues = [
     job.title,
     job.source,
+    ...(job.regions || []),
+    ...(job.school_levels || []),
+    ...(job.subjects || []),
     ...(job.matched_terms || []),
-  ].join(" ").toLowerCase();
-  return haystack.includes(query);
+    ...(job.employment_terms || []),
+  ];
+  const searchFields = searchableValues.map(normalizeSearchText).filter(Boolean);
+  const haystack = normalizeSearchText(searchableValues.join(" "));
+  const tokens = query.split(/\s+/).filter(Boolean);
+  return tokens.every(token => fuzzyTokenMatches(token, haystack, searchFields));
 }
 
 function render() {
@@ -224,7 +310,11 @@ function render() {
     fragment.querySelector(".job-source").textContent = job.source;
 
     const terms = fragment.querySelector(".terms");
-    [...new Set([...(job.employment_terms || []), ...(job.matched_terms || [])])]
+    [...new Set([
+      ...(job.subjects || []),
+      ...(job.employment_terms || []),
+      ...(job.matched_terms || []),
+    ])]
       .slice(0, 6).forEach(term => {
       const tag = document.createElement("span");
       tag.className = "term";
@@ -314,9 +404,11 @@ async function loadJobs({ fresh = false } = {}) {
   }
 }
 
+let searchTimer;
 elements.search.addEventListener("input", event => {
   state.query = event.target.value;
-  render();
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(render, 100);
 });
 
 elements.chips.addEventListener("click", event => {
