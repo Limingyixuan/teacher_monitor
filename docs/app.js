@@ -160,57 +160,6 @@ function enableDesktopHorizontalScroll(container) {
   }, { passive: false });
 }
 
-function attachVisibleScrollControl(container, label) {
-  const control = document.createElement("div");
-  control.className = "custom-scroll-control";
-
-  const left = document.createElement("button");
-  left.type = "button";
-  left.className = "scroll-arrow";
-  left.textContent = "‹";
-  left.setAttribute("aria-label", `${label}向左滚动`);
-
-  const range = document.createElement("input");
-  range.type = "range";
-  range.className = "scroll-range";
-  range.min = "0";
-  range.max = "1000";
-  range.value = "0";
-  range.setAttribute("aria-label", `${label}横向滚动条`);
-
-  const right = document.createElement("button");
-  right.type = "button";
-  right.className = "scroll-arrow";
-  right.textContent = "›";
-  right.setAttribute("aria-label", `${label}向右滚动`);
-
-  control.append(left, range, right);
-  container.insertAdjacentElement("afterend", control);
-
-  function update() {
-    const maxScroll = Math.max(0, container.scrollWidth - container.clientWidth);
-    control.classList.toggle("has-overflow", maxScroll > 2);
-    range.value = maxScroll ? String(Math.round(container.scrollLeft / maxScroll * 1000)) : "0";
-    left.disabled = container.scrollLeft <= 1;
-    right.disabled = container.scrollLeft >= maxScroll - 1;
-  }
-
-  range.addEventListener("input", () => {
-    const maxScroll = Math.max(0, container.scrollWidth - container.clientWidth);
-    container.scrollLeft = Number(range.value) / 1000 * maxScroll;
-  });
-  left.addEventListener("click", () => {
-    container.scrollBy({ left: -container.clientWidth * 0.75, behavior: "smooth" });
-  });
-  right.addEventListener("click", () => {
-    container.scrollBy({ left: container.clientWidth * 0.75, behavior: "smooth" });
-  });
-  container.addEventListener("scroll", update, { passive: true });
-  new ResizeObserver(update).observe(container);
-  new MutationObserver(update).observe(container, { childList: true });
-  requestAnimationFrame(update);
-}
-
 function matchesFilter(job) {
   if (state.filter === "all") return true;
   if (state.filter === "favorite") return state.favorites.has(job.url);
@@ -507,10 +456,4 @@ buildExclusionOptions();
   elements.timeChips,
   elements.chips,
 ].forEach(enableDesktopHorizontalScroll);
-[
-  [elements.regionChips, "地区选项"],
-  [elements.levelChips, "学段选项"],
-  [elements.timeChips, "时间选项"],
-  [elements.chips, "公告类型选项"],
-].forEach(([container, label]) => attachVisibleScrollControl(container, label));
 loadJobs();
