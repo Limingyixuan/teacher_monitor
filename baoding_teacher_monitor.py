@@ -23,6 +23,9 @@ STATE_FILE = ROOT / "data" / "state.json"
 REPORT_DIR = ROOT / "reports"
 PUBLIC_DATA_FILE = ROOT / "docs" / "data" / "latest_jobs.json"
 PWA_URL = "https://limingyixuan.github.io/teacher_monitor/"
+WECHAT_NOTIFY_REGIONS = {
+    "保定市", "市直", "莲池区", "竞秀区", "高新区",
+}
 
 REGION_ALIASES = [
     ("市直", ["市直"]),
@@ -229,6 +232,12 @@ def detect_school_names(title_text, main_text=""):
         if 3 <= len(name) <= 40 and name not in matches:
             matches.append(name)
     return matches[:5]
+
+
+def should_notify_wechat(item):
+    return bool(
+        WECHAT_NOTIFY_REGIONS.intersection(item.get("regions", []))
+    )
 
 
 def detect_employment_terms(title_text, main_text=""):
@@ -547,9 +556,9 @@ def send_wechat_push(items):
         print("未配置 PUSHPLUS_TOKEN，已跳过微信推送。")
         return False
 
-    title = "有新的招聘岗位了（{0}条）".format(len(items))
+    title = "保定市区/市直招聘有更新（{0}条）".format(len(items))
     lines = [
-        "## 有新的招聘岗位了",
+        "## 保定市区或市直有新的招聘信息",
         "",
     ]
     for index, item in enumerate(items[:10], 1):
@@ -557,8 +566,9 @@ def send_wechat_push(items):
         levels = "＋".join(item.get("school_levels", [])) or "学段待核实"
         schools = "、".join(item.get("school_names", [])) or "岗位表中查看"
         source_kind = "第三方线索" if item.get("source_type") == "aggregator" else "官方来源"
+        change_kind = item.get("notification_status", "新增或更新")
         lines.extend([
-            "### {0}. {1}".format(index, schools),
+            "### {0}. {1}｜{2}".format(index, change_kind, schools),
             "- 地区：{0}".format(regions),
             "- 学段：{0}".format(levels),
             "- 日期：{0}".format(item.get("date") or "未识别"),
@@ -636,10 +646,23 @@ def main():
     for item in items:
         previous = old_items.get(item["url"])
         if previous is None or previous.get("content_hash") != item.get("content_hash"):
-            changed.append(item)
+            changed_item = dict(item)
+            changed_item["notification_status"] = (
+                "新增公告" if previous is None else "公告更新"
+            )
+            changed.append(changed_item)
 
     first_run = not old_state.get("initialized", False)
-    notify_items = changed
+    notify_items = [
+        item for item in changed if should_notify_wechat(item)
+    ]
+    skipped_regions = len(changed) - len(notify_items)
+    if skipped_regions:
+        print(
+            "有 {0} 条新增/更新不属于市区或市直，仅更新网页，不发微信。".format(
+                skipped_regions
+            )
+        )
     if first_run and not args.notify_existing:
         notify_items = []
         print("首次运行：已建立基线，本次不提醒历史公告。")
