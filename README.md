@@ -35,17 +35,22 @@ python baoding_teacher_monitor.py --notify-existing
 python baoding_teacher_monitor.py --dry-run --notify-existing
 ```
 
-## 3. 邮件提醒
+## 3. 微信提醒
 
-以 QQ 邮箱为例，先在邮箱设置中开启 SMTP 并取得“授权码”（不是登录密码），然后重新打开 PowerShell：
+程序通过 PushPlus 微信公众号发送通知。先使用自己的微信登录
+[PushPlus](https://www.pushplus.plus/)，关注其微信服务号并取得个人 token。
 
-```powershell
-setx SMTP_USER "你的QQ邮箱@qq.com"
-setx SMTP_PASS "你的SMTP授权码"
-setx MAIL_TO "接收提醒的邮箱@qq.com"
-```
+在 GitHub 仓库进入：
 
-默认使用 `smtp.qq.com:465`。其他邮箱可另设 `SMTP_HOST` 和 `SMTP_PORT`。
+`Settings → Secrets and variables → Actions → New repository secret`
+
+新增 Secret：
+
+- Name：`PUSHPLUS_TOKEN`
+- Secret：你的 PushPlus token
+
+token 与登录 PushPlus 的微信绑定，不要把 token 写进代码、提交到仓库或发送给别人。
+程序仅在发现新增或内容更新的公告时推送微信，没有变化时不会发送。
 
 ## 4. 设置自动运行
 

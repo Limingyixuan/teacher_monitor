@@ -7,12 +7,9 @@ import hashlib
 import json
 import os
 import re
-import smtplib
-import ssl
 import sys
 import time
 from datetime import datetime
-from email.message import EmailMessage
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
@@ -25,6 +22,7 @@ CONFIG_FILE = ROOT / "config.json"
 STATE_FILE = ROOT / "data" / "state.json"
 REPORT_DIR = ROOT / "reports"
 PUBLIC_DATA_FILE = ROOT / "docs" / "data" / "latest_jobs.json"
+PWA_URL = "https://limingyixuan.github.io/teacher_monitor/"
 
 REGION_ALIASES = [
     ("市直", ["市直"]),
@@ -512,23 +510,62 @@ def save_public_data(items, failures):
     })
 
 
-def send_email(subject, report):
-    user = os.getenv("SMTP_USER")
-    password = os.getenv("SMTP_PASS")
-    recipients = os.getenv("MAIL_TO", user or "")
-    if not user or not password or not recipients:
-        print("未配置 SMTP_USER/SMTP_PASS/MAIL_TO，已跳过邮件。")
+def send_wechat_push(items):
+    token = os.getenv("PUSHPLUS_TOKEN")
+    if not token:
+        print("未配置 PUSHPLUS_TOKEN，已跳过微信推送。")
         return False
-    message = EmailMessage()
-    message["Subject"] = subject
-    message["From"] = user
-    message["To"] = recipients
-    message.set_content(report)
-    host = os.getenv("SMTP_HOST", "smtp.qq.com")
-    port = int(os.getenv("SMTP_PORT", "465"))
-    with smtplib.SMTP_SSL(host, port, context=ssl.create_default_context()) as server:
-        server.login(user, password)
-        server.send_message(message)
+
+    title = "保定教师招聘：发现 {0} 条新增/更新".format(len(items))
+    lines = [
+        "## 保定初高中教师招聘更新",
+        "",
+        "本次发现 **{0} 条** 新增或更新公告。".format(len(items)),
+        "",
+    ]
+    for index, item in enumerate(items[:20], 1):
+        regions = "、".join(item.get("regions", [])) or "地区待核实"
+        levels = "＋".join(item.get("school_levels", [])) or "学段待核实"
+        source_kind = "第三方线索" if item.get("source_type") == "aggregator" else "官方来源"
+        lines.extend([
+            "### {0}. {1}".format(index, item.get("title", "未命名公告")),
+            "",
+            "- 地区：{0}".format(regions),
+            "- 学段：{0}".format(levels),
+            "- 日期：{0}".format(item.get("date") or "未识别"),
+            "- 来源：{0}（{1}）".format(item.get("source", ""), source_kind),
+            "- [查看原文]({0})".format(item.get("url", PWA_URL)),
+            "",
+        ])
+    if len(items) > 20:
+        lines.extend([
+            "还有 {0} 条未在消息中展开。".format(len(items) - 20),
+            "",
+        ])
+    lines.extend([
+        "[打开保定教师编筛选全部公告]({0})".format(PWA_URL),
+        "",
+        "> 第三方信息仅作为线索，报名条件和编制性质请以官方公告为准。",
+    ])
+
+    response = requests.post(
+        "https://www.pushplus.plus/send",
+        json={
+            "token": token,
+            "title": title,
+            "content": "\n".join(lines),
+            "template": "markdown",
+            "channel": "wechat",
+        },
+        timeout=20,
+    )
+    response.raise_for_status()
+    result = response.json()
+    if result.get("code") != 200:
+        raise RuntimeError(
+            "PushPlus 请求失败：{0}".format(result.get("msg") or result)
+        )
+    print("微信推送请求已提交，消息流水号：{0}".format(result.get("data", "")))
     return True
 
 
@@ -569,12 +606,10 @@ def main():
     print("报告：{0}".format(report_path))
 
     if notify_items and not args.dry_run:
-        subject = "保定初高中事业编招聘：发现 {0} 条新增/更新".format(len(notify_items))
         try:
-            if send_email(subject, report):
-                print("邮件已发送。")
+            send_wechat_push(notify_items)
         except Exception as exc:
-            print("邮件发送失败：{0}".format(exc), file=sys.stderr)
+            print("微信推送失败：{0}".format(exc), file=sys.stderr)
 
     if not args.dry_run:
         merged = dict(old_items)

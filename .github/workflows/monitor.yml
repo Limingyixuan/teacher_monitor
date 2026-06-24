@@ -40,9 +40,7 @@ jobs:
 
       - name: Run monitor
         env:
-          SMTP_USER: ${{ secrets.SMTP_USER }}
-          SMTP_PASS: ${{ secrets.SMTP_PASS }}
-          MAIL_TO: ${{ secrets.MAIL_TO }}
+          PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
         run: python baoding_teacher_monitor.py
 
       - name: Persist monitor state
