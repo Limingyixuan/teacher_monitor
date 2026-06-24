@@ -1,0 +1,36 @@
+{
+  "timeout_seconds": 25,
+  "request_delay_seconds": 0.4,
+  "sources": [
+    {
+      "name": "保定市教育局－通知通告",
+      "url": "https://jyj.baoding.gov.cn/ejzwgk-159-more.html",
+      "max_detail_pages": 40,
+      "enabled": true
+    },
+    {
+      "name": "唐县人民政府－人社局信息公开",
+      "url": "https://www.tangxian.gov.cn/zwgkwzlist-888888647-888888001-list.html",
+      "max_detail_pages": 30,
+      "enabled": true
+    },
+    {
+      "name": "高阳县人民政府－公开信息",
+      "url": "https://www.gaoyang.gov.cn/",
+      "max_detail_pages": 30,
+      "enabled": true
+    },
+    {
+      "name": "阜平县人民政府",
+      "url": "https://www.bdfuping.gov.cn/",
+      "max_detail_pages": 30,
+      "enabled": true
+    },
+    {
+      "name": "徐水区人民政府－公告公示",
+      "url": "https://xushui.gov.cn/zfxxgk/fdzdgknr/gggs/",
+      "max_detail_pages": 30,
+      "enabled": true
+    }
+  ]
+}

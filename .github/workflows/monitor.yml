@@ -1,0 +1,68 @@
+name: Baoding teacher job monitor
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "docs/**"
+      - "!docs/data/**"
+      - "baoding_teacher_monitor.py"
+      - "config.json"
+      - "requirements.txt"
+      - ".github/workflows/monitor.yml"
+  schedule:
+    - cron: "30 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install -r requirements.txt
+
+      - name: Run monitor
+        env:
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+        run: python baoding_teacher_monitor.py
+
+      - name: Persist monitor state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/state.json docs/data/latest_jobs.json
+          git diff --cached --quiet || git commit -m "chore: update monitor state"
+          git push
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: monitor
+    steps:
+      - name: Deploy PWA to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

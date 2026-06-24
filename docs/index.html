@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f5f1e8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="保定教师编">
+  <meta name="description" content="保定初高中事业编教师招聘信息，每日自动更新。">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icons/icon.svg">
+  <link rel="stylesheet" href="./styles.css">
+  <title>保定教师编</title>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="hero">
+      <div class="hero-top">
+        <div>
+          <p class="eyebrow">BAODING · TEACHER JOBS</p>
+          <h1>保定教师编</h1>
+          <p class="subtitle">只看初高中事业编招聘，少一点噪音。</p>
+        </div>
+        <button class="icon-button" id="refreshButton" aria-label="刷新数据" title="刷新">
+          <span aria-hidden="true">↻</span>
+        </button>
+      </div>
+      <div class="status-line">
+        <span class="live-dot"></span>
+        <span id="updateText">正在读取最新信息…</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="summary-grid" aria-label="招聘统计">
+        <div class="summary-card primary">
+          <span>全部岗位</span>
+          <strong id="totalCount">—</strong>
+        </div>
+        <div class="summary-card">
+          <span>明确编制</span>
+          <strong id="confirmedCount">—</strong>
+        </div>
+        <div class="summary-card">
+          <span>待核实</span>
+          <strong id="reviewCount">—</strong>
+        </div>
+      </section>
+
+      <section class="controls">
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" placeholder="搜索学校、区县、学科…" autocomplete="off">
+        </label>
+        <div class="chips" id="filterChips" aria-label="筛选">
+          <button class="chip active" data-filter="all">全部</button>
+          <button class="chip" data-filter="confirmed">明确事业编</button>
+          <button class="chip" data-filter="likely">事业单位</button>
+          <button class="chip" data-filter="review">待核实</button>
+          <button class="chip" data-filter="favorite">已收藏</button>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-heading">
+          <h2>招聘公告</h2>
+          <span id="resultCount"></span>
+        </div>
+        <div class="job-list" id="jobList" aria-live="polite"></div>
+        <div class="empty-state hidden" id="emptyState">
+          <div class="empty-mark">◎</div>
+          <h3>没有匹配的公告</h3>
+          <p>换个关键词或筛选条件试试。</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>信息来自政府官方网站，报名前请以原公告和岗位表为准。</p>
+      <button id="installHelp">如何添加到 iPhone 主屏幕？</button>
+    </footer>
+  </div>
+
+  <dialog id="helpDialog">
+    <button class="dialog-close" id="closeDialog" aria-label="关闭">×</button>
+    <p class="eyebrow">安装到 iPhone</p>
+    <h2>三步放到桌面</h2>
+    <ol>
+      <li>请使用 Safari 打开本页面。</li>
+      <li>点击底部工具栏的“分享”按钮。</li>
+      <li>选择“添加到主屏幕”，再点“添加”。</li>
+    </ol>
+    <p class="dialog-note">以后直接点桌面图标即可打开，数据会自动更新。</p>
+  </dialog>
+
+  <template id="jobTemplate">
+    <article class="job-card">
+      <div class="card-head">
+        <span class="badge"></span>
+        <button class="favorite-button" aria-label="收藏公告">☆</button>
+      </div>
+      <a class="job-link" target="_blank" rel="noopener">
+        <h3 class="job-title"></h3>
+        <div class="meta">
+          <span class="job-date"></span>
+          <span class="separator">·</span>
+          <span class="job-source"></span>
+        </div>
+        <div class="terms"></div>
+        <span class="read-more">查看官方原文 <span aria-hidden="true">→</span></span>
+      </a>
+    </article>
+  </template>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
