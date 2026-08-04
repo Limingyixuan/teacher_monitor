@@ -13,7 +13,7 @@
       "source": "河北人社网"
     },
     {
-      "error": "HTTPSConnectionPool(host='www.hebpta.com.cn', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.hebpta.com.cn', port=443) at 0x7f26eb7ba590>, 'Connection to www.hebpta.com.cn timed out. (connect timeout=25)'))",
+      "error": "HTTPSConnectionPool(host='www.hebpta.com.cn', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.hebpta.com.cn', port=443) at 0x7f67354b8e10>, 'Connection to www.hebpta.com.cn timed out. (connect timeout=25)'))",
       "source": "河北省人事考试网"
     },
     {
@@ -21,7 +21,7 @@
       "source": "中国公共招聘网"
     },
     {
-      "error": "HTTPSConnectionPool(host='www.gaoxiaojob.com', port=443): Read timed out. (read timeout=25)",
+      "error": "403 Client Error: Forbidden for url: https://www.gaoxiaojob.com/company/detail/30087.html",
       "source": "高校人才网－保定市教育局专区"
     },
     {
@@ -102,6 +102,56 @@
         "招聘教师",
         "拟聘用",
         "笔试",
+        "选聘教师",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "阜平县"
+      ],
+      "school_levels": [
+        "高中"
+      ],
+      "school_names": [
+        "阜平职教中心",
+        "有在职业教育学校",
+        "由阜平职教中心",
+        "00前将体检报告交至阜平职教中心",
+        "岗前培训工作由阜平职教中心"
+      ],
+      "source": "华图－保定招考",
+      "source_type": "aggregator",
+      "source_url": "https://m.baoding.huatu.com/",
+      "subjects": [
+        "心理"
+      ],
+      "title": "2025年保定市阜平职教中心公开招聘教师21人公告",
+      "url": "http://m.baoding.huatu.com/2025/0815/1555604.html"
+    },
+    "http://m.baoding.huatu.com/2025/0815/1555604.html|04cf9c62c8a27b0fd9610ce2aeb3e904f9a408583c6bf114d57f2c39fc8eb091": {
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:14:02",
+      "classification": "likely",
+      "content_hash": "04cf9c62c8a27b0fd9610ce2aeb3e904f9a408583c6bf114d57f2c39fc8eb091",
+      "date": "2025-08-15",
+      "employment_terms": [
+        "人事代理",
+        "劳务派遣"
+      ],
+      "listing_context": "2025年保定市阜平职教中心公开招聘教师21人公告 教师 2025年保定市阜平职教中心公开招聘教师21人公告",
+      "matched_terms": [
+        "事业单位公开招聘",
+        "事业单位工作人员",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "报名",
+        "招聘工作人员",
+        "招聘教师",
+        "拟聘用",
+        "笔试",
+        "资格复审",
         "选聘教师",
         "递补",
         "面试"
@@ -13291,6 +13341,57 @@
       "title": "2025年保定市蠡县公开招聘教师80人公告",
       "url": "http://m.baoding.huatu.com/2025/0821/1555723.html"
     },
+    "http://m.baoding.huatu.com/2025/0821/1555723.html|9ba46f9b2bf53248f0b9b884728b4c4db3825edbfc06d31f460ea2caae47cab8": {
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:14:01",
+      "classification": "likely",
+      "content_hash": "9ba46f9b2bf53248f0b9b884728b4c4db3825edbfc06d31f460ea2caae47cab8",
+      "date": "2025-08-21",
+      "employment_terms": [],
+      "listing_context": "2025年保定市蠡县公开招聘教师80人公告 教师 2025年保定市蠡县公开招聘教师80人公告",
+      "matched_terms": [
+        "事业单位人事管理条例",
+        "事业单位公开招聘",
+        "事业单位工作人员",
+        "事业单位招聘",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "报名",
+        "招聘工作人员",
+        "招聘教师",
+        "拟聘用",
+        "笔试",
+        "考察",
+        "资格复审",
+        "选聘教师",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "蠡县"
+      ],
+      "school_levels": [
+        "学段待核实"
+      ],
+      "school_names": [
+        "普通高等学校"
+      ],
+      "source": "华图－保定招考",
+      "source_type": "aggregator",
+      "source_url": "https://m.baoding.huatu.com/",
+      "subjects": [
+        "体育",
+        "历史",
+        "心理",
+        "政治",
+        "语文",
+        "音乐"
+      ],
+      "title": "2025年保定市蠡县公开招聘教师80人公告",
+      "url": "http://m.baoding.huatu.com/2025/0821/1555723.html"
+    },
     "http://m.baoding.huatu.com/2025/0821/1555723.html|9dd7d7c53c0636eae1cce36dd68fd63d66aed14be1968859176db42b124695e6": {
       "archived_at": "2026-07-11T19:43:55",
       "checked_at": "2026-07-11T14:03:42",
@@ -17796,6 +17897,58 @@
         "招聘教师",
         "拟聘用",
         "考察",
+        "选聘教师",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "高碑店市"
+      ],
+      "school_levels": [
+        "中学未细分"
+      ],
+      "school_names": [
+        "高碑店一中",
+        "决定面向社会公开选聘高碑店一中",
+        "高碑店市第二中学",
+        "度高碑店一中"
+      ],
+      "source": "华图－保定招考",
+      "source_type": "aggregator",
+      "source_url": "https://m.baoding.huatu.com/",
+      "subjects": [
+        "思想政治",
+        "政治",
+        "语文"
+      ],
+      "title": "2026年保定市高碑店一中选聘教师20名公告",
+      "url": "http://m.baoding.huatu.com/2026/0114/1658040.html"
+    },
+    "http://m.baoding.huatu.com/2026/0114/1658040.html|2eaa89d70d826b9b78c152f41270c2453545f2b9c8e8ffc6f7180216a2ad2ed6": {
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:14:00",
+      "classification": "likely",
+      "content_hash": "2eaa89d70d826b9b78c152f41270c2453545f2b9c8e8ffc6f7180216a2ad2ed6",
+      "date": "2026-01-14",
+      "employment_terms": [],
+      "listing_context": "2026年保定市高碑店一中选聘教师20名公告 教师 2026年保定市高碑店一中选聘教师20名公告",
+      "matched_terms": [
+        "事业单位人事管理条例",
+        "事业单位公开招聘",
+        "事业单位工作人员",
+        "事业单位招聘",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "办理聘用手续",
+        "报名",
+        "招聘工作人员",
+        "招聘教师",
+        "拟聘用",
+        "笔试",
+        "考察",
+        "资格复审",
         "选聘教师",
         "递补",
         "面试"
@@ -26942,6 +27095,51 @@
       "checked_at": "2026-07-15T03:47:02",
       "classification": "confirmed",
       "content_hash": "5cc913fafced7b41f59c8baa6bda6535f63d4d5be5a000b8ce09624880f4bf7a",
+      "date": "2026-02-23",
+      "employment_terms": [],
+      "listing_context": "2026年度河北雄安新区新建片区学校选聘教师30名公告 教师 2026年度河北雄安新区新建片区学校选聘教师30名公告",
+      "matched_terms": [
+        "事业编制管理",
+        "体检",
+        "公开招聘",
+        "公示",
+        "办理聘用手续",
+        "报名",
+        "招聘教师",
+        "拟聘用",
+        "笔试",
+        "考察",
+        "资格复审",
+        "选聘教师",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "雄安新区",
+        "安新县"
+      ],
+      "school_levels": [
+        "学段待核实"
+      ],
+      "school_names": [
+        "度河北雄安新区新建片区学校",
+        "度雄安新区新建片区学校"
+      ],
+      "source": "华图－保定招考",
+      "source_type": "aggregator",
+      "source_url": "https://m.baoding.huatu.com/",
+      "subjects": [
+        "政治",
+        "语文"
+      ],
+      "title": "2026年度河北雄安新区新建片区学校选聘教师30名公告",
+      "url": "http://m.baoding.huatu.com/2026/0223/1700663.html"
+    },
+    "http://m.baoding.huatu.com/2026/0223/1700663.html|5eab35c99f38596138d20a05237fba4997e03b866ba8be95d17498d86c59a6cd": {
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:13:59",
+      "classification": "confirmed",
+      "content_hash": "5eab35c99f38596138d20a05237fba4997e03b866ba8be95d17498d86c59a6cd",
       "date": "2026-02-23",
       "employment_terms": [],
       "listing_context": "2026年度河北雄安新区新建片区学校选聘教师30名公告 教师 2026年度河北雄安新区新建片区学校选聘教师30名公告",
@@ -38445,6 +38643,48 @@
       "title": "2026年度北京市丰台区职业教育中心学校雄安分校选聘教师36人公告",
       "url": "http://m.baoding.huatu.com/2026/0223/1700665.html"
     },
+    "http://m.baoding.huatu.com/2026/0223/1700665.html|f292095ad6d0a31210d8195e600a6dfbbe3fd1e4a23a44f384d0eafaa8137291": {
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:13:58",
+      "classification": "likely",
+      "content_hash": "f292095ad6d0a31210d8195e600a6dfbbe3fd1e4a23a44f384d0eafaa8137291",
+      "date": "2026-02-23",
+      "employment_terms": [],
+      "listing_context": "2026年度北京市丰台区职业教育中心学校雄安分校选聘教师36人公告 教师 2026年度北京市丰台区职业教育中心学校雄安分校选聘教师36人公告",
+      "matched_terms": [
+        "体检",
+        "公开招聘",
+        "公示",
+        "办理聘用手续",
+        "报名",
+        "招聘教师",
+        "笔试",
+        "考察",
+        "资格复审",
+        "选聘教师",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "雄安新区"
+      ],
+      "school_levels": [
+        "学段待核实"
+      ],
+      "school_names": [
+        "度北京市丰台区职业教育中心学校",
+        "全体教职员工接受北京市丰台区职业教育中心学校"
+      ],
+      "source": "华图－保定招考",
+      "source_type": "aggregator",
+      "source_url": "https://m.baoding.huatu.com/",
+      "subjects": [
+        "政治",
+        "语文"
+      ],
+      "title": "2026年度北京市丰台区职业教育中心学校雄安分校选聘教师36人公告",
+      "url": "http://m.baoding.huatu.com/2026/0223/1700665.html"
+    },
     "http://m.baoding.huatu.com/2026/0223/1700665.html|f2baba84f017fd4d36dab8486d5e1efda38d1f0d79f6a19a56a930660b28e4f7": {
       "archived_at": "2026-06-28T14:25:36",
       "checked_at": "2026-06-28T09:43:25",
@@ -40528,6 +40768,56 @@
       "checked_at": "2026-07-28T03:48:54",
       "classification": "likely",
       "content_hash": "3bfeacaa857929953bd47ff14c6c0a7fc1f1e11b1379372c750c7f00e223bf2e",
+      "date": "2026-03-04",
+      "employment_terms": [],
+      "listing_context": "2026年保定市顺平县人力资源和社会保障局公开选聘高中教师20名公告 事业单位 2026年保定市顺平县人力资源和社会保障局公开选聘高中教师20名公告",
+      "matched_terms": [
+        "事业单位人事管理条例",
+        "事业单位公开招聘",
+        "事业单位工作人员",
+        "事业单位招聘",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "办理聘用手续",
+        "报名",
+        "招聘工作人员",
+        "拟聘用",
+        "考察",
+        "资格复审",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "顺平县"
+      ],
+      "school_levels": [
+        "高中"
+      ],
+      "school_names": [
+        "取得报考岗位要求的高级中学",
+        "顺平县中学",
+        "如期取得毕业证等内容的学校",
+        "原顺平县实验中学"
+      ],
+      "source": "华图－保定招考",
+      "source_type": "aggregator",
+      "source_url": "https://m.baoding.huatu.com/",
+      "subjects": [
+        "心理",
+        "思想政治",
+        "政治",
+        "语文"
+      ],
+      "title": "2026年保定市顺平县人力资源和社会保障局公开选聘高中教师20名公告",
+      "url": "http://m.baoding.huatu.com/2026/0304/1700786.html"
+    },
+    "http://m.baoding.huatu.com/2026/0304/1700786.html|3d82cb6f28291068016d70509fd4f820966e7e776ff4b3571f24dc5cbd61a82c": {
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:13:57",
+      "classification": "likely",
+      "content_hash": "3d82cb6f28291068016d70509fd4f820966e7e776ff4b3571f24dc5cbd61a82c",
       "date": "2026-03-04",
       "employment_terms": [],
       "listing_context": "2026年保定市顺平县人力资源和社会保障局公开选聘高中教师20名公告 事业单位 2026年保定市顺平县人力资源和社会保障局公开选聘高中教师20名公告",
@@ -54369,6 +54659,58 @@
       "title": "2026年北京四中雄安校区公开选聘第二批教职人员22名公告",
       "url": "http://m.baoding.huatu.com/2026/0305/1700789.html"
     },
+    "http://m.baoding.huatu.com/2026/0305/1700789.html|e4ecf32a8727622073b0df9c0a6ba47a8f8125fa8cb7082e04230c8d8853524b": {
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:13:55",
+      "classification": "confirmed",
+      "content_hash": "e4ecf32a8727622073b0df9c0a6ba47a8f8125fa8cb7082e04230c8d8853524b",
+      "date": "2026-03-05",
+      "employment_terms": [
+        "民办"
+      ],
+      "listing_context": "2026年北京四中雄安校区公开选聘第二批教职人员22名公告 2026年北京四中雄安校区公开选聘第二批教职人员22名公告",
+      "matched_terms": [
+        "事业单位编制",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "报名",
+        "招聘教师",
+        "拟聘用",
+        "笔试",
+        "考察",
+        "资格复审",
+        "选聘教师",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "雄安新区"
+      ],
+      "school_levels": [
+        "初中",
+        "高中"
+      ],
+      "school_names": [
+        "北京四中",
+        "结合北京四中",
+        "国家级三等奖及以上荣誉可放宽至中学",
+        "如公办示范校或优质民办学校",
+        "有地市级及以上公办示范校或优质民办学校"
+      ],
+      "source": "华图－保定招考",
+      "source_type": "aggregator",
+      "source_url": "https://m.baoding.huatu.com/",
+      "subjects": [
+        "心理",
+        "思想政治",
+        "政治",
+        "英语"
+      ],
+      "title": "2026年北京四中雄安校区公开选聘第二批教职人员22名公告",
+      "url": "http://m.baoding.huatu.com/2026/0305/1700789.html"
+    },
     "http://m.baoding.huatu.com/2026/0305/1700789.html|e506b74f5a5eed6157cebfc0ff8414b9cd225c70e29bf1088354d1cf55c185b1": {
       "archived_at": "2026-08-03T15:27:50",
       "checked_at": "2026-08-03T10:15:08",
@@ -58804,6 +59146,56 @@
       "checked_at": "2026-07-11T08:22:08",
       "classification": "confirmed",
       "content_hash": "75a314288ba7244ca615a9be133b022b588708328bf358e0d5904710e0ebee3f",
+      "date": "2026-03-05",
+      "employment_terms": [
+        "民办"
+      ],
+      "listing_context": "2026年北京四中雄安校区第二实验学校公开选聘第二批教职人员11名公告 2026年北京四中雄安校区第二实验学校公开选聘第二批教职人员11名公告",
+      "matched_terms": [
+        "事业单位编制",
+        "体检",
+        "公开选聘",
+        "公示",
+        "报名",
+        "招聘教师",
+        "拟聘用",
+        "笔试",
+        "考察",
+        "资格复审",
+        "选聘教师",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "雄安新区"
+      ],
+      "school_levels": [
+        "中学未细分"
+      ],
+      "school_names": [
+        "北京四中雄安校区第二实验学校",
+        "结合北京四中雄安校区第二实验学校",
+        "国家级三等奖及以上荣誉可放宽至中学",
+        "如公办示范校或优质民办学校",
+        "有地市级及以上公办示范校或优质民办学校"
+      ],
+      "source": "华图－保定招考",
+      "source_type": "aggregator",
+      "source_url": "https://m.baoding.huatu.com/",
+      "subjects": [
+        "心理",
+        "思想政治",
+        "政治",
+        "英语"
+      ],
+      "title": "2026年北京四中雄安校区第二实验学校公开选聘第二批教职人员11名公告",
+      "url": "http://m.baoding.huatu.com/2026/0305/1700791.html"
+    },
+    "http://m.baoding.huatu.com/2026/0305/1700791.html|7842ec91359a71cb8c3e751f3c8393fda95cacd9eb63a78eb73de8546fe4aef2": {
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:13:54",
+      "classification": "confirmed",
+      "content_hash": "7842ec91359a71cb8c3e751f3c8393fda95cacd9eb63a78eb73de8546fe4aef2",
       "date": "2026-03-05",
       "employment_terms": [
         "民办"
@@ -67081,6 +67473,54 @@
       "title": "2026年保定市顺平县博文高级中学招聘教师33名公告",
       "url": "http://m.baoding.huatu.com/2026/0305/1700794.html"
     },
+    "http://m.baoding.huatu.com/2026/0305/1700794.html|7838b4f2e7b17657df74d2278762f41bd078d3438dd3031494a07df82f1a465f": {
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:13:53",
+      "classification": "needs_review",
+      "content_hash": "7838b4f2e7b17657df74d2278762f41bd078d3438dd3031494a07df82f1a465f",
+      "date": "2026-03-05",
+      "employment_terms": [],
+      "listing_context": "2026年保定市顺平县博文高级中学招聘教师33名公告 2026年保定市顺平县博文高级中学招聘教师33名公告",
+      "matched_terms": [
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "报名",
+        "招聘教师",
+        "资格复审",
+        "选聘教师"
+      ],
+      "regions": [
+        "顺平县"
+      ],
+      "school_levels": [
+        "高中"
+      ],
+      "school_names": [
+        "博文高级中学",
+        "博文高级中学是保定朗宸教育科技有限公司投资建设的一所民办全日制寄宿学校",
+        "是在当地政府正确领导和亲切关怀下建设的窗口学校",
+        "毕业学校",
+        "自选所应聘学科高中学"
+      ],
+      "source": "华图－保定招考",
+      "source_type": "aggregator",
+      "source_url": "https://m.baoding.huatu.com/",
+      "subjects": [
+        "信息技术",
+        "化学",
+        "历史",
+        "地理",
+        "政治",
+        "数学",
+        "物理",
+        "生物",
+        "英语",
+        "语文"
+      ],
+      "title": "2026年保定市顺平县博文高级中学招聘教师33名公告",
+      "url": "http://m.baoding.huatu.com/2026/0305/1700794.html"
+    },
     "http://m.baoding.huatu.com/2026/0305/1700794.html|79e0e26cf7715634eb150ddbf2e4ed283708567cdf6326683c174aaccc95808a": {
       "archived_at": "2026-07-21T20:03:01",
       "checked_at": "2026-07-21T14:36:23",
@@ -71593,6 +72033,61 @@
       "checked_at": "2026-07-15T19:47:56",
       "classification": "likely",
       "content_hash": "0cc3a7c1c09b74456390709672720361544e9ee42b6f07e2b58996d034b3ae97",
+      "date": "2026-03-26",
+      "employment_terms": [],
+      "listing_context": "2026年北京师范大学保定实验学校公开招聘教师50名公告 2026年北京师范大学保定实验学校公开招聘教师50名公告",
+      "matched_terms": [
+        "事业单位公开招聘",
+        "事业单位工作人员",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "报名",
+        "招聘工作人员",
+        "招聘教师",
+        "拟聘用",
+        "笔试",
+        "选聘教师",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "保定市"
+      ],
+      "school_levels": [
+        "初中"
+      ],
+      "school_names": [
+        "北京师范大学保定实验学校",
+        "北京师范大学保定实验学校是一所九年一贯制公办学校",
+        "具体以报考学校",
+        "以报考学校",
+        "考核形式以报考学校"
+      ],
+      "source": "华图－保定招考",
+      "source_type": "aggregator",
+      "source_url": "https://m.baoding.huatu.com/",
+      "subjects": [
+        "化学",
+        "历史",
+        "地理",
+        "心理",
+        "数学",
+        "物理",
+        "生物",
+        "英语",
+        "语文",
+        "道德与法治"
+      ],
+      "title": "2026年北京师范大学保定实验学校公开招聘教师50名公告",
+      "url": "http://m.baoding.huatu.com/2026/0326/1701064.html"
+    },
+    "http://m.baoding.huatu.com/2026/0326/1701064.html|0cf55360ebdc9abfccf92f5c8f0e5c006236dfbefa95fdb396ec25dd48232cd7": {
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:13:52",
+      "classification": "likely",
+      "content_hash": "0cf55360ebdc9abfccf92f5c8f0e5c006236dfbefa95fdb396ec25dd48232cd7",
       "date": "2026-03-26",
       "employment_terms": [],
       "listing_context": "2026年北京师范大学保定实验学校公开招聘教师50名公告 2026年北京师范大学保定实验学校公开招聘教师50名公告",
@@ -81905,6 +82400,57 @@
       "title": "2026年保定市唐县教育和体育局公开选聘高中教师15名公告",
       "url": "http://m.baoding.huatu.com/2026/0429/1707815.html"
     },
+    "http://m.baoding.huatu.com/2026/0429/1707815.html|3291f1e6a126e95318fa8765d1dc61c65369385ae2824e3436ebe945da59e48e": {
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:13:51",
+      "classification": "likely",
+      "content_hash": "3291f1e6a126e95318fa8765d1dc61c65369385ae2824e3436ebe945da59e48e",
+      "date": "2026-04-29",
+      "employment_terms": [],
+      "listing_context": "2026年保定市唐县教育和体育局公开选聘高中教师15名公告 2026年保定市唐县教育和体育局公开选聘高中教师15名公告",
+      "matched_terms": [
+        "事业单位人事管理条例",
+        "事业单位公开招聘",
+        "事业单位工作人员",
+        "事业单位招聘",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "办理聘用手续",
+        "报名",
+        "招聘工作人员",
+        "拟聘用",
+        "教育事业单位",
+        "考察",
+        "资格复审",
+        "选聘教师",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "唐县"
+      ],
+      "school_levels": [
+        "高中"
+      ],
+      "school_names": [
+        "取得报考岗位要求的高级中学",
+        "如期取得毕业证等内容的学校",
+        "唐县第一中学"
+      ],
+      "source": "华图－保定招考",
+      "source_type": "aggregator",
+      "source_url": "https://m.baoding.huatu.com/",
+      "subjects": [
+        "心理",
+        "思想政治",
+        "政治",
+        "语文"
+      ],
+      "title": "2026年保定市唐县教育和体育局公开选聘高中教师15名公告",
+      "url": "http://m.baoding.huatu.com/2026/0429/1707815.html"
+    },
     "http://m.baoding.huatu.com/2026/0429/1707815.html|3532af89d6148f0902d88c1ad734c01080ff6735710c14890c0ccf1df8dc6dea": {
       "archived_at": "2026-07-06T20:25:57",
       "checked_at": "2026-07-06T16:02:06",
@@ -90307,6 +90853,60 @@
       "checked_at": "2026-06-24T20:20:08",
       "classification": "likely",
       "content_hash": "4bb1acfd7bd1c7c5fb71c1b84329dc84414c0f44775805aec03befbdfdd8d779",
+      "date": "2026-06-09",
+      "employment_terms": [],
+      "listing_context": "2026年北京师范大学保定实验学校选聘教师30名（事业编）公告 2026年北京师范大学保定实验学校选聘教师30名（事业编）公告",
+      "matched_terms": [
+        "事业单位人事管理条例",
+        "事业单位公开招聘",
+        "事业单位工作人员",
+        "事业单位招聘",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "办理聘用手续",
+        "报名",
+        "招聘工作人员",
+        "拟聘用",
+        "教育事业单位",
+        "考察",
+        "资格复审",
+        "选聘教师",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "保定市"
+      ],
+      "school_levels": [
+        "中学未细分"
+      ],
+      "school_names": [
+        "北京师范大学保定实验学校",
+        "为满足北京师范大学保定实验学校",
+        "现为北京师范大学保定实验学校",
+        "旭阳路158号北京师范大学保定实验学校",
+        "北师大保定实验学校"
+      ],
+      "source": "华图－保定招考",
+      "source_type": "aggregator",
+      "source_url": "https://m.baoding.huatu.com/",
+      "subjects": [
+        "心理",
+        "思想政治",
+        "政治",
+        "科学",
+        "语文"
+      ],
+      "title": "2026年北京师范大学保定实验学校选聘教师30名（事业编）公告",
+      "url": "http://m.baoding.huatu.com/2026/0609/1711969.html"
+    },
+    "http://m.baoding.huatu.com/2026/0609/1711969.html|4cd4a0763a8f12995bf9c41ad43d7f8d99ab6dbda3ec44f866fceff290302e89": {
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:13:50",
+      "classification": "likely",
+      "content_hash": "4cd4a0763a8f12995bf9c41ad43d7f8d99ab6dbda3ec44f866fceff290302e89",
       "date": "2026-06-09",
       "employment_terms": [],
       "listing_context": "2026年北京师范大学保定实验学校选聘教师30名（事业编）公告 2026年北京师范大学保定实验学校选聘教师30名（事业编）公告",
@@ -100519,8 +101119,8 @@
       "url": "http://m.baoding.huatu.com/2026/0709/1712444.html"
     },
     "http://m.baoding.huatu.com/2026/0709/1712444.html|c224ec35f40a0295e86d30e81078164c64e53452ba823c5c89da5e76add0fb6e": {
-      "archived_at": "2026-07-13T04:11:38",
-      "checked_at": "2026-07-12T19:40:19",
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:13:49",
       "classification": "confirmed",
       "content_hash": "c224ec35f40a0295e86d30e81078164c64e53452ba823c5c89da5e76add0fb6e",
       "date": "2026-07-09",
@@ -144829,6 +145429,54 @@
       "title": "清河县职业技术教育中心2026年公开招聘人事代理教师公告 正在报名 河北 · 教师",
       "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/467896256714752"
     },
+    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/467896256714752|5bac3161ae70a9b5e0b2b892fa5d6de6a5a72cb362686cbbb216fcba37f45f0d": {
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:13:46",
+      "classification": "likely",
+      "content_hash": "5bac3161ae70a9b5e0b2b892fa5d6de6a5a72cb362686cbbb216fcba37f45f0d",
+      "date": "2026-07-29",
+      "employment_terms": [
+        "人事代理"
+      ],
+      "listing_context": "清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
+      "matched_terms": [
+        "事业单位公开招聘",
+        "事业单位工作人员",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "报名",
+        "招聘工作人员",
+        "拟聘用",
+        "校园招聘",
+        "笔试",
+        "考察",
+        "资格复审",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "地区待核实"
+      ],
+      "school_levels": [
+        "中学未细分"
+      ],
+      "school_names": [
+        "组织关系仍保留在原毕业学校",
+        "普通高等学校",
+        "所需资金由县财政按经费拨付到学校"
+      ],
+      "source": "粉笔－河北招考",
+      "source_type": "aggregator",
+      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
+      "subjects": [
+        "思想政治",
+        "政治"
+      ],
+      "title": "清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
+      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/467896256714752"
+    },
     "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/467896256714752|6584b3941c613211bbe09992ac44d22a89a2d9112d9eb7e7aa0ae998cb29c6f0": {
       "archived_at": "2026-07-25T08:32:56",
       "checked_at": "2026-07-25T03:50:54",
@@ -154818,6 +155466,50 @@
       "title": "石家庄学院2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位",
       "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/467984790871040"
     },
+    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/467984790871040|8039b45a94dff14a71c35bef2f0d2d3a63dd2b95830a1d28ddbe5f49a1d9cfb9": {
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:13:45",
+      "classification": "likely",
+      "content_hash": "8039b45a94dff14a71c35bef2f0d2d3a63dd2b95830a1d28ddbe5f49a1d9cfb9",
+      "date": "2026-07-30",
+      "employment_terms": [],
+      "listing_context": "石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
+      "matched_terms": [
+        "事业单位公开招聘",
+        "事业单位工作人员",
+        "人才引进",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "报名",
+        "招聘工作人员",
+        "校园招聘",
+        "笔试",
+        "考察",
+        "资格复审",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "高新区"
+      ],
+      "school_levels": [
+        "学段待核实"
+      ],
+      "school_names": [
+        "安家补贴和科研启动经费按照学校",
+        "毕业学校"
+      ],
+      "source": "粉笔－河北招考",
+      "source_type": "aggregator",
+      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
+      "subjects": [
+        "政治"
+      ],
+      "title": "石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位",
+      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/467984790871040"
+    },
     "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/467984790871040|bbfa58167be52a6964ed68e9edf90902abeb28a2402bac3e2268409dafd45ab8": {
       "archived_at": "2026-07-28T15:01:22",
       "checked_at": "2026-07-28T09:19:53",
@@ -155686,6 +156378,44 @@
       "title": "雄安新区招聘从事燃气、热力等运营管理相关工作人员 正在报名 河北 · 派遣/临时/购买服务等",
       "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/467990301135873"
     },
+    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/467990301135873|9f6ff22c139c9ed1f2f3cb06b2f801052c180ab12d6d4b9f702565ea1230b233": {
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:13:44",
+      "classification": "likely",
+      "content_hash": "9f6ff22c139c9ed1f2f3cb06b2f801052c180ab12d6d4b9f702565ea1230b233",
+      "date": "2026-07-28",
+      "employment_terms": [
+        "购买服务"
+      ],
+      "listing_context": "雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
+      "matched_terms": [
+        "事业单位工作人员",
+        "公开招聘",
+        "公开选聘",
+        "报名",
+        "招聘工作人员",
+        "校园招聘",
+        "考察",
+        "面试"
+      ],
+      "regions": [
+        "雄安新区",
+        "安新县"
+      ],
+      "school_levels": [
+        "学段待核实"
+      ],
+      "school_names": [],
+      "source": "粉笔－河北招考",
+      "source_type": "aggregator",
+      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
+      "subjects": [
+        "思想政治",
+        "政治"
+      ],
+      "title": "雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等",
+      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/467990301135873"
+    },
     "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/467990301135873|a39bc893fe613f4bc0455b81b4471a3841507a17864f9d2eaf135b379147feb4": {
       "archived_at": "2026-08-03T10:15:17",
       "checked_at": "2026-08-03T04:07:39",
@@ -156457,6 +157187,39 @@
       "title": "唐山人才发展集团有限责任公司为唐山市芦台经济开发区芦稻香农业发展有限公司招聘工作人员的公告 即将截止 河北 · 国企",
       "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468004200009729"
     },
+    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468007402098688|0f8216591c0ce1cd24ba529b3eabc4f305d818fb2ed0e24b3fbd7d94f37bc5e9": {
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:13:43",
+      "classification": "likely",
+      "content_hash": "0f8216591c0ce1cd24ba529b3eabc4f305d818fb2ed0e24b3fbd7d94f37bc5e9",
+      "date": "2026-07-29",
+      "employment_terms": [],
+      "listing_context": "财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
+      "matched_terms": [
+        "事业单位工作人员",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "报名",
+        "招聘工作人员",
+        "校园招聘",
+        "笔试",
+        "面试"
+      ],
+      "regions": [
+        "地区待核实"
+      ],
+      "school_levels": [
+        "学段待核实"
+      ],
+      "school_names": [],
+      "source": "粉笔－河北招考",
+      "source_type": "aggregator",
+      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
+      "subjects": [],
+      "title": "财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企",
+      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468007402098688"
+    },
     "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468007402098688|26a1a67479510bb07759bd4344b512c22988192cec197da520eee2cc1bc52cc8": {
       "archived_at": "2026-08-03T04:08:06",
       "checked_at": "2026-08-02T19:45:13",
@@ -156925,6 +157688,37 @@
       "title": "唐山市公安局开平分局2026年公开招聘留置看护人员的公告 即将报名 河北 · 派遣/临时/购买服务等",
       "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468009240779777"
     },
+    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468010595012608|0e653e8d4483efb361503da70b28825162cb44abea87f5c2e021297094c66698": {
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:13:41",
+      "classification": "likely",
+      "content_hash": "0e653e8d4483efb361503da70b28825162cb44abea87f5c2e021297094c66698",
+      "date": "2026-07-29",
+      "employment_terms": [],
+      "listing_context": "保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
+      "matched_terms": [
+        "事业单位工作人员",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "报名",
+        "招聘工作人员",
+        "校园招聘"
+      ],
+      "regions": [
+        "保定市"
+      ],
+      "school_levels": [
+        "学段待核实"
+      ],
+      "school_names": [],
+      "source": "粉笔－河北招考",
+      "source_type": "aggregator",
+      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
+      "subjects": [],
+      "title": "保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位",
+      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468010595012608"
+    },
     "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468010595012608|215f5c5bd085fe4d29aa89bad364803ff603df5b180e2d3a63820a37962861ae": {
       "archived_at": "2026-07-30T14:44:55",
       "checked_at": "2026-07-30T09:15:40",
@@ -157338,6 +158132,37 @@
       ],
       "title": "保定市世纪高级中学招聘启事 正在报名 河北 · 教师",
       "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468010595012609"
+    },
+    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468010595013633|1cbb8792f76b8b475a5569e07066f5967f3b881d334a1c91d7328477ffef2be8": {
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:13:42",
+      "classification": "likely",
+      "content_hash": "1cbb8792f76b8b475a5569e07066f5967f3b881d334a1c91d7328477ffef2be8",
+      "date": "2026-07-29",
+      "employment_terms": [],
+      "listing_context": "保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
+      "matched_terms": [
+        "事业单位工作人员",
+        "公开招聘",
+        "公开选聘",
+        "报名",
+        "招聘工作人员",
+        "校园招聘",
+        "面试"
+      ],
+      "regions": [
+        "莲池区"
+      ],
+      "school_levels": [
+        "学段待核实"
+      ],
+      "school_names": [],
+      "source": "粉笔－河北招考",
+      "source_type": "aggregator",
+      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
+      "subjects": [],
+      "title": "保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者",
+      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468010595013633"
     },
     "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468010595013633|6b825f5cf192c8ca1895043927666ee4fae3fe6e5598220089e29e1f41ee9f6f": {
       "archived_at": "2026-07-31T09:26:18",
@@ -159035,6 +159860,52 @@
       "title": "宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位",
       "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468117245680640"
     },
+    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468117245680640|435fff254b128bdfccdf43d050f6fd8cce70d76eb8c870b9c3bc557e36b4a477": {
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:13:40",
+      "classification": "likely",
+      "content_hash": "435fff254b128bdfccdf43d050f6fd8cce70d76eb8c870b9c3bc557e36b4a477",
+      "date": "2026-08-10",
+      "employment_terms": [],
+      "listing_context": "宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
+      "matched_terms": [
+        "事业单位公开招聘",
+        "事业单位工作人员",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "办理聘用手续",
+        "报名",
+        "招聘工作人员",
+        "拟聘用",
+        "校园招聘",
+        "考察",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "地区待核实"
+      ],
+      "school_levels": [
+        "学段待核实"
+      ],
+      "school_names": [
+        "组织关系仍保留在原毕业学校",
+        "需提供所在学校",
+        "XXX同学于XX年XX月考入XXXXXX学校"
+      ],
+      "source": "粉笔－河北招考",
+      "source_type": "aggregator",
+      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
+      "subjects": [
+        "历史",
+        "思想政治",
+        "政治"
+      ],
+      "title": "宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位",
+      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468117245680640"
+    },
     "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468117245680640|c08a12c69a9b40f49ae14f288cb67bf28ff61c0322188bee32e76ee45800f16b": {
       "archived_at": "2026-08-03T10:15:17",
       "checked_at": "2026-08-03T04:07:37",
@@ -159164,6 +160035,77 @@
       "title": "河北大学教育学院2026年公开招聘教学助理公告 即将报名 河北 · 高校",
       "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468118257030145"
     },
+    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468118257030145|8872ecf1f5ff8234c2ea6acd38afdffb49d0b17bc178ae90a093b531d16fd2c4": {
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:13:39",
+      "classification": "likely",
+      "content_hash": "8872ecf1f5ff8234c2ea6acd38afdffb49d0b17bc178ae90a093b531d16fd2c4",
+      "date": "2026-08-04",
+      "employment_terms": [],
+      "listing_context": "河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
+      "matched_terms": [
+        "事业单位工作人员",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "办理聘用手续",
+        "报名",
+        "招聘工作人员",
+        "拟聘用",
+        "校园招聘",
+        "考察"
+      ],
+      "regions": [
+        "地区待核实"
+      ],
+      "school_levels": [
+        "学段待核实"
+      ],
+      "school_names": [
+        "根据学校",
+        "公示无异议后报学校"
+      ],
+      "source": "粉笔－河北招考",
+      "source_type": "aggregator",
+      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
+      "subjects": [
+        "思想政治",
+        "政治"
+      ],
+      "title": "河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校",
+      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468118257030145"
+    },
+    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468118854458368|5c6d61c93e1fc700085417fbb36da14428b019d0645285007678576f3a136972": {
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:13:38",
+      "classification": "likely",
+      "content_hash": "5c6d61c93e1fc700085417fbb36da14428b019d0645285007678576f3a136972",
+      "date": "2026-07-09",
+      "employment_terms": [],
+      "listing_context": "中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
+      "matched_terms": [
+        "事业单位工作人员",
+        "公开招聘",
+        "公开选聘",
+        "报名",
+        "招聘工作人员",
+        "校园招聘"
+      ],
+      "regions": [
+        "地区待核实"
+      ],
+      "school_levels": [
+        "学段待核实"
+      ],
+      "school_names": [],
+      "source": "粉笔－河北招考",
+      "source_type": "aggregator",
+      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
+      "subjects": [],
+      "title": "中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企",
+      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468118854458368"
+    },
     "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468118854458368|b8216e4f5f2010ea8ddca81ff235e13f3a625bdc65b228a980c721e86cd85101": {
       "archived_at": "2026-08-03T15:27:50",
       "checked_at": "2026-08-03T10:14:50",
@@ -159193,6 +160135,50 @@
       "subjects": [],
       "title": "中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企",
       "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468118854458368"
+    },
+    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468122391303168|bcc4d8c1b603f8368060559f2d169f0f2fad8663606480a9447a79d3f29ac75a": {
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:13:38",
+      "classification": "likely",
+      "content_hash": "bcc4d8c1b603f8368060559f2d169f0f2fad8663606480a9447a79d3f29ac75a",
+      "date": "2026-08-10",
+      "employment_terms": [],
+      "listing_context": "邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
+      "matched_terms": [
+        "事业单位工作人员",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "办理聘用手续",
+        "报名",
+        "招聘工作人员",
+        "拟聘用",
+        "校园招聘",
+        "笔试",
+        "考察",
+        "资格复审",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "地区待核实"
+      ],
+      "school_levels": [
+        "学段待核实"
+      ],
+      "school_names": [
+        "未毕业的全日制普通高等学校"
+      ],
+      "source": "粉笔－河北招考",
+      "source_type": "aggregator",
+      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
+      "subjects": [
+        "思想政治",
+        "政治"
+      ],
+      "title": "邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者",
+      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468122391303168"
     },
     "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468122391303168|c4fb6a651c58053c78974124754fbae6334d07c48080129637b27c6ce75f0fcc": {
       "archived_at": "2026-08-03T15:27:50",
@@ -159237,6 +160223,52 @@
       ],
       "title": "邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者",
       "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468122391303168"
+    },
+    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468123729022976|0623638dc9ac4546859a59009a38821bbc2c5ba2536029563e935d04ef4cb938": {
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:13:34",
+      "classification": "likely",
+      "content_hash": "0623638dc9ac4546859a59009a38821bbc2c5ba2536029563e935d04ef4cb938",
+      "date": "2026-08-04",
+      "employment_terms": [],
+      "listing_context": "河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
+      "matched_terms": [
+        "事业单位公开招聘",
+        "事业单位工作人员",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "办理聘用手续",
+        "报名",
+        "招聘工作人员",
+        "拟聘用",
+        "校园招聘",
+        "笔试",
+        "考察",
+        "资格复审",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "地区待核实"
+      ],
+      "school_levels": [
+        "学段待核实"
+      ],
+      "school_names": [
+        "可凭学校"
+      ],
+      "source": "粉笔－河北招考",
+      "source_type": "aggregator",
+      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
+      "subjects": [
+        "思想政治",
+        "政治",
+        "音乐"
+      ],
+      "title": "河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位",
+      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468123729022976"
     },
     "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468123729022976|d66ff08cf9f1ac2907a760111d96fa229f9d37dad5e8584fe3f1af012fc340e5": {
       "archived_at": "2026-08-03T15:27:50",
@@ -159284,6 +160316,50 @@
       "title": "河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位",
       "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468123729022976"
     },
+    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468123729024000|5b2cf12ab8666ed4e63c8d97c413617baffb348db30017a68842569a97bef018": {
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:13:36",
+      "classification": "likely",
+      "content_hash": "5b2cf12ab8666ed4e63c8d97c413617baffb348db30017a68842569a97bef018",
+      "date": "2026-08-04",
+      "employment_terms": [],
+      "listing_context": "河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
+      "matched_terms": [
+        "事业单位公开招聘",
+        "事业单位工作人员",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "报名",
+        "招聘工作人员",
+        "拟聘用",
+        "校园招聘",
+        "考察",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "地区待核实"
+      ],
+      "school_levels": [
+        "学段待核实"
+      ],
+      "school_names": [
+        "普通高等学校"
+      ],
+      "source": "粉笔－河北招考",
+      "source_type": "aggregator",
+      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
+      "subjects": [
+        "历史",
+        "思想政治",
+        "政治",
+        "美术"
+      ],
+      "title": "河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位",
+      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468123729024000"
+    },
     "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468123729024000|5d8617b7a4cf463b884576281d5fb9a0a1593a2ab47324fd2749ba8bb100a29b": {
       "archived_at": "2026-08-03T15:27:50",
       "checked_at": "2026-08-03T10:14:49",
@@ -159327,6 +160403,49 @@
       ],
       "title": "河北工艺美术职业学院2026年公开选聘工作人员公告 即将报名 河北 · 事业单位",
       "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468123729024000"
+    },
+    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468123729285120|842dd456b1c717c781e1b7345040cc86536badad80d1c32a461b46a3b2c0b956": {
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:13:35",
+      "classification": "likely",
+      "content_hash": "842dd456b1c717c781e1b7345040cc86536badad80d1c32a461b46a3b2c0b956",
+      "date": "2026-08-04",
+      "employment_terms": [],
+      "listing_context": "河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
+      "matched_terms": [
+        "事业单位公开招聘",
+        "事业单位工作人员",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "办理聘用手续",
+        "报名",
+        "招聘工作人员",
+        "拟聘用",
+        "校园招聘",
+        "笔试",
+        "考察",
+        "资格复审",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "地区待核实"
+      ],
+      "school_levels": [
+        "学段待核实"
+      ],
+      "school_names": [],
+      "source": "粉笔－河北招考",
+      "source_type": "aggregator",
+      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
+      "subjects": [
+        "思想政治",
+        "政治"
+      ],
+      "title": "河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位",
+      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468123729285120"
     },
     "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468123729285120|b2cfb4f24a779b1bde18ff5ea416f4a20de2eb200e989814a012378a88154d5c": {
       "archived_at": "2026-08-03T15:27:50",
@@ -159411,6 +160530,90 @@
       ],
       "title": "北京大学第三医院崇礼院区2026年公开选聘编外工作人员公告 即将报名 河北 · 医疗",
       "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468123858000896"
+    },
+    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468124194853888|8b2dff0b093715105c43b227ba983d72cfffdd0668adc7a8ffebe9ac0501fda9": {
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:13:33",
+      "classification": "likely",
+      "content_hash": "8b2dff0b093715105c43b227ba983d72cfffdd0668adc7a8ffebe9ac0501fda9",
+      "date": "2026-08-04",
+      "employment_terms": [
+        "劳务派遣"
+      ],
+      "listing_context": "2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
+      "matched_terms": [
+        "事业单位工作人员",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "办理聘用手续",
+        "岗位取消",
+        "岗位核减",
+        "报名",
+        "招聘工作人员",
+        "校园招聘",
+        "笔试",
+        "考察",
+        "资格复审",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "地区待核实"
+      ],
+      "school_levels": [
+        "学段待核实"
+      ],
+      "school_names": [],
+      "source": "粉笔－河北招考",
+      "source_type": "aggregator",
+      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
+      "subjects": [
+        "心理",
+        "政治",
+        "物理",
+        "科学"
+      ],
+      "title": "2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企",
+      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468124194853888"
+    },
+    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468127192469504|b5a8ae568be6a005bee3156e283bfefa1c16d6aa5e8d023db1d544758f75ed0a": {
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:13:32",
+      "classification": "likely",
+      "content_hash": "b5a8ae568be6a005bee3156e283bfefa1c16d6aa5e8d023db1d544758f75ed0a",
+      "date": "2026-08-03",
+      "employment_terms": [],
+      "listing_context": "河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
+      "matched_terms": [
+        "事业单位工作人员",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "报名",
+        "招聘工作人员",
+        "校园招聘",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "地区待核实"
+      ],
+      "school_levels": [
+        "学段待核实"
+      ],
+      "school_names": [],
+      "source": "粉笔－河北招考",
+      "source_type": "aggregator",
+      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
+      "subjects": [
+        "思想政治",
+        "政治"
+      ],
+      "title": "河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企",
+      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468127192469504"
     },
     "https://m.bd.bendibao.com/job/36128.shtm|1bda524268824074940191c462dd64b156eab7fd0337ef41afb034c568e697ca": {
       "archived_at": "2026-07-04T19:46:50",
@@ -159648,8 +160851,8 @@
       "url": "https://m.bd.bendibao.com/job/36128.shtm"
     },
     "https://m.bd.bendibao.com/job/36128.shtm|897a032abda71ac668ead3bb183527f7fb6ebd75f81722479be7263fbc32b31a": {
-      "archived_at": "2026-08-02T04:06:19",
-      "checked_at": "2026-08-01T19:44:45",
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:13:01",
       "classification": "likely",
       "content_hash": "897a032abda71ac668ead3bb183527f7fb6ebd75f81722479be7263fbc32b31a",
       "date": "2026-04-29",
@@ -159856,8 +161059,8 @@
       "url": "https://m.bd.bendibao.com/job/36128.shtm"
     },
     "https://m.bd.bendibao.com/job/36433.shtm|06763009891f0ebcb872490b95b2829c8d5bd4269a1bdee50fb1c3416deda904": {
-      "archived_at": "2026-08-03T15:27:50",
-      "checked_at": "2026-08-03T10:14:41",
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:13:00",
       "classification": "likely",
       "content_hash": "06763009891f0ebcb872490b95b2829c8d5bd4269a1bdee50fb1c3416deda904",
       "date": "2026-06-10",
@@ -160241,8 +161444,8 @@
       "url": "https://m.bd.bendibao.com/job/36433.shtm"
     },
     "https://m.bd.bendibao.com/job/36471.shtm|0e085a698b08c033bdf44124c19bbdb79ab48762fe5f9aa887d76f8fd952af4f": {
-      "archived_at": "2026-08-03T04:08:06",
-      "checked_at": "2026-08-02T19:44:59",
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:12:59",
       "classification": "likely",
       "content_hash": "0e085a698b08c033bdf44124c19bbdb79ab48762fe5f9aa887d76f8fd952af4f",
       "date": "2026-06-16",
@@ -160591,8 +161794,8 @@
       "url": "https://m.bd.bendibao.com/job/36472.shtm"
     },
     "https://m.bd.bendibao.com/job/36472.shtm|258d7c0111695d155eafa1c116963659757c9da40b6a7498ae51d034a671632a": {
-      "archived_at": "2026-08-03T04:08:06",
-      "checked_at": "2026-08-02T19:44:59",
+      "archived_at": "2026-08-04T03:50:31",
+      "checked_at": "2026-08-03T20:12:58",
       "classification": "likely",
       "content_hash": "258d7c0111695d155eafa1c116963659757c9da40b6a7498ae51d034a671632a",
       "date": "2026-06-16",
@@ -166943,9 +168146,9 @@
   "initialized": true,
   "items": {
     "http://m.baoding.huatu.com/2025/0815/1555604.html": {
-      "checked_at": "2026-08-03T20:14:02",
+      "checked_at": "2026-08-04T03:50:29",
       "classification": "likely",
-      "content_hash": "04cf9c62c8a27b0fd9610ce2aeb3e904f9a408583c6bf114d57f2c39fc8eb091",
+      "content_hash": "624a4d2bd9ec148ab39d0b07260a5bb13f9fe4f9e114db6577c07114b6e0e803",
       "date": "2025-08-15",
       "employment_terms": [
         "人事代理",
@@ -166992,9 +168195,9 @@
       "url": "http://m.baoding.huatu.com/2025/0815/1555604.html"
     },
     "http://m.baoding.huatu.com/2025/0821/1555723.html": {
-      "checked_at": "2026-08-03T20:14:01",
+      "checked_at": "2026-08-04T03:50:28",
       "classification": "likely",
-      "content_hash": "9ba46f9b2bf53248f0b9b884728b4c4db3825edbfc06d31f460ea2caae47cab8",
+      "content_hash": "ee8d60f88b4345db279ae2f2667cfc4172d5d19b1b1c08b2f27cf5c043ea257b",
       "date": "2025-08-21",
       "employment_terms": [],
       "listing_context": "2025年保定市蠡县公开招聘教师80人公告 教师 2025年保定市蠡县公开招聘教师80人公告",
@@ -167042,9 +168245,9 @@
       "url": "http://m.baoding.huatu.com/2025/0821/1555723.html"
     },
     "http://m.baoding.huatu.com/2026/0114/1658040.html": {
-      "checked_at": "2026-08-03T20:14:00",
+      "checked_at": "2026-08-04T03:50:27",
       "classification": "likely",
-      "content_hash": "2eaa89d70d826b9b78c152f41270c2453545f2b9c8e8ffc6f7180216a2ad2ed6",
+      "content_hash": "93cfb7f892ff7f5655a9fb409fb955f9b02a2e0836be519734762d069fdc2e41",
       "date": "2026-01-14",
       "employment_terms": [],
       "listing_context": "2026年保定市高碑店一中选聘教师20名公告 教师 2026年保定市高碑店一中选聘教师20名公告",
@@ -167062,9 +168265,7 @@
         "招聘工作人员",
         "招聘教师",
         "拟聘用",
-        "笔试",
         "考察",
-        "资格复审",
         "选聘教师",
         "递补",
         "面试"
@@ -167093,9 +168294,9 @@
       "url": "http://m.baoding.huatu.com/2026/0114/1658040.html"
     },
     "http://m.baoding.huatu.com/2026/0223/1700663.html": {
-      "checked_at": "2026-08-03T20:13:59",
+      "checked_at": "2026-08-04T03:50:26",
       "classification": "confirmed",
-      "content_hash": "5eab35c99f38596138d20a05237fba4997e03b866ba8be95d17498d86c59a6cd",
+      "content_hash": "4080d07f90a306747f969af1c43910bdb1c98b09e859425bace8b77dbd650183",
       "date": "2026-02-23",
       "employment_terms": [],
       "listing_context": "2026年度河北雄安新区新建片区学校选聘教师30名公告 教师 2026年度河北雄安新区新建片区学校选聘教师30名公告",
@@ -167137,9 +168338,9 @@
       "url": "http://m.baoding.huatu.com/2026/0223/1700663.html"
     },
     "http://m.baoding.huatu.com/2026/0223/1700665.html": {
-      "checked_at": "2026-08-03T20:13:58",
+      "checked_at": "2026-08-04T03:50:25",
       "classification": "likely",
-      "content_hash": "f292095ad6d0a31210d8195e600a6dfbbe3fd1e4a23a44f384d0eafaa8137291",
+      "content_hash": "fd06e4440fd680a49d1ab6735feaf2c36bd412436b56e1f0af452cfeb76cd072",
       "date": "2026-02-23",
       "employment_terms": [],
       "listing_context": "2026年度北京市丰台区职业教育中心学校雄安分校选聘教师36人公告 教师 2026年度北京市丰台区职业教育中心学校雄安分校选聘教师36人公告",
@@ -167178,9 +168379,9 @@
       "url": "http://m.baoding.huatu.com/2026/0223/1700665.html"
     },
     "http://m.baoding.huatu.com/2026/0304/1700786.html": {
-      "checked_at": "2026-08-03T20:13:57",
+      "checked_at": "2026-08-04T03:50:24",
       "classification": "likely",
-      "content_hash": "3d82cb6f28291068016d70509fd4f820966e7e776ff4b3571f24dc5cbd61a82c",
+      "content_hash": "0f603a7c4559fc2a48bb977b427a6120583b75ae91a726a1e85fdc8bc37f2f79",
       "date": "2026-03-04",
       "employment_terms": [],
       "listing_context": "2026年保定市顺平县人力资源和社会保障局公开选聘高中教师20名公告 事业单位 2026年保定市顺平县人力资源和社会保障局公开选聘高中教师20名公告",
@@ -167227,9 +168428,9 @@
       "url": "http://m.baoding.huatu.com/2026/0304/1700786.html"
     },
     "http://m.baoding.huatu.com/2026/0305/1700789.html": {
-      "checked_at": "2026-08-03T20:13:55",
+      "checked_at": "2026-08-04T03:50:23",
       "classification": "confirmed",
-      "content_hash": "e4ecf32a8727622073b0df9c0a6ba47a8f8125fa8cb7082e04230c8d8853524b",
+      "content_hash": "62c3f4ea1d7b4f041e147b9e9a971bef938fa052c296a3b69be4cf301655d461",
       "date": "2026-03-05",
       "employment_terms": [
         "民办"
@@ -167278,9 +168479,9 @@
       "url": "http://m.baoding.huatu.com/2026/0305/1700789.html"
     },
     "http://m.baoding.huatu.com/2026/0305/1700791.html": {
-      "checked_at": "2026-08-03T20:13:54",
+      "checked_at": "2026-08-04T03:50:22",
       "classification": "confirmed",
-      "content_hash": "7842ec91359a71cb8c3e751f3c8393fda95cacd9eb63a78eb73de8546fe4aef2",
+      "content_hash": "9c3076fc90cfda14ac41bf5366724238adbec2414de1a33407022d2b5448fdcd",
       "date": "2026-03-05",
       "employment_terms": [
         "民办"
@@ -167327,9 +168528,9 @@
       "url": "http://m.baoding.huatu.com/2026/0305/1700791.html"
     },
     "http://m.baoding.huatu.com/2026/0305/1700794.html": {
-      "checked_at": "2026-08-03T20:13:53",
+      "checked_at": "2026-08-04T03:50:21",
       "classification": "needs_review",
-      "content_hash": "7838b4f2e7b17657df74d2278762f41bd078d3438dd3031494a07df82f1a465f",
+      "content_hash": "6cee7fbd1342d49fea16809a3b02e2284750da7c88f757d240ed5e7901b25a19",
       "date": "2026-03-05",
       "employment_terms": [],
       "listing_context": "2026年保定市顺平县博文高级中学招聘教师33名公告 2026年保定市顺平县博文高级中学招聘教师33名公告",
@@ -167339,7 +168540,7 @@
         "公开选聘",
         "报名",
         "招聘教师",
-        "资格复审",
+        "笔试",
         "选聘教师"
       ],
       "regions": [
@@ -167374,9 +168575,9 @@
       "url": "http://m.baoding.huatu.com/2026/0305/1700794.html"
     },
     "http://m.baoding.huatu.com/2026/0326/1701064.html": {
-      "checked_at": "2026-08-03T20:13:52",
+      "checked_at": "2026-08-04T03:50:20",
       "classification": "likely",
-      "content_hash": "0cf55360ebdc9abfccf92f5c8f0e5c006236dfbefa95fdb396ec25dd48232cd7",
+      "content_hash": "28e33b57247889acc1700448b16af76de0addd9020574645790fa572e9b2e419",
       "date": "2026-03-26",
       "employment_terms": [],
       "listing_context": "2026年北京师范大学保定实验学校公开招聘教师50名公告 2026年北京师范大学保定实验学校公开招聘教师50名公告",
@@ -167428,9 +168629,9 @@
       "url": "http://m.baoding.huatu.com/2026/0326/1701064.html"
     },
     "http://m.baoding.huatu.com/2026/0429/1707815.html": {
-      "checked_at": "2026-08-03T20:13:51",
+      "checked_at": "2026-08-04T03:50:19",
       "classification": "likely",
-      "content_hash": "3291f1e6a126e95318fa8765d1dc61c65369385ae2824e3436ebe945da59e48e",
+      "content_hash": "f31df76ccfc8254d69887d26fc698ee076137b31fd22f6af5431a1ba969f7789",
       "date": "2026-04-29",
       "employment_terms": [],
       "listing_context": "2026年保定市唐县教育和体育局公开选聘高中教师15名公告 2026年保定市唐县教育和体育局公开选聘高中教师15名公告",
@@ -167478,9 +168679,9 @@
       "url": "http://m.baoding.huatu.com/2026/0429/1707815.html"
     },
     "http://m.baoding.huatu.com/2026/0609/1711969.html": {
-      "checked_at": "2026-08-03T20:13:50",
+      "checked_at": "2026-08-04T03:50:18",
       "classification": "likely",
-      "content_hash": "4cd4a0763a8f12995bf9c41ad43d7f8d99ab6dbda3ec44f866fceff290302e89",
+      "content_hash": "da8b2616ae342a0242d994243fe821fa52f7d2578adcffa018c5456e8b4c6b5f",
       "date": "2026-06-09",
       "employment_terms": [],
       "listing_context": "2026年北京师范大学保定实验学校选聘教师30名（事业编）公告 2026年北京师范大学保定实验学校选聘教师30名（事业编）公告",
@@ -167531,9 +168732,9 @@
       "url": "http://m.baoding.huatu.com/2026/0609/1711969.html"
     },
     "http://m.baoding.huatu.com/2026/0709/1712444.html": {
-      "checked_at": "2026-08-03T20:13:49",
+      "checked_at": "2026-08-04T03:50:17",
       "classification": "confirmed",
-      "content_hash": "c224ec35f40a0295e86d30e81078164c64e53452ba823c5c89da5e76add0fb6e",
+      "content_hash": "0679ca3e538840331393e359d20478efef83bcb2c187c7416fcedd2c0cd1bf34",
       "date": "2026-07-09",
       "employment_terms": [],
       "listing_context": "2026年河北阜平中学公开选聘高中教师10名公告 2026年河北阜平中学公开选聘高中教师10名公告",
@@ -167580,594 +168781,6 @@
       ],
       "title": "2026年河北阜平中学公开选聘高中教师10名公告",
       "url": "http://m.baoding.huatu.com/2026/0709/1712444.html"
-    },
-    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/467896256714752": {
-      "checked_at": "2026-08-03T20:13:46",
-      "classification": "likely",
-      "content_hash": "5bac3161ae70a9b5e0b2b892fa5d6de6a5a72cb362686cbbb216fcba37f45f0d",
-      "date": "2026-07-29",
-      "employment_terms": [
-        "人事代理"
-      ],
-      "listing_context": "清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
-      "matched_terms": [
-        "事业单位公开招聘",
-        "事业单位工作人员",
-        "体检",
-        "公开招聘",
-        "公开选聘",
-        "公示",
-        "报名",
-        "招聘工作人员",
-        "拟聘用",
-        "校园招聘",
-        "笔试",
-        "考察",
-        "资格复审",
-        "递补",
-        "面试"
-      ],
-      "regions": [
-        "地区待核实"
-      ],
-      "school_levels": [
-        "中学未细分"
-      ],
-      "school_names": [
-        "组织关系仍保留在原毕业学校",
-        "普通高等学校",
-        "所需资金由县财政按经费拨付到学校"
-      ],
-      "source": "粉笔－河北招考",
-      "source_type": "aggregator",
-      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
-      "subjects": [
-        "思想政治",
-        "政治"
-      ],
-      "title": "清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
-      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/467896256714752"
-    },
-    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/467984790871040": {
-      "checked_at": "2026-08-03T20:13:45",
-      "classification": "likely",
-      "content_hash": "8039b45a94dff14a71c35bef2f0d2d3a63dd2b95830a1d28ddbe5f49a1d9cfb9",
-      "date": "2026-07-30",
-      "employment_terms": [],
-      "listing_context": "石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
-      "matched_terms": [
-        "事业单位公开招聘",
-        "事业单位工作人员",
-        "人才引进",
-        "体检",
-        "公开招聘",
-        "公开选聘",
-        "公示",
-        "报名",
-        "招聘工作人员",
-        "校园招聘",
-        "笔试",
-        "考察",
-        "资格复审",
-        "递补",
-        "面试"
-      ],
-      "regions": [
-        "高新区"
-      ],
-      "school_levels": [
-        "学段待核实"
-      ],
-      "school_names": [
-        "安家补贴和科研启动经费按照学校",
-        "毕业学校"
-      ],
-      "source": "粉笔－河北招考",
-      "source_type": "aggregator",
-      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
-      "subjects": [
-        "政治"
-      ],
-      "title": "石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位",
-      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/467984790871040"
-    },
-    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/467990301135873": {
-      "checked_at": "2026-08-03T20:13:44",
-      "classification": "likely",
-      "content_hash": "9f6ff22c139c9ed1f2f3cb06b2f801052c180ab12d6d4b9f702565ea1230b233",
-      "date": "2026-07-28",
-      "employment_terms": [
-        "购买服务"
-      ],
-      "listing_context": "雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
-      "matched_terms": [
-        "事业单位工作人员",
-        "公开招聘",
-        "公开选聘",
-        "报名",
-        "招聘工作人员",
-        "校园招聘",
-        "考察",
-        "面试"
-      ],
-      "regions": [
-        "雄安新区",
-        "安新县"
-      ],
-      "school_levels": [
-        "学段待核实"
-      ],
-      "school_names": [],
-      "source": "粉笔－河北招考",
-      "source_type": "aggregator",
-      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
-      "subjects": [
-        "思想政治",
-        "政治"
-      ],
-      "title": "雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等",
-      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/467990301135873"
-    },
-    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468007402098688": {
-      "checked_at": "2026-08-03T20:13:43",
-      "classification": "likely",
-      "content_hash": "0f8216591c0ce1cd24ba529b3eabc4f305d818fb2ed0e24b3fbd7d94f37bc5e9",
-      "date": "2026-07-29",
-      "employment_terms": [],
-      "listing_context": "财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
-      "matched_terms": [
-        "事业单位工作人员",
-        "体检",
-        "公开招聘",
-        "公开选聘",
-        "报名",
-        "招聘工作人员",
-        "校园招聘",
-        "笔试",
-        "面试"
-      ],
-      "regions": [
-        "地区待核实"
-      ],
-      "school_levels": [
-        "学段待核实"
-      ],
-      "school_names": [],
-      "source": "粉笔－河北招考",
-      "source_type": "aggregator",
-      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
-      "subjects": [],
-      "title": "财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企",
-      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468007402098688"
-    },
-    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468010595012608": {
-      "checked_at": "2026-08-03T20:13:41",
-      "classification": "likely",
-      "content_hash": "0e653e8d4483efb361503da70b28825162cb44abea87f5c2e021297094c66698",
-      "date": "2026-07-29",
-      "employment_terms": [],
-      "listing_context": "保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
-      "matched_terms": [
-        "事业单位工作人员",
-        "体检",
-        "公开招聘",
-        "公开选聘",
-        "报名",
-        "招聘工作人员",
-        "校园招聘"
-      ],
-      "regions": [
-        "保定市"
-      ],
-      "school_levels": [
-        "学段待核实"
-      ],
-      "school_names": [],
-      "source": "粉笔－河北招考",
-      "source_type": "aggregator",
-      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
-      "subjects": [],
-      "title": "保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位",
-      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468010595012608"
-    },
-    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468010595013633": {
-      "checked_at": "2026-08-03T20:13:42",
-      "classification": "likely",
-      "content_hash": "1cbb8792f76b8b475a5569e07066f5967f3b881d334a1c91d7328477ffef2be8",
-      "date": "2026-07-29",
-      "employment_terms": [],
-      "listing_context": "保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
-      "matched_terms": [
-        "事业单位工作人员",
-        "公开招聘",
-        "公开选聘",
-        "报名",
-        "招聘工作人员",
-        "校园招聘",
-        "面试"
-      ],
-      "regions": [
-        "莲池区"
-      ],
-      "school_levels": [
-        "学段待核实"
-      ],
-      "school_names": [],
-      "source": "粉笔－河北招考",
-      "source_type": "aggregator",
-      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
-      "subjects": [],
-      "title": "保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者",
-      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468010595013633"
-    },
-    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468117245680640": {
-      "checked_at": "2026-08-03T20:13:40",
-      "classification": "likely",
-      "content_hash": "435fff254b128bdfccdf43d050f6fd8cce70d76eb8c870b9c3bc557e36b4a477",
-      "date": "2026-08-10",
-      "employment_terms": [],
-      "listing_context": "宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
-      "matched_terms": [
-        "事业单位公开招聘",
-        "事业单位工作人员",
-        "体检",
-        "公开招聘",
-        "公开选聘",
-        "公示",
-        "办理聘用手续",
-        "报名",
-        "招聘工作人员",
-        "拟聘用",
-        "校园招聘",
-        "考察",
-        "递补",
-        "面试"
-      ],
-      "regions": [
-        "地区待核实"
-      ],
-      "school_levels": [
-        "学段待核实"
-      ],
-      "school_names": [
-        "组织关系仍保留在原毕业学校",
-        "需提供所在学校",
-        "XXX同学于XX年XX月考入XXXXXX学校"
-      ],
-      "source": "粉笔－河北招考",
-      "source_type": "aggregator",
-      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
-      "subjects": [
-        "历史",
-        "思想政治",
-        "政治"
-      ],
-      "title": "宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位",
-      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468117245680640"
-    },
-    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468118257030145": {
-      "checked_at": "2026-08-03T20:13:39",
-      "classification": "likely",
-      "content_hash": "8872ecf1f5ff8234c2ea6acd38afdffb49d0b17bc178ae90a093b531d16fd2c4",
-      "date": "2026-08-04",
-      "employment_terms": [],
-      "listing_context": "河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
-      "matched_terms": [
-        "事业单位工作人员",
-        "体检",
-        "公开招聘",
-        "公开选聘",
-        "公示",
-        "办理聘用手续",
-        "报名",
-        "招聘工作人员",
-        "拟聘用",
-        "校园招聘",
-        "考察"
-      ],
-      "regions": [
-        "地区待核实"
-      ],
-      "school_levels": [
-        "学段待核实"
-      ],
-      "school_names": [
-        "根据学校",
-        "公示无异议后报学校"
-      ],
-      "source": "粉笔－河北招考",
-      "source_type": "aggregator",
-      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
-      "subjects": [
-        "思想政治",
-        "政治"
-      ],
-      "title": "河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校",
-      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468118257030145"
-    },
-    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468118854458368": {
-      "checked_at": "2026-08-03T20:13:38",
-      "classification": "likely",
-      "content_hash": "5c6d61c93e1fc700085417fbb36da14428b019d0645285007678576f3a136972",
-      "date": "2026-07-09",
-      "employment_terms": [],
-      "listing_context": "中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
-      "matched_terms": [
-        "事业单位工作人员",
-        "公开招聘",
-        "公开选聘",
-        "报名",
-        "招聘工作人员",
-        "校园招聘"
-      ],
-      "regions": [
-        "地区待核实"
-      ],
-      "school_levels": [
-        "学段待核实"
-      ],
-      "school_names": [],
-      "source": "粉笔－河北招考",
-      "source_type": "aggregator",
-      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
-      "subjects": [],
-      "title": "中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企",
-      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468118854458368"
-    },
-    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468122391303168": {
-      "checked_at": "2026-08-03T20:13:38",
-      "classification": "likely",
-      "content_hash": "bcc4d8c1b603f8368060559f2d169f0f2fad8663606480a9447a79d3f29ac75a",
-      "date": "2026-08-10",
-      "employment_terms": [],
-      "listing_context": "邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
-      "matched_terms": [
-        "事业单位工作人员",
-        "体检",
-        "公开招聘",
-        "公开选聘",
-        "公示",
-        "办理聘用手续",
-        "报名",
-        "招聘工作人员",
-        "拟聘用",
-        "校园招聘",
-        "笔试",
-        "考察",
-        "资格复审",
-        "递补",
-        "面试"
-      ],
-      "regions": [
-        "地区待核实"
-      ],
-      "school_levels": [
-        "学段待核实"
-      ],
-      "school_names": [
-        "未毕业的全日制普通高等学校"
-      ],
-      "source": "粉笔－河北招考",
-      "source_type": "aggregator",
-      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
-      "subjects": [
-        "思想政治",
-        "政治"
-      ],
-      "title": "邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者",
-      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468122391303168"
-    },
-    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468123729022976": {
-      "checked_at": "2026-08-03T20:13:34",
-      "classification": "likely",
-      "content_hash": "0623638dc9ac4546859a59009a38821bbc2c5ba2536029563e935d04ef4cb938",
-      "date": "2026-08-04",
-      "employment_terms": [],
-      "listing_context": "河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
-      "matched_terms": [
-        "事业单位公开招聘",
-        "事业单位工作人员",
-        "体检",
-        "公开招聘",
-        "公开选聘",
-        "公示",
-        "办理聘用手续",
-        "报名",
-        "招聘工作人员",
-        "拟聘用",
-        "校园招聘",
-        "笔试",
-        "考察",
-        "资格复审",
-        "递补",
-        "面试"
-      ],
-      "regions": [
-        "地区待核实"
-      ],
-      "school_levels": [
-        "学段待核实"
-      ],
-      "school_names": [
-        "可凭学校"
-      ],
-      "source": "粉笔－河北招考",
-      "source_type": "aggregator",
-      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
-      "subjects": [
-        "思想政治",
-        "政治",
-        "音乐"
-      ],
-      "title": "河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位",
-      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468123729022976"
-    },
-    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468123729024000": {
-      "checked_at": "2026-08-03T20:13:36",
-      "classification": "likely",
-      "content_hash": "5b2cf12ab8666ed4e63c8d97c413617baffb348db30017a68842569a97bef018",
-      "date": "2026-08-04",
-      "employment_terms": [],
-      "listing_context": "河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
-      "matched_terms": [
-        "事业单位公开招聘",
-        "事业单位工作人员",
-        "体检",
-        "公开招聘",
-        "公开选聘",
-        "公示",
-        "报名",
-        "招聘工作人员",
-        "拟聘用",
-        "校园招聘",
-        "考察",
-        "递补",
-        "面试"
-      ],
-      "regions": [
-        "地区待核实"
-      ],
-      "school_levels": [
-        "学段待核实"
-      ],
-      "school_names": [
-        "普通高等学校"
-      ],
-      "source": "粉笔－河北招考",
-      "source_type": "aggregator",
-      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
-      "subjects": [
-        "历史",
-        "思想政治",
-        "政治",
-        "美术"
-      ],
-      "title": "河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位",
-      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468123729024000"
-    },
-    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468123729285120": {
-      "checked_at": "2026-08-03T20:13:35",
-      "classification": "likely",
-      "content_hash": "842dd456b1c717c781e1b7345040cc86536badad80d1c32a461b46a3b2c0b956",
-      "date": "2026-08-04",
-      "employment_terms": [],
-      "listing_context": "河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
-      "matched_terms": [
-        "事业单位公开招聘",
-        "事业单位工作人员",
-        "体检",
-        "公开招聘",
-        "公开选聘",
-        "公示",
-        "办理聘用手续",
-        "报名",
-        "招聘工作人员",
-        "拟聘用",
-        "校园招聘",
-        "笔试",
-        "考察",
-        "资格复审",
-        "递补",
-        "面试"
-      ],
-      "regions": [
-        "地区待核实"
-      ],
-      "school_levels": [
-        "学段待核实"
-      ],
-      "school_names": [],
-      "source": "粉笔－河北招考",
-      "source_type": "aggregator",
-      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
-      "subjects": [
-        "思想政治",
-        "政治"
-      ],
-      "title": "河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位",
-      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468123729285120"
-    },
-    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468124194853888": {
-      "checked_at": "2026-08-03T20:13:33",
-      "classification": "likely",
-      "content_hash": "8b2dff0b093715105c43b227ba983d72cfffdd0668adc7a8ffebe9ac0501fda9",
-      "date": "2026-08-04",
-      "employment_terms": [
-        "劳务派遣"
-      ],
-      "listing_context": "2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
-      "matched_terms": [
-        "事业单位工作人员",
-        "体检",
-        "公开招聘",
-        "公开选聘",
-        "公示",
-        "办理聘用手续",
-        "岗位取消",
-        "岗位核减",
-        "报名",
-        "招聘工作人员",
-        "校园招聘",
-        "笔试",
-        "考察",
-        "资格复审",
-        "递补",
-        "面试"
-      ],
-      "regions": [
-        "地区待核实"
-      ],
-      "school_levels": [
-        "学段待核实"
-      ],
-      "school_names": [],
-      "source": "粉笔－河北招考",
-      "source_type": "aggregator",
-      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
-      "subjects": [
-        "心理",
-        "政治",
-        "物理",
-        "科学"
-      ],
-      "title": "2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企",
-      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468124194853888"
-    },
-    "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468127192469504": {
-      "checked_at": "2026-08-03T20:13:32",
-      "classification": "likely",
-      "content_hash": "b5a8ae568be6a005bee3156e283bfefa1c16d6aa5e8d023db1d544758f75ed0a",
-      "date": "2026-08-03",
-      "employment_terms": [],
-      "listing_context": "河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企 2026年曲周县公开招聘专业技术人员的公告 正在报名 河北 · 国企 河北省文化和旅游厅河北交响乐团2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北省京剧艺术研究院2026年公开招聘工作人员公告 即将报名 河北 · 事业单位 河北工艺美术职业学院2026年公开选聘工作人员公告 正在报名 河北 · 事业单位 邯郸经济技术开发区2026年度公开招聘社区工作者公告 即将报名 河北 · 社区工作者 中冶瑞木新能源科技有限公司2026年度校园招聘 正在报名 河北 · 国企 河北大学教育学院2026年公开招聘教学助理公告 正在报名 河北 · 高校 宽城满族自治县2026年公开选聘事业单位工作人员公告 即将报名 河北 · 事业单位 保定市民政事业服务中心孤残儿童服务岗招聘 正在报名 河北 · 事业单位 保定市莲池区网格员招聘简章 正在报名 河北 · 社区工作者 财达证券股份有限公司河北分公司招聘公告 即将截止 河北 · 国企 雄安新区招聘从事燃气、热力等运营管理相关工作人员 即将截止 河北 · 派遣/临时/购买服务等 石家庄学院2026年公开选聘事业单位工作人员公告 正在报名 河北 · 事业单位 清河县职业技术教育中心2026年公开招聘人事代理教师公告 即将截止 河北 · 教师",
-      "matched_terms": [
-        "事业单位工作人员",
-        "体检",
-        "公开招聘",
-        "公开选聘",
-        "公示",
-        "报名",
-        "招聘工作人员",
-        "校园招聘",
-        "递补",
-        "面试"
-      ],
-      "regions": [
-        "地区待核实"
-      ],
-      "school_levels": [
-        "学段待核实"
-      ],
-      "school_names": [],
-      "source": "粉笔－河北招考",
-      "source_type": "aggregator",
-      "source_url": "https://fenbi.com/page/fenxiaozhaokao/16",
-      "subjects": [
-        "思想政治",
-        "政治"
-      ],
-      "title": "河北交投物流有限公司2026年社会招聘公告 正在报名 河北 · 国企",
-      "url": "https://fenbi.com/page/fenxiaozhaokaodetail/16/0/468127192469504"
     },
     "https://jyj.baoding.gov.cn/content-159-4882.html": {
       "checked_at": "2026-07-18T08:19:46",
@@ -168293,9 +168906,9 @@
       "url": "https://jyj.baoding.gov.cn/content-159-4922.html"
     },
     "https://m.bd.bendibao.com/job/36128.shtm": {
-      "checked_at": "2026-08-03T20:13:01",
+      "checked_at": "2026-08-04T03:50:10",
       "classification": "likely",
-      "content_hash": "897a032abda71ac668ead3bb183527f7fb6ebd75f81722479be7263fbc32b31a",
+      "content_hash": "5b07afd0ca20ebd981a9a5f9c3b26c05da238a32c05be770c062400337c795dc",
       "date": "2026-04-29",
       "employment_terms": [],
       "listing_context": "2026唐县公开选聘高中教师公告 2026-04-29 16:43 2026唐县公开选聘高中教师公告 2026-04-29 16:43",
@@ -168344,9 +168957,9 @@
       "url": "https://m.bd.bendibao.com/job/36128.shtm"
     },
     "https://m.bd.bendibao.com/job/36433.shtm": {
-      "checked_at": "2026-08-03T20:13:00",
+      "checked_at": "2026-08-04T03:50:09",
       "classification": "likely",
-      "content_hash": "06763009891f0ebcb872490b95b2829c8d5bd4269a1bdee50fb1c3416deda904",
+      "content_hash": "348bd99ee1dacc773ccd9f74c9a1b0b730b6476cfd43ea593782d96ba17cc155",
       "date": "2026-06-10",
       "employment_terms": [],
       "listing_context": "2026保定14家市直教育事业单位选聘教师公告 2026-06-10 17:33 2026保定14家市直教育事业单位选聘教师公告 2026-06-10 17:33",
@@ -168398,48 +169011,36 @@
       "url": "https://m.bd.bendibao.com/job/36433.shtm"
     },
     "https://m.bd.bendibao.com/job/36471.shtm": {
-      "checked_at": "2026-08-03T20:12:59",
-      "classification": "likely",
-      "content_hash": "0e085a698b08c033bdf44124c19bbdb79ab48762fe5f9aa887d76f8fd952af4f",
+      "checked_at": "2026-08-04T03:50:07",
+      "classification": "needs_review",
+      "content_hash": "fe09925ae9095ad076ac2231735d01873debc25a095625e707ec1b7239e746c7",
       "date": "2026-06-16",
+      "detail_error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
       "employment_terms": [],
       "listing_context": "2026保定事业单位统一招聘教师类岗位工作人员面试公告 2026-06-16 16:42 2026保定事业单位统一招聘教师类岗位工作人员面试公告 2026-06-16 16:42",
       "matched_terms": [
-        "事业单位公开招聘",
         "事业单位招聘",
-        "体检",
-        "公开招聘",
-        "公开选聘",
         "招聘教师",
-        "教育事业单位",
-        "笔试",
-        "考察",
-        "资格复审",
-        "选聘教师",
         "面试"
       ],
       "regions": [
         "保定市"
       ],
       "school_levels": [
-        "中学未细分"
+        "学段待核实"
       ],
-      "school_names": [
-        "幼儿师范高等专科学校"
-      ],
+      "school_names": [],
       "source": "保定本地宝－事业单位招聘",
       "source_type": "aggregator",
       "source_url": "https://m.bd.bendibao.com/job/shiyedangweizhaopin/",
-      "subjects": [
-        "科学"
-      ],
+      "subjects": [],
       "title": "2026保定事业单位统一招聘教师类岗位工作人员面试公告 2026-06-16 16:42",
       "url": "https://m.bd.bendibao.com/job/36471.shtm"
     },
     "https://m.bd.bendibao.com/job/36472.shtm": {
-      "checked_at": "2026-08-03T20:12:58",
+      "checked_at": "2026-08-04T03:50:07",
       "classification": "likely",
-      "content_hash": "258d7c0111695d155eafa1c116963659757c9da40b6a7498ae51d034a671632a",
+      "content_hash": "a78f7bf5622f31687f6d2b5660591cf3ed92693c7056122a11dedc49b8932d67",
       "date": "2026-06-16",
       "employment_terms": [],
       "listing_context": "2026保定事业单位统一招聘教师类面试参考教材目录 2026-06-16 16:49 2026保定事业单位统一招聘教师类面试参考教材目录 2026-06-16 16:49",
@@ -168497,7 +169098,7 @@
       "url": "https://m.bd.bendibao.com/job/36472.shtm"
     },
     "https://m.bd.bendibao.com/job/36488.shtm": {
-      "checked_at": "2026-08-03T20:12:57",
+      "checked_at": "2026-08-04T03:50:06",
       "classification": "likely",
       "content_hash": "85ddc67ca81dc6b7a57cf4a98dfc55ff1a3343ec45fb1763f5479a9aa6c2753e",
       "date": "2026-06-18",
@@ -168549,7 +169150,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=13#/examinee/mobileHostPage/home": {
       "api_hash": "76f167aadb58ff6e6f2dfe17622bd924bc2580dfdbd9ff3336558b25e1e5d028",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "needs_review",
       "content_hash": "76f167aadb58ff6e6f2dfe17622bd924bc2580dfdbd9ff3336558b25e1e5d028",
       "date": "2026-02-12",
@@ -168578,7 +169179,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=15#/examinee/mobileHostPage/home": {
       "api_hash": "4c4781d1090d96415bed51e3971bd9e673092589b674c7c8601c7529b696a01c",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "needs_review",
       "content_hash": "4c4781d1090d96415bed51e3971bd9e673092589b674c7c8601c7529b696a01c",
       "date": "2026-03-04",
@@ -168604,7 +169205,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=16#/examinee/mobileHostPage/home": {
       "api_hash": "6a834654123fe065e186bc6cadb13bd1c3d36f6d03a2cddb706cae1f2227fa16",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "needs_review",
       "content_hash": "6a834654123fe065e186bc6cadb13bd1c3d36f6d03a2cddb706cae1f2227fa16",
       "date": "2026-03-05",
@@ -168631,7 +169232,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=20#/examinee/mobileHostPage/home": {
       "api_hash": "682512defb50d4bf46abfb088616530b1cca88f5263fcfe88f23eeefc160ff92",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "needs_review",
       "content_hash": "682512defb50d4bf46abfb088616530b1cca88f5263fcfe88f23eeefc160ff92",
       "date": "2026-04-29",
@@ -168657,7 +169258,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=22#/examinee/mobileHostPage/home": {
       "api_hash": "daebf582b661e9063474e4866471bf597fa919bbbaf173db7b646ded4bc15791",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "needs_review",
       "content_hash": "daebf582b661e9063474e4866471bf597fa919bbbaf173db7b646ded4bc15791",
       "date": "2026-05-11",
@@ -168684,7 +169285,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=25#/examinee/mobileHostPage/home": {
       "api_hash": "11779c92d8ddec070e93fd3e0d6e1556c477f52f67a866bcedf41e096485331c",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "likely",
       "content_hash": "11779c92d8ddec070e93fd3e0d6e1556c477f52f67a866bcedf41e096485331c",
       "date": "2026-06-08",
@@ -168711,7 +169312,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=26#/examinee/mobileHostPage/home": {
       "api_hash": "a54342914e4a577a2d77f6c1aff94710b6c9434149ad13ac17b675ef5c112b33",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "needs_review",
       "content_hash": "a54342914e4a577a2d77f6c1aff94710b6c9434149ad13ac17b675ef5c112b33",
       "date": "2026-06-08",
@@ -168739,7 +169340,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=27#/examinee/mobileHostPage/home": {
       "api_hash": "d8497757ba7af06c3f2fb60f0f7ea8d89a424e3de22d83ebbb8b5a8d8c143ef1",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "needs_review",
       "content_hash": "d8497757ba7af06c3f2fb60f0f7ea8d89a424e3de22d83ebbb8b5a8d8c143ef1",
       "date": "2026-06-09",
@@ -168768,7 +169369,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=28#/examinee/mobileHostPage/home": {
       "api_hash": "a9bb7c8f245eb46a2a9028c3b67d91d1e9fc9169068edf15dda2e53f3f1ae69a",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "likely",
       "content_hash": "a9bb7c8f245eb46a2a9028c3b67d91d1e9fc9169068edf15dda2e53f3f1ae69a",
       "date": "2026-06-09",
@@ -168796,7 +169397,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=3#/examinee/mobileHostPage/home": {
       "api_hash": "0b4628400c770f00b0bfed8a385e08f4ae743b22b068deee4921597b52ab9489",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "needs_review",
       "content_hash": "0b4628400c770f00b0bfed8a385e08f4ae743b22b068deee4921597b52ab9489",
       "date": "2026-01-14",
@@ -168824,7 +169425,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=33#/examinee/mobileHostPage/home": {
       "api_hash": "d65a7ad76323dde7c3a54c358ef3c651dba9387f140c25cb1e22082f683ac297",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "likely",
       "content_hash": "d65a7ad76323dde7c3a54c358ef3c651dba9387f140c25cb1e22082f683ac297",
       "date": "2026-06-15",
@@ -168852,7 +169453,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=35#/examinee/mobileHostPage/home": {
       "api_hash": "b42549353c5caf04959500aaf77322d42eae45e2a394424808da27d51e60a560",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "needs_review",
       "content_hash": "b42549353c5caf04959500aaf77322d42eae45e2a394424808da27d51e60a560",
       "date": "2026-06-17",
@@ -168878,7 +169479,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=36#/examinee/mobileHostPage/home": {
       "api_hash": "31a267d0edbe9dd720ca24fa615191b90c4605da68246f838c84b28e62587c56",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "likely",
       "content_hash": "31a267d0edbe9dd720ca24fa615191b90c4605da68246f838c84b28e62587c56",
       "date": "2026-06-17",
@@ -168906,7 +169507,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=39#/examinee/mobileHostPage/home": {
       "api_hash": "4da465c4a6fd312de4682cc19a115bf279a52aa2c1c4c253a1056d481f5f5c58",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "needs_review",
       "content_hash": "4da465c4a6fd312de4682cc19a115bf279a52aa2c1c4c253a1056d481f5f5c58",
       "date": "2026-06-22",
@@ -168933,7 +169534,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=4#/examinee/mobileHostPage/home": {
       "api_hash": "a21e5b3b89b40196bfb1ee3e9a47c5badb7faadb7ef6bd6a09476b880ce6c56d",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "needs_review",
       "content_hash": "a21e5b3b89b40196bfb1ee3e9a47c5badb7faadb7ef6bd6a09476b880ce6c56d",
       "date": "2026-01-22",
@@ -168959,7 +169560,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=40#/examinee/mobileHostPage/home": {
       "api_hash": "b1c99375f9307075c3ae5f3767a49f3423d00be850274ec30771f2413364aba0",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "likely",
       "content_hash": "b1c99375f9307075c3ae5f3767a49f3423d00be850274ec30771f2413364aba0",
       "date": "2026-06-24",
@@ -168987,7 +169588,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=41#/examinee/mobileHostPage/home": {
       "api_hash": "1580c2a553e5ff1907da119ddb9ef98716f98823831ed6b099e517ec375530c8",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "needs_review",
       "content_hash": "1580c2a553e5ff1907da119ddb9ef98716f98823831ed6b099e517ec375530c8",
       "date": "2026-06-24",
@@ -169016,7 +169617,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=42#/examinee/mobileHostPage/home": {
       "api_hash": "2b38c1597f47689ea24df0253f449e45be7d07071350c0b0906034c54aca090e",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "likely",
       "content_hash": "2b38c1597f47689ea24df0253f449e45be7d07071350c0b0906034c54aca090e",
       "date": "2026-06-24",
@@ -169044,7 +169645,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=43#/examinee/mobileHostPage/home": {
       "api_hash": "438e5c2b90cfea9de2058691ced61348e0e17997dd95c2b989406600237f4c21",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "likely",
       "content_hash": "438e5c2b90cfea9de2058691ced61348e0e17997dd95c2b989406600237f4c21",
       "date": "2026-06-27",
@@ -169073,7 +169674,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=46#/examinee/mobileHostPage/home": {
       "api_hash": "b427d3ba3611fa284411fe08e73e6cbf22debf98769bbc5f3dd95bfd06dc949c",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "needs_review",
       "content_hash": "b427d3ba3611fa284411fe08e73e6cbf22debf98769bbc5f3dd95bfd06dc949c",
       "date": "2026-07-01",
@@ -169099,7 +169700,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=47#/examinee/mobileHostPage/home": {
       "api_hash": "370b33d7cc51c91e8c9566ee330b75d424e0947ddb24da864463f3e39c9436e9",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "needs_review",
       "content_hash": "370b33d7cc51c91e8c9566ee330b75d424e0947ddb24da864463f3e39c9436e9",
       "date": "2026-07-01",
@@ -169125,7 +169726,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=48#/examinee/mobileHostPage/home": {
       "api_hash": "e6b5dacf7b6bbc82d7c531ca5ba0abd9c926777c2f0ece6b8fd1bd5946da228a",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "needs_review",
       "content_hash": "e6b5dacf7b6bbc82d7c531ca5ba0abd9c926777c2f0ece6b8fd1bd5946da228a",
       "date": "2026-07-02",
@@ -169152,7 +169753,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=51#/examinee/mobileHostPage/home": {
       "api_hash": "098bfc4f0bd8df08b5b7fe5d2ec65915aa23886a5e822d2d5b4458a251d5aa28",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "needs_review",
       "content_hash": "098bfc4f0bd8df08b5b7fe5d2ec65915aa23886a5e822d2d5b4458a251d5aa28",
       "date": "2026-07-06",
@@ -169179,7 +169780,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=54#/examinee/mobileHostPage/home": {
       "api_hash": "e95356a4b38ad78f82e20ba06b0ca9c3b5849c7dfad1730302e87e12007dc040",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "needs_review",
       "content_hash": "e95356a4b38ad78f82e20ba06b0ca9c3b5849c7dfad1730302e87e12007dc040",
       "date": "2026-07-09",
@@ -169207,7 +169808,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=55#/examinee/mobileHostPage/home": {
       "api_hash": "80a671fd79b153762a739e57b641c4bf13e69ee89091482bfc8accf20966daf6",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "needs_review",
       "content_hash": "80a671fd79b153762a739e57b641c4bf13e69ee89091482bfc8accf20966daf6",
       "date": "2026-07-09",
@@ -169235,7 +169836,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=56#/examinee/mobileHostPage/home": {
       "api_hash": "cef077e6e34ddeff5bb64e6bf3a1eda45b0857f2df3a4752df5f4b4668868e54",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "needs_review",
       "content_hash": "cef077e6e34ddeff5bb64e6bf3a1eda45b0857f2df3a4752df5f4b4668868e54",
       "date": "2026-07-10",
@@ -169264,7 +169865,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=57#/examinee/mobileHostPage/home": {
       "api_hash": "1f603abc7dc874d487c8c6dadba1b36d439efbadc9634b24f59bbeec88cb7aa0",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "needs_review",
       "content_hash": "1f603abc7dc874d487c8c6dadba1b36d439efbadc9634b24f59bbeec88cb7aa0",
       "date": "2026-07-18",
@@ -169292,7 +169893,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=58#/examinee/mobileHostPage/home": {
       "api_hash": "7eb6e2bb2c8daac1d5a5d4993aea45389f4dd47644919dfc6f81efabae49bdad",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "likely",
       "content_hash": "7eb6e2bb2c8daac1d5a5d4993aea45389f4dd47644919dfc6f81efabae49bdad",
       "date": "2026-07-20",
@@ -169320,7 +169921,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=59#/examinee/mobileHostPage/home": {
       "api_hash": "fa07436e63600979f785dd225f285451faf275095cab66067f54619a8b8feb42",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "needs_review",
       "content_hash": "fa07436e63600979f785dd225f285451faf275095cab66067f54619a8b8feb42",
       "date": "2026-07-21",
@@ -169350,7 +169951,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=6#/examinee/mobileHostPage/home": {
       "api_hash": "21b95afd7fe8e4a352a7c1af367aab788d8d14730f660372a190fd0b4c844606",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "needs_review",
       "content_hash": "21b95afd7fe8e4a352a7c1af367aab788d8d14730f660372a190fd0b4c844606",
       "date": "2026-01-25",
@@ -169377,7 +169978,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=60#/examinee/mobileHostPage/home": {
       "api_hash": "99e7fbb2a344cf7aa9f32a171e2eba812db8e965f7826092a1c8f954eea2fafb",
-      "checked_at": "2026-08-03T20:11:00",
+      "checked_at": "2026-08-04T03:48:10",
       "classification": "needs_review",
       "content_hash": "99e7fbb2a344cf7aa9f32a171e2eba812db8e965f7826092a1c8f954eea2fafb",
       "date": "2026-08-01",
@@ -170196,7 +170797,7 @@
       "url": "https://www.gaoxiaojob.com/job/detail/2210004.html"
     },
     "https://www.gaoyang.gov.cn/info_show.asp?infoid=11844": {
-      "checked_at": "2026-08-03T20:11:39",
+      "checked_at": "2026-08-04T03:48:50",
       "classification": "likely",
       "content_hash": "506d52986ca816b9d381728e26f742a1542a5afd987b0b0ae9b72b2a6b8b303d",
       "date": "2026-07-10",
@@ -170233,7 +170834,7 @@
       "url": "https://www.gaoyang.gov.cn/info_show.asp?infoid=11844"
     },
     "https://www.gaoyang.gov.cn/info_show.asp?infoid=11845": {
-      "checked_at": "2026-08-03T20:11:39",
+      "checked_at": "2026-08-04T03:48:50",
       "classification": "likely",
       "content_hash": "6ba06506a5b8144da2a21534c2013ea45d88cc1640a2c2dfddde9a95033ce342",
       "date": "2026-07-10",
@@ -170269,7 +170870,7 @@
       "url": "https://www.gaoyang.gov.cn/info_show.asp?infoid=11845"
     },
     "https://www.tangxian.gov.cn/zwgknr-888888647-394991.html": {
-      "checked_at": "2026-08-03T20:11:35",
+      "checked_at": "2026-08-04T03:48:45",
       "classification": "likely",
       "content_hash": "959d3b49b9f41c7c98b93576f4f9f4dca14a280ad913a6d7142222b207a1ee82",
       "date": "2026-04-29",
@@ -170309,5 +170910,5 @@
       "url": "https://www.tangxian.gov.cn/zwgknr-888888647-394991.html"
     }
   },
-  "last_run": "2026-08-03T20:14:05"
+  "last_run": "2026-08-04T03:50:32"
 }
