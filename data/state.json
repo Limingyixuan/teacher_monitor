@@ -13,12 +13,16 @@
       "source": "河北人社网"
     },
     {
-      "error": "HTTPSConnectionPool(host='www.hebpta.com.cn', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.hebpta.com.cn', port=443) at 0x7fe27af8aed0>, 'Connection to www.hebpta.com.cn timed out. (connect timeout=25)'))",
+      "error": "HTTPSConnectionPool(host='www.hebpta.com.cn', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.hebpta.com.cn', port=443) at 0x7f33844a93d0>, 'Connection to www.hebpta.com.cn timed out. (connect timeout=25)'))",
       "source": "河北省人事考试网"
     },
     {
       "error": "HTTPSConnectionPool(host='job.mohrss.gov.cn', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='job.mohrss.gov.cn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
       "source": "中国公共招聘网"
+    },
+    {
+      "error": "HTTPSConnectionPool(host='m.bd.bendibao.com', port=443): Read timed out. (read timeout=25)",
+      "source": "保定本地宝－事业单位招聘"
     },
     {
       "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
@@ -8730,6 +8734,56 @@
       "checked_at": "2026-10-25T21:07:19",
       "classification": "likely",
       "content_hash": "57d8f730d0045d4070eec6c588c557018858c5f0614e9b9e06e97285eabb6298",
+      "date": "2025-08-15",
+      "employment_terms": [
+        "人事代理",
+        "劳务派遣"
+      ],
+      "listing_context": "2025年保定市阜平职教中心公开招聘教师21人公告 教师 2025年保定市阜平职教中心公开招聘教师21人公告",
+      "matched_terms": [
+        "事业单位公开招聘",
+        "事业单位工作人员",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "报名",
+        "招聘工作人员",
+        "招聘教师",
+        "拟聘用",
+        "笔试",
+        "资格复审",
+        "选聘教师",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "阜平县"
+      ],
+      "school_levels": [
+        "高中"
+      ],
+      "school_names": [
+        "阜平职教中心",
+        "有在职业教育学校",
+        "由阜平职教中心",
+        "00前将体检报告交至阜平职教中心",
+        "岗前培训工作由阜平职教中心"
+      ],
+      "source": "华图－保定招考",
+      "source_type": "aggregator",
+      "source_url": "https://m.baoding.huatu.com/",
+      "subjects": [
+        "心理"
+      ],
+      "title": "2025年保定市阜平职教中心公开招聘教师21人公告",
+      "url": "http://m.baoding.huatu.com/2025/0815/1555604.html"
+    },
+    "http://m.baoding.huatu.com/2025/0815/1555604.html|57e58d9c4439379a89332e958d100fdde1c9c91e5183a96fabe6396a03140309": {
+      "archived_at": "2026-11-09T22:39:52",
+      "checked_at": "2026-11-09T07:02:31",
+      "classification": "likely",
+      "content_hash": "57e58d9c4439379a89332e958d100fdde1c9c91e5183a96fabe6396a03140309",
       "date": "2025-08-15",
       "employment_terms": [
         "人事代理",
@@ -37025,6 +37079,57 @@
       "checked_at": "2026-09-29T06:02:19",
       "classification": "likely",
       "content_hash": "74aacde3f84cb5e0cf4d35fecab5a7669207567bc76f969c3d5b0fbdfb6104bb",
+      "date": "2025-08-21",
+      "employment_terms": [],
+      "listing_context": "2025年保定市蠡县公开招聘教师80人公告 教师 2025年保定市蠡县公开招聘教师80人公告",
+      "matched_terms": [
+        "事业单位人事管理条例",
+        "事业单位公开招聘",
+        "事业单位工作人员",
+        "事业单位招聘",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "报名",
+        "招聘工作人员",
+        "招聘教师",
+        "拟聘用",
+        "笔试",
+        "考察",
+        "资格复审",
+        "选聘教师",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "蠡县"
+      ],
+      "school_levels": [
+        "学段待核实"
+      ],
+      "school_names": [
+        "普通高等学校"
+      ],
+      "source": "华图－保定招考",
+      "source_type": "aggregator",
+      "source_url": "https://m.baoding.huatu.com/",
+      "subjects": [
+        "体育",
+        "历史",
+        "心理",
+        "政治",
+        "语文",
+        "音乐"
+      ],
+      "title": "2025年保定市蠡县公开招聘教师80人公告",
+      "url": "http://m.baoding.huatu.com/2025/0821/1555723.html"
+    },
+    "http://m.baoding.huatu.com/2025/0821/1555723.html|74d695e9a3e9f5ca26452c06328ce729cc147004b0d87bcf90d5f358b74fac10": {
+      "archived_at": "2026-11-09T22:39:52",
+      "checked_at": "2026-11-09T07:02:30",
+      "classification": "likely",
+      "content_hash": "74d695e9a3e9f5ca26452c06328ce729cc147004b0d87bcf90d5f358b74fac10",
       "date": "2025-08-21",
       "employment_terms": [],
       "listing_context": "2025年保定市蠡县公开招聘教师80人公告 教师 2025年保定市蠡县公开招聘教师80人公告",
@@ -66134,6 +66239,56 @@
       "title": "2026年保定市高碑店一中选聘教师20名公告",
       "url": "http://m.baoding.huatu.com/2026/0114/1658040.html"
     },
+    "http://m.baoding.huatu.com/2026/0114/1658040.html|9937af263b0743e22f8950ef856b71d6354053472fbcbbf8f3fa973139a70780": {
+      "archived_at": "2026-11-09T22:39:52",
+      "checked_at": "2026-11-09T07:02:29",
+      "classification": "likely",
+      "content_hash": "9937af263b0743e22f8950ef856b71d6354053472fbcbbf8f3fa973139a70780",
+      "date": "2026-01-14",
+      "employment_terms": [],
+      "listing_context": "2026年保定市高碑店一中选聘教师20名公告 教师 2026年保定市高碑店一中选聘教师20名公告",
+      "matched_terms": [
+        "事业单位人事管理条例",
+        "事业单位公开招聘",
+        "事业单位工作人员",
+        "事业单位招聘",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "办理聘用手续",
+        "报名",
+        "招聘工作人员",
+        "招聘教师",
+        "拟聘用",
+        "考察",
+        "选聘教师",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "高碑店市"
+      ],
+      "school_levels": [
+        "中学未细分"
+      ],
+      "school_names": [
+        "高碑店一中",
+        "决定面向社会公开选聘高碑店一中",
+        "高碑店市第二中学",
+        "度高碑店一中"
+      ],
+      "source": "华图－保定招考",
+      "source_type": "aggregator",
+      "source_url": "https://m.baoding.huatu.com/",
+      "subjects": [
+        "思想政治",
+        "政治",
+        "语文"
+      ],
+      "title": "2026年保定市高碑店一中选聘教师20名公告",
+      "url": "http://m.baoding.huatu.com/2026/0114/1658040.html"
+    },
     "http://m.baoding.huatu.com/2026/0114/1658040.html|99c2569b4594488021cc677e8fed973c51246b9f4990fc81d061ed82ea31c040": {
       "archived_at": "2026-09-11T11:43:29",
       "checked_at": "2026-09-11T05:01:56",
@@ -78809,6 +78964,51 @@
       "checked_at": "2026-09-20T16:24:47",
       "classification": "confirmed",
       "content_hash": "1e5e14857e988e7a5cd828ba0de8d5aae5f37384a4299933492c4987df577568",
+      "date": "2026-02-23",
+      "employment_terms": [],
+      "listing_context": "2026年度河北雄安新区新建片区学校选聘教师30名公告 教师 2026年度河北雄安新区新建片区学校选聘教师30名公告",
+      "matched_terms": [
+        "事业编制管理",
+        "体检",
+        "公开招聘",
+        "公示",
+        "办理聘用手续",
+        "报名",
+        "招聘教师",
+        "拟聘用",
+        "笔试",
+        "考察",
+        "资格复审",
+        "选聘教师",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "雄安新区",
+        "安新县"
+      ],
+      "school_levels": [
+        "学段待核实"
+      ],
+      "school_names": [
+        "度河北雄安新区新建片区学校",
+        "度雄安新区新建片区学校"
+      ],
+      "source": "华图－保定招考",
+      "source_type": "aggregator",
+      "source_url": "https://m.baoding.huatu.com/",
+      "subjects": [
+        "政治",
+        "语文"
+      ],
+      "title": "2026年度河北雄安新区新建片区学校选聘教师30名公告",
+      "url": "http://m.baoding.huatu.com/2026/0223/1700663.html"
+    },
+    "http://m.baoding.huatu.com/2026/0223/1700663.html|1e8d805786b1a0002e306893537d5085b8232479f81f7b157327ec09cb0a65b8": {
+      "archived_at": "2026-11-09T22:39:52",
+      "checked_at": "2026-11-09T07:02:28",
+      "classification": "confirmed",
+      "content_hash": "1e8d805786b1a0002e306893537d5085b8232479f81f7b157327ec09cb0a65b8",
       "date": "2026-02-23",
       "employment_terms": [],
       "listing_context": "2026年度河北雄安新区新建片区学校选聘教师30名公告 教师 2026年度河北雄安新区新建片区学校选聘教师30名公告",
@@ -112086,6 +112286,48 @@
       "title": "2026年度北京市丰台区职业教育中心学校雄安分校选聘教师36人公告",
       "url": "http://m.baoding.huatu.com/2026/0223/1700665.html"
     },
+    "http://m.baoding.huatu.com/2026/0223/1700665.html|976b39fd3592db867ab0986ba80f94775cd903940a587eeea19f7e86477830b4": {
+      "archived_at": "2026-11-09T22:39:52",
+      "checked_at": "2026-11-09T07:02:27",
+      "classification": "likely",
+      "content_hash": "976b39fd3592db867ab0986ba80f94775cd903940a587eeea19f7e86477830b4",
+      "date": "2026-02-23",
+      "employment_terms": [],
+      "listing_context": "2026年度北京市丰台区职业教育中心学校雄安分校选聘教师36人公告 教师 2026年度北京市丰台区职业教育中心学校雄安分校选聘教师36人公告",
+      "matched_terms": [
+        "体检",
+        "公开招聘",
+        "公示",
+        "办理聘用手续",
+        "报名",
+        "招聘教师",
+        "笔试",
+        "考察",
+        "资格复审",
+        "选聘教师",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "雄安新区"
+      ],
+      "school_levels": [
+        "学段待核实"
+      ],
+      "school_names": [
+        "度北京市丰台区职业教育中心学校",
+        "全体教职员工接受北京市丰台区职业教育中心学校"
+      ],
+      "source": "华图－保定招考",
+      "source_type": "aggregator",
+      "source_url": "https://m.baoding.huatu.com/",
+      "subjects": [
+        "政治",
+        "语文"
+      ],
+      "title": "2026年度北京市丰台区职业教育中心学校雄安分校选聘教师36人公告",
+      "url": "http://m.baoding.huatu.com/2026/0223/1700665.html"
+    },
     "http://m.baoding.huatu.com/2026/0223/1700665.html|97a44ed108870e6aa91e02f2e8c0291005993b7db1b58b3a8f272130d8c6953c": {
       "archived_at": "2026-09-22T17:11:19",
       "checked_at": "2026-09-22T11:59:11",
@@ -127441,6 +127683,56 @@
       "checked_at": "2026-10-11T13:19:24",
       "classification": "likely",
       "content_hash": "52a0ef0dcc3e2549eddde95f085eb80bb7bc7ac56a034a50641bd391d1280431",
+      "date": "2026-03-04",
+      "employment_terms": [],
+      "listing_context": "2026年保定市顺平县人力资源和社会保障局公开选聘高中教师20名公告 事业单位 2026年保定市顺平县人力资源和社会保障局公开选聘高中教师20名公告",
+      "matched_terms": [
+        "事业单位人事管理条例",
+        "事业单位公开招聘",
+        "事业单位工作人员",
+        "事业单位招聘",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "办理聘用手续",
+        "报名",
+        "招聘工作人员",
+        "拟聘用",
+        "考察",
+        "资格复审",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "顺平县"
+      ],
+      "school_levels": [
+        "高中"
+      ],
+      "school_names": [
+        "取得报考岗位要求的高级中学",
+        "顺平县中学",
+        "如期取得毕业证等内容的学校",
+        "原顺平县实验中学"
+      ],
+      "source": "华图－保定招考",
+      "source_type": "aggregator",
+      "source_url": "https://m.baoding.huatu.com/",
+      "subjects": [
+        "心理",
+        "思想政治",
+        "政治",
+        "语文"
+      ],
+      "title": "2026年保定市顺平县人力资源和社会保障局公开选聘高中教师20名公告",
+      "url": "http://m.baoding.huatu.com/2026/0304/1700786.html"
+    },
+    "http://m.baoding.huatu.com/2026/0304/1700786.html|52ce72d147066c285f1fca368f91b2d70eaf9f58b09de859a0a53974840cb255": {
+      "archived_at": "2026-11-09T22:39:52",
+      "checked_at": "2026-11-09T07:02:26",
+      "classification": "likely",
+      "content_hash": "52ce72d147066c285f1fca368f91b2d70eaf9f58b09de859a0a53974840cb255",
       "date": "2026-03-04",
       "employment_terms": [],
       "listing_context": "2026年保定市顺平县人力资源和社会保障局公开选聘高中教师20名公告 事业单位 2026年保定市顺平县人力资源和社会保障局公开选聘高中教师20名公告",
@@ -149655,6 +149947,58 @@
       "checked_at": "2026-10-29T13:33:21",
       "classification": "confirmed",
       "content_hash": "49b791c45f7aa8c2b0715892a77c92c95485122b30d6e8bb39435a79baf3ebbc",
+      "date": "2026-03-05",
+      "employment_terms": [
+        "民办"
+      ],
+      "listing_context": "2026年北京四中雄安校区公开选聘第二批教职人员22名公告 2026年北京四中雄安校区公开选聘第二批教职人员22名公告",
+      "matched_terms": [
+        "事业单位编制",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "报名",
+        "招聘教师",
+        "拟聘用",
+        "笔试",
+        "考察",
+        "资格复审",
+        "选聘教师",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "雄安新区"
+      ],
+      "school_levels": [
+        "初中",
+        "高中"
+      ],
+      "school_names": [
+        "北京四中",
+        "结合北京四中",
+        "国家级三等奖及以上荣誉可放宽至中学",
+        "如公办示范校或优质民办学校",
+        "有地市级及以上公办示范校或优质民办学校"
+      ],
+      "source": "华图－保定招考",
+      "source_type": "aggregator",
+      "source_url": "https://m.baoding.huatu.com/",
+      "subjects": [
+        "心理",
+        "思想政治",
+        "政治",
+        "英语"
+      ],
+      "title": "2026年北京四中雄安校区公开选聘第二批教职人员22名公告",
+      "url": "http://m.baoding.huatu.com/2026/0305/1700789.html"
+    },
+    "http://m.baoding.huatu.com/2026/0305/1700789.html|49faef9fc74b970b3f14a9c13648b215fdef0484d02cfa428e15d616d3065159": {
+      "archived_at": "2026-11-09T22:39:52",
+      "checked_at": "2026-11-09T07:02:25",
+      "classification": "confirmed",
+      "content_hash": "49faef9fc74b970b3f14a9c13648b215fdef0484d02cfa428e15d616d3065159",
       "date": "2026-03-05",
       "employment_terms": [
         "民办"
@@ -182646,6 +182990,56 @@
       "title": "2026年北京四中雄安校区第二实验学校公开选聘第二批教职人员11名公告",
       "url": "http://m.baoding.huatu.com/2026/0305/1700791.html"
     },
+    "http://m.baoding.huatu.com/2026/0305/1700791.html|95e49a7ab7810b9771f91f301d4899341dd25ad48418b2768e5854d60f28fba6": {
+      "archived_at": "2026-11-09T22:39:52",
+      "checked_at": "2026-11-09T07:02:24",
+      "classification": "confirmed",
+      "content_hash": "95e49a7ab7810b9771f91f301d4899341dd25ad48418b2768e5854d60f28fba6",
+      "date": "2026-03-05",
+      "employment_terms": [
+        "民办"
+      ],
+      "listing_context": "2026年北京四中雄安校区第二实验学校公开选聘第二批教职人员11名公告 2026年北京四中雄安校区第二实验学校公开选聘第二批教职人员11名公告",
+      "matched_terms": [
+        "事业单位编制",
+        "体检",
+        "公开选聘",
+        "公示",
+        "报名",
+        "招聘教师",
+        "拟聘用",
+        "笔试",
+        "考察",
+        "资格复审",
+        "选聘教师",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "雄安新区"
+      ],
+      "school_levels": [
+        "中学未细分"
+      ],
+      "school_names": [
+        "北京四中雄安校区第二实验学校",
+        "结合北京四中雄安校区第二实验学校",
+        "国家级三等奖及以上荣誉可放宽至中学",
+        "如公办示范校或优质民办学校",
+        "有地市级及以上公办示范校或优质民办学校"
+      ],
+      "source": "华图－保定招考",
+      "source_type": "aggregator",
+      "source_url": "https://m.baoding.huatu.com/",
+      "subjects": [
+        "心理",
+        "思想政治",
+        "政治",
+        "英语"
+      ],
+      "title": "2026年北京四中雄安校区第二实验学校公开选聘第二批教职人员11名公告",
+      "url": "http://m.baoding.huatu.com/2026/0305/1700791.html"
+    },
     "http://m.baoding.huatu.com/2026/0305/1700791.html|963f2adfe85c0810f819b27bb454808499a2ef439f6d9365859a3f1be9ad7ae3": {
       "archived_at": "2026-08-19T07:22:38",
       "checked_at": "2026-08-19T02:02:21",
@@ -202827,6 +203221,54 @@
       "title": "2026年保定市顺平县博文高级中学招聘教师33名公告",
       "url": "http://m.baoding.huatu.com/2026/0305/1700794.html"
     },
+    "http://m.baoding.huatu.com/2026/0305/1700794.html|6594fc18ad0865cc7671b064654df73e1b78950f7efb29723fc8ab6d53f5734d": {
+      "archived_at": "2026-11-09T22:39:52",
+      "checked_at": "2026-11-09T07:02:23",
+      "classification": "needs_review",
+      "content_hash": "6594fc18ad0865cc7671b064654df73e1b78950f7efb29723fc8ab6d53f5734d",
+      "date": "2026-03-05",
+      "employment_terms": [],
+      "listing_context": "2026年保定市顺平县博文高级中学招聘教师33名公告 2026年保定市顺平县博文高级中学招聘教师33名公告",
+      "matched_terms": [
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "报名",
+        "招聘教师",
+        "笔试",
+        "选聘教师"
+      ],
+      "regions": [
+        "顺平县"
+      ],
+      "school_levels": [
+        "高中"
+      ],
+      "school_names": [
+        "博文高级中学",
+        "博文高级中学是保定朗宸教育科技有限公司投资建设的一所民办全日制寄宿学校",
+        "是在当地政府正确领导和亲切关怀下建设的窗口学校",
+        "毕业学校",
+        "自选所应聘学科高中学"
+      ],
+      "source": "华图－保定招考",
+      "source_type": "aggregator",
+      "source_url": "https://m.baoding.huatu.com/",
+      "subjects": [
+        "信息技术",
+        "化学",
+        "历史",
+        "地理",
+        "政治",
+        "数学",
+        "物理",
+        "生物",
+        "英语",
+        "语文"
+      ],
+      "title": "2026年保定市顺平县博文高级中学招聘教师33名公告",
+      "url": "http://m.baoding.huatu.com/2026/0305/1700794.html"
+    },
     "http://m.baoding.huatu.com/2026/0305/1700794.html|661bc90c8ff8fd2a9d4d2a8e13d1e715ca5ff804dbcab267e3d2dc2e7fbd2dda": {
       "archived_at": "2026-09-20T11:44:30",
       "checked_at": "2026-09-20T05:14:31",
@@ -217618,6 +218060,61 @@
       "checked_at": "2026-07-31T04:02:34",
       "classification": "likely",
       "content_hash": "004dcf8594d907a6d6e77ae35606a65e8ae12956281713033b1b0c9b28a6a8a9",
+      "date": "2026-03-26",
+      "employment_terms": [],
+      "listing_context": "2026年北京师范大学保定实验学校公开招聘教师50名公告 2026年北京师范大学保定实验学校公开招聘教师50名公告",
+      "matched_terms": [
+        "事业单位公开招聘",
+        "事业单位工作人员",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "报名",
+        "招聘工作人员",
+        "招聘教师",
+        "拟聘用",
+        "笔试",
+        "选聘教师",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "保定市"
+      ],
+      "school_levels": [
+        "初中"
+      ],
+      "school_names": [
+        "北京师范大学保定实验学校",
+        "北京师范大学保定实验学校是一所九年一贯制公办学校",
+        "具体以报考学校",
+        "以报考学校",
+        "考核形式以报考学校"
+      ],
+      "source": "华图－保定招考",
+      "source_type": "aggregator",
+      "source_url": "https://m.baoding.huatu.com/",
+      "subjects": [
+        "化学",
+        "历史",
+        "地理",
+        "心理",
+        "数学",
+        "物理",
+        "生物",
+        "英语",
+        "语文",
+        "道德与法治"
+      ],
+      "title": "2026年北京师范大学保定实验学校公开招聘教师50名公告",
+      "url": "http://m.baoding.huatu.com/2026/0326/1701064.html"
+    },
+    "http://m.baoding.huatu.com/2026/0326/1701064.html|00f9cadd220c1cd1754ef6f4dae81743ff45990959faf5e51c9d446525e3f5f6": {
+      "archived_at": "2026-11-09T22:39:52",
+      "checked_at": "2026-11-09T07:02:22",
+      "classification": "likely",
+      "content_hash": "00f9cadd220c1cd1754ef6f4dae81743ff45990959faf5e51c9d446525e3f5f6",
       "date": "2026-03-26",
       "employment_terms": [],
       "listing_context": "2026年北京师范大学保定实验学校公开招聘教师50名公告 2026年北京师范大学保定实验学校公开招聘教师50名公告",
@@ -261593,6 +262090,57 @@
       "title": "2026年保定市唐县教育和体育局公开选聘高中教师15名公告",
       "url": "http://m.baoding.huatu.com/2026/0429/1707815.html"
     },
+    "http://m.baoding.huatu.com/2026/0429/1707815.html|c7da7acfd924345e908358a0c3c4aa635d1efda56108fdbbcdc02bfc9b11eca2": {
+      "archived_at": "2026-11-09T22:39:52",
+      "checked_at": "2026-11-09T07:02:21",
+      "classification": "likely",
+      "content_hash": "c7da7acfd924345e908358a0c3c4aa635d1efda56108fdbbcdc02bfc9b11eca2",
+      "date": "2026-04-29",
+      "employment_terms": [],
+      "listing_context": "2026年保定市唐县教育和体育局公开选聘高中教师15名公告 事业单位 2026年保定市唐县教育和体育局公开选聘高中教师15名公告",
+      "matched_terms": [
+        "事业单位人事管理条例",
+        "事业单位公开招聘",
+        "事业单位工作人员",
+        "事业单位招聘",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "办理聘用手续",
+        "报名",
+        "招聘工作人员",
+        "拟聘用",
+        "教育事业单位",
+        "考察",
+        "资格复审",
+        "选聘教师",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "唐县"
+      ],
+      "school_levels": [
+        "高中"
+      ],
+      "school_names": [
+        "取得报考岗位要求的高级中学",
+        "如期取得毕业证等内容的学校",
+        "唐县第一中学"
+      ],
+      "source": "华图－保定招考",
+      "source_type": "aggregator",
+      "source_url": "https://m.baoding.huatu.com/",
+      "subjects": [
+        "心理",
+        "思想政治",
+        "政治",
+        "语文"
+      ],
+      "title": "2026年保定市唐县教育和体育局公开选聘高中教师15名公告",
+      "url": "http://m.baoding.huatu.com/2026/0429/1707815.html"
+    },
     "http://m.baoding.huatu.com/2026/0429/1707815.html|c86ec00790e6714aef96966bac42ce5988363baccde67c6edf9cab05c04c7a4a": {
       "archived_at": "2026-08-24T07:39:34",
       "checked_at": "2026-08-24T02:09:08",
@@ -270376,6 +270924,60 @@
       "checked_at": "2026-07-17T03:48:51",
       "classification": "likely",
       "content_hash": "23ae3f624d4f54357d751180f1c3a0327075ff732e7a25c4b660ba32fd2c8d1d",
+      "date": "2026-06-09",
+      "employment_terms": [],
+      "listing_context": "2026年北京师范大学保定实验学校选聘教师30名（事业编）公告 2026年北京师范大学保定实验学校选聘教师30名（事业编）公告",
+      "matched_terms": [
+        "事业单位人事管理条例",
+        "事业单位公开招聘",
+        "事业单位工作人员",
+        "事业单位招聘",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "办理聘用手续",
+        "报名",
+        "招聘工作人员",
+        "拟聘用",
+        "教育事业单位",
+        "考察",
+        "资格复审",
+        "选聘教师",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "保定市"
+      ],
+      "school_levels": [
+        "中学未细分"
+      ],
+      "school_names": [
+        "北京师范大学保定实验学校",
+        "为满足北京师范大学保定实验学校",
+        "现为北京师范大学保定实验学校",
+        "旭阳路158号北京师范大学保定实验学校",
+        "北师大保定实验学校"
+      ],
+      "source": "华图－保定招考",
+      "source_type": "aggregator",
+      "source_url": "https://m.baoding.huatu.com/",
+      "subjects": [
+        "心理",
+        "思想政治",
+        "政治",
+        "科学",
+        "语文"
+      ],
+      "title": "2026年北京师范大学保定实验学校选聘教师30名（事业编）公告",
+      "url": "http://m.baoding.huatu.com/2026/0609/1711969.html"
+    },
+    "http://m.baoding.huatu.com/2026/0609/1711969.html|23e987b654322c30b3ecb9aea4ba14b6c9ce6ec70530dfb966b73a4e247eed6f": {
+      "archived_at": "2026-11-09T22:39:52",
+      "checked_at": "2026-11-09T07:02:20",
+      "classification": "likely",
+      "content_hash": "23e987b654322c30b3ecb9aea4ba14b6c9ce6ec70530dfb966b73a4e247eed6f",
       "date": "2026-06-09",
       "employment_terms": [],
       "listing_context": "2026年北京师范大学保定实验学校选聘教师30名（事业编）公告 2026年北京师范大学保定实验学校选聘教师30名（事业编）公告",
@@ -300995,6 +301597,58 @@
       "title": "2026年河北阜平中学公开选聘高中教师10名公告",
       "url": "http://m.baoding.huatu.com/2026/0709/1712444.html"
     },
+    "http://m.baoding.huatu.com/2026/0709/1712444.html|7de47bf7cb88b488cd67baa9a3bd108e47904c3bb75a515314fe3b15e8a79fd6": {
+      "archived_at": "2026-11-09T22:39:52",
+      "checked_at": "2026-11-09T07:02:19",
+      "classification": "confirmed",
+      "content_hash": "7de47bf7cb88b488cd67baa9a3bd108e47904c3bb75a515314fe3b15e8a79fd6",
+      "date": "2026-07-09",
+      "employment_terms": [],
+      "listing_context": "2026年河北阜平中学公开选聘高中教师10名公告 2026年河北阜平中学公开选聘高中教师10名公告",
+      "matched_terms": [
+        "事业单位人事管理条例",
+        "事业单位公开招聘",
+        "事业单位工作人员",
+        "事业单位招聘",
+        "体检",
+        "全额事业编制",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "报名",
+        "招聘工作人员",
+        "拟聘用",
+        "教育事业单位",
+        "考察",
+        "资格复审",
+        "选聘教师",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "阜平县"
+      ],
+      "school_levels": [
+        "高中"
+      ],
+      "school_names": [
+        "河北阜平中学",
+        "具有报考岗位要求的高级中学",
+        "阜平县北城中学",
+        "如期取得毕业证等内容的学校"
+      ],
+      "source": "华图－保定招考",
+      "source_type": "aggregator",
+      "source_url": "https://m.baoding.huatu.com/",
+      "subjects": [
+        "心理",
+        "思想政治",
+        "政治",
+        "语文"
+      ],
+      "title": "2026年河北阜平中学公开选聘高中教师10名公告",
+      "url": "http://m.baoding.huatu.com/2026/0709/1712444.html"
+    },
     "http://m.baoding.huatu.com/2026/0709/1712444.html|7e2b82ee32b4f025d2b164b661c7460e5f6608f6c7a8a9030cce260ca1a54e01": {
       "archived_at": "2026-07-09T15:43:50",
       "checked_at": "2026-07-09T10:06:18",
@@ -321548,6 +322202,57 @@
       "checked_at": "2026-09-27T12:20:36",
       "classification": "likely",
       "content_hash": "ba0c6eca4f15fc249addddca4f981a8aad8f82f731978f743deb6d60db4a6cb8",
+      "date": "2026-08-11",
+      "employment_terms": [],
+      "listing_context": "2026年保定安国市、定兴县公开选聘高中教师28名公告 2026年保定安国市、定兴县公开选聘高中教师28名公告",
+      "matched_terms": [
+        "事业单位人事管理条例",
+        "事业单位公开招聘",
+        "事业单位工作人员",
+        "事业单位招聘",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "办理聘用手续",
+        "报名",
+        "招聘工作人员",
+        "拟聘用",
+        "教育事业单位",
+        "考察",
+        "资格复审",
+        "选聘教师",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "定兴县",
+        "安国市"
+      ],
+      "school_levels": [
+        "高中"
+      ],
+      "school_names": [
+        "具有报考岗位要求的高级中学",
+        "河北安国中学"
+      ],
+      "source": "华图－保定招考",
+      "source_type": "aggregator",
+      "source_url": "https://m.baoding.huatu.com/",
+      "subjects": [
+        "心理",
+        "思想政治",
+        "政治",
+        "语文"
+      ],
+      "title": "2026年保定安国市、定兴县公开选聘高中教师28名公告",
+      "url": "http://m.baoding.huatu.com/2026/0811/1712938.html"
+    },
+    "http://m.baoding.huatu.com/2026/0811/1712938.html|beb3b8988f661ed694a43375797e6c3424ed771f39d026e284407418a69c1c09": {
+      "archived_at": "2026-11-09T22:39:52",
+      "checked_at": "2026-11-09T07:02:18",
+      "classification": "likely",
+      "content_hash": "beb3b8988f661ed694a43375797e6c3424ed771f39d026e284407418a69c1c09",
       "date": "2026-08-11",
       "employment_terms": [],
       "listing_context": "2026年保定安国市、定兴县公开选聘高中教师28名公告 2026年保定安国市、定兴县公开选聘高中教师28名公告",
@@ -457823,6 +458528,44 @@
       "title": "已下线 河北省保定市市直普通高中2023年11月公开选聘63名教师公告 共2个职位 招若干人 2023-11-23发布 保定",
       "url": "https://www.gaoxiaojob.com/announcement/detail/164229.html"
     },
+    "https://www.gaoxiaojob.com/announcement/detail/164229.html|2ae4145e6005d8e9f8bb3e9875b557a922764368e16cf8c28506b0a2dc47adea": {
+      "archived_at": "2026-11-09T22:39:52",
+      "checked_at": "2026-11-09T07:02:08",
+      "classification": "likely",
+      "content_hash": "2ae4145e6005d8e9f8bb3e9875b557a922764368e16cf8c28506b0a2dc47adea",
+      "date": "2023-11-23",
+      "employment_terms": [],
+      "listing_context": "已下线 河北省保定市市直普通高中2023年11月公开选聘63名教师公告 共2个职位 招若干人 2023-11-23发布 保定 已下线 河北省保定市市直普通高中2023年11月公开选聘63名教师公告 共2个职位 招若干人 2023-11-23发布 保定",
+      "matched_terms": [
+        "事业单位人事管理条例",
+        "事业单位公开招聘",
+        "事业单位工作人员",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "报名",
+        "招聘工作人员",
+        "拟聘用",
+        "考察",
+        "选聘教师",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "市直"
+      ],
+      "school_levels": [
+        "高中"
+      ],
+      "school_names": [],
+      "source": "高校人才网－保定市教育局专区",
+      "source_type": "aggregator",
+      "source_url": "https://www.gaoxiaojob.com/company/detail/30087.html",
+      "subjects": [],
+      "title": "已下线 河北省保定市市直普通高中2023年11月公开选聘63名教师公告 共2个职位 招若干人 2023-11-23发布 保定",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/164229.html"
+    },
     "https://www.gaoxiaojob.com/announcement/detail/164229.html|2b1fc1a2d23c734d602caa77032e26ac5a0a87115f9c4d0241a2235c24c423c3": {
       "archived_at": "2026-08-08T13:29:19",
       "checked_at": "2026-08-03T15:27:10",
@@ -476578,6 +477321,47 @@
       "title": "已下线 河北省保定市教育局14家市直教育事业单位2026年选聘教师公告 共6个职位 招若干人 06-09发布 保定",
       "url": "https://www.gaoxiaojob.com/announcement/detail/406939.html"
     },
+    "https://www.gaoxiaojob.com/announcement/detail/406939.html|a9898e232dd5803436c4dc9cc1411e5f7a7c2323667b192f75f3d02e31730a08": {
+      "archived_at": "2026-11-09T22:39:52",
+      "checked_at": "2026-11-09T07:02:07",
+      "classification": "likely",
+      "content_hash": "a9898e232dd5803436c4dc9cc1411e5f7a7c2323667b192f75f3d02e31730a08",
+      "date": "2026-06-09",
+      "employment_terms": [],
+      "listing_context": "已下线 河北省保定市教育局14家市直教育事业单位2026年选聘教师公告 共6个职位 招若干人 06-09发布 保定 已下线 河北省保定市教育局14家市直教育事业单位2026年选聘教师公告 共6个职位 招若干人 06-09发布 保定",
+      "matched_terms": [
+        "事业单位人事管理条例",
+        "事业单位公开招聘",
+        "事业单位工作人员",
+        "事业单位招聘",
+        "体检",
+        "公开招聘",
+        "公示",
+        "办理聘用手续",
+        "报名",
+        "招聘工作人员",
+        "拟聘用",
+        "教育事业单位",
+        "考察",
+        "资格复审",
+        "选聘教师",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "市直"
+      ],
+      "school_levels": [
+        "学段待核实"
+      ],
+      "school_names": [],
+      "source": "高校人才网－保定市教育局专区",
+      "source_type": "aggregator",
+      "source_url": "https://www.gaoxiaojob.com/company/detail/30087.html",
+      "subjects": [],
+      "title": "已下线 河北省保定市教育局14家市直教育事业单位2026年选聘教师公告 共6个职位 招若干人 06-09发布 保定",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/406939.html"
+    },
     "https://www.gaoxiaojob.com/announcement/detail/406939.html|aa24bd2d2a288c384095c0ba2ccb01c73d953e5a16e944da104b1ac150c997ff": {
       "archived_at": "2026-09-19T20:56:42",
       "checked_at": "2026-09-19T11:22:30",
@@ -482003,6 +482787,47 @@
       "listing_context": "河北省安国市、定兴县2026年8月公开选聘28名高中教师公告 已下线 高中英语教师-定兴县第三中学 08-12发布 本科 招2人 面议 河北-保定 河北省安国市、定兴县2026年8月公开选聘28名高中教师公告",
       "matched_terms": [
         "专项招聘",
+        "事业单位人事管理条例",
+        "事业单位公开招聘",
+        "事业单位工作人员",
+        "事业单位招聘",
+        "体检",
+        "公开招聘",
+        "公开选聘",
+        "公示",
+        "办理聘用手续",
+        "报名",
+        "招聘工作人员",
+        "拟聘用",
+        "考察",
+        "资格复审",
+        "递补",
+        "面试"
+      ],
+      "regions": [
+        "定兴县",
+        "安国市"
+      ],
+      "school_levels": [
+        "高中"
+      ],
+      "school_names": [],
+      "source": "高校人才网－保定市教育局专区",
+      "source_type": "aggregator",
+      "source_url": "https://www.gaoxiaojob.com/company/detail/30087.html",
+      "subjects": [],
+      "title": "河北省安国市、定兴县2026年8月公开选聘28名高中教师公告",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/422778.html"
+    },
+    "https://www.gaoxiaojob.com/announcement/detail/422778.html|0ca0ba82b94d080fe6e17664ba8df1057c7878fccf9080be7bacc2c0550c79df": {
+      "archived_at": "2026-11-09T22:39:52",
+      "checked_at": "2026-11-09T07:02:06",
+      "classification": "likely",
+      "content_hash": "0ca0ba82b94d080fe6e17664ba8df1057c7878fccf9080be7bacc2c0550c79df",
+      "date": "2026-08-12",
+      "employment_terms": [],
+      "listing_context": "河北省安国市、定兴县2026年8月公开选聘28名高中教师公告 已下线 高中英语教师-定兴县第三中学 08-12发布 本科 招2人 面议 河北-保定 河北省安国市、定兴县2026年8月公开选聘28名高中教师公告",
+      "matched_terms": [
         "事业单位人事管理条例",
         "事业单位公开招聘",
         "事业单位工作人员",
@@ -500391,9 +501216,9 @@
   "initialized": true,
   "items": {
     "http://m.baoding.huatu.com/2025/0815/1555604.html": {
-      "checked_at": "2026-11-09T07:02:31",
+      "checked_at": "2026-11-09T22:39:50",
       "classification": "likely",
-      "content_hash": "57e58d9c4439379a89332e958d100fdde1c9c91e5183a96fabe6396a03140309",
+      "content_hash": "0eceb3c4b92317d720de51bdfed7b148f9b83585dbff79dc1150618ea5a88f5f",
       "date": "2025-08-15",
       "employment_terms": [
         "人事代理",
@@ -500412,7 +501237,6 @@
         "招聘教师",
         "拟聘用",
         "笔试",
-        "资格复审",
         "选聘教师",
         "递补",
         "面试"
@@ -500440,9 +501264,9 @@
       "url": "http://m.baoding.huatu.com/2025/0815/1555604.html"
     },
     "http://m.baoding.huatu.com/2025/0821/1555723.html": {
-      "checked_at": "2026-11-09T07:02:30",
+      "checked_at": "2026-11-09T22:39:49",
       "classification": "likely",
-      "content_hash": "74d695e9a3e9f5ca26452c06328ce729cc147004b0d87bcf90d5f358b74fac10",
+      "content_hash": "9d23f88e42f35053f82101550ca3b472ff015d157d6bda3ab70b7d9954dfde99",
       "date": "2025-08-21",
       "employment_terms": [],
       "listing_context": "2025年保定市蠡县公开招聘教师80人公告 教师 2025年保定市蠡县公开招聘教师80人公告",
@@ -500490,9 +501314,9 @@
       "url": "http://m.baoding.huatu.com/2025/0821/1555723.html"
     },
     "http://m.baoding.huatu.com/2026/0114/1658040.html": {
-      "checked_at": "2026-11-09T07:02:29",
+      "checked_at": "2026-11-09T22:39:48",
       "classification": "likely",
-      "content_hash": "9937af263b0743e22f8950ef856b71d6354053472fbcbbf8f3fa973139a70780",
+      "content_hash": "bbec065cd589a69689a18f7cd5fae13f644c97350bca599558056851987dc233",
       "date": "2026-01-14",
       "employment_terms": [],
       "listing_context": "2026年保定市高碑店一中选聘教师20名公告 教师 2026年保定市高碑店一中选聘教师20名公告",
@@ -500511,6 +501335,7 @@
         "招聘教师",
         "拟聘用",
         "考察",
+        "资格复审",
         "选聘教师",
         "递补",
         "面试"
@@ -500539,9 +501364,9 @@
       "url": "http://m.baoding.huatu.com/2026/0114/1658040.html"
     },
     "http://m.baoding.huatu.com/2026/0223/1700663.html": {
-      "checked_at": "2026-11-09T07:02:28",
+      "checked_at": "2026-11-09T22:39:47",
       "classification": "confirmed",
-      "content_hash": "1e8d805786b1a0002e306893537d5085b8232479f81f7b157327ec09cb0a65b8",
+      "content_hash": "06b9ccc41a24b6c3e08d4bb08577727d2f37336d85aa1f7d97915a11c2325cf8",
       "date": "2026-02-23",
       "employment_terms": [],
       "listing_context": "2026年度河北雄安新区新建片区学校选聘教师30名公告 教师 2026年度河北雄安新区新建片区学校选聘教师30名公告",
@@ -500583,9 +501408,9 @@
       "url": "http://m.baoding.huatu.com/2026/0223/1700663.html"
     },
     "http://m.baoding.huatu.com/2026/0223/1700665.html": {
-      "checked_at": "2026-11-09T07:02:27",
+      "checked_at": "2026-11-09T22:39:46",
       "classification": "likely",
-      "content_hash": "976b39fd3592db867ab0986ba80f94775cd903940a587eeea19f7e86477830b4",
+      "content_hash": "e014fb6567a8f2c3aafde88f072eb0b0bfeb7598646b97d2ae57462f1463717f",
       "date": "2026-02-23",
       "employment_terms": [],
       "listing_context": "2026年度北京市丰台区职业教育中心学校雄安分校选聘教师36人公告 教师 2026年度北京市丰台区职业教育中心学校雄安分校选聘教师36人公告",
@@ -500624,9 +501449,9 @@
       "url": "http://m.baoding.huatu.com/2026/0223/1700665.html"
     },
     "http://m.baoding.huatu.com/2026/0304/1700786.html": {
-      "checked_at": "2026-11-09T07:02:26",
+      "checked_at": "2026-11-09T22:39:45",
       "classification": "likely",
-      "content_hash": "52ce72d147066c285f1fca368f91b2d70eaf9f58b09de859a0a53974840cb255",
+      "content_hash": "93eca57e8c2e86010a011272036ac9d098f8df1fdbfef057da725e5f53b04138",
       "date": "2026-03-04",
       "employment_terms": [],
       "listing_context": "2026年保定市顺平县人力资源和社会保障局公开选聘高中教师20名公告 事业单位 2026年保定市顺平县人力资源和社会保障局公开选聘高中教师20名公告",
@@ -500673,9 +501498,9 @@
       "url": "http://m.baoding.huatu.com/2026/0304/1700786.html"
     },
     "http://m.baoding.huatu.com/2026/0305/1700789.html": {
-      "checked_at": "2026-11-09T07:02:25",
+      "checked_at": "2026-11-09T22:39:44",
       "classification": "confirmed",
-      "content_hash": "49faef9fc74b970b3f14a9c13648b215fdef0484d02cfa428e15d616d3065159",
+      "content_hash": "a4cd7188cd786730c62ea0dc1be66c7a8f9309af7fdb0d737fd5d8e596d5024b",
       "date": "2026-03-05",
       "employment_terms": [
         "民办"
@@ -500724,9 +501549,9 @@
       "url": "http://m.baoding.huatu.com/2026/0305/1700789.html"
     },
     "http://m.baoding.huatu.com/2026/0305/1700791.html": {
-      "checked_at": "2026-11-09T07:02:24",
+      "checked_at": "2026-11-09T22:39:42",
       "classification": "confirmed",
-      "content_hash": "95e49a7ab7810b9771f91f301d4899341dd25ad48418b2768e5854d60f28fba6",
+      "content_hash": "424b885be400847f9e4df455012125da4237c46b71776c3081337fe43f311a35",
       "date": "2026-03-05",
       "employment_terms": [
         "民办"
@@ -500773,9 +501598,9 @@
       "url": "http://m.baoding.huatu.com/2026/0305/1700791.html"
     },
     "http://m.baoding.huatu.com/2026/0305/1700794.html": {
-      "checked_at": "2026-11-09T07:02:23",
+      "checked_at": "2026-11-09T22:39:41",
       "classification": "needs_review",
-      "content_hash": "6594fc18ad0865cc7671b064654df73e1b78950f7efb29723fc8ab6d53f5734d",
+      "content_hash": "1fb402b69ecddf38d4860067e44edf1ab02232a96294c6947346153d13c3329e",
       "date": "2026-03-05",
       "employment_terms": [],
       "listing_context": "2026年保定市顺平县博文高级中学招聘教师33名公告 2026年保定市顺平县博文高级中学招聘教师33名公告",
@@ -500820,9 +501645,9 @@
       "url": "http://m.baoding.huatu.com/2026/0305/1700794.html"
     },
     "http://m.baoding.huatu.com/2026/0326/1701064.html": {
-      "checked_at": "2026-11-09T07:02:22",
+      "checked_at": "2026-11-09T22:39:41",
       "classification": "likely",
-      "content_hash": "00f9cadd220c1cd1754ef6f4dae81743ff45990959faf5e51c9d446525e3f5f6",
+      "content_hash": "444704d9dc51961c576c0ecf9376a07a56e53b079fc7850b691dac41b83ebc35",
       "date": "2026-03-26",
       "employment_terms": [],
       "listing_context": "2026年北京师范大学保定实验学校公开招聘教师50名公告 2026年北京师范大学保定实验学校公开招聘教师50名公告",
@@ -500874,9 +501699,9 @@
       "url": "http://m.baoding.huatu.com/2026/0326/1701064.html"
     },
     "http://m.baoding.huatu.com/2026/0429/1707815.html": {
-      "checked_at": "2026-11-09T07:02:21",
+      "checked_at": "2026-11-09T22:39:40",
       "classification": "likely",
-      "content_hash": "c7da7acfd924345e908358a0c3c4aa635d1efda56108fdbbcdc02bfc9b11eca2",
+      "content_hash": "9ade32904562a0768692a85ba7a0faade4cb4ce7acfc8e178cafde30d43ae21b",
       "date": "2026-04-29",
       "employment_terms": [],
       "listing_context": "2026年保定市唐县教育和体育局公开选聘高中教师15名公告 事业单位 2026年保定市唐县教育和体育局公开选聘高中教师15名公告",
@@ -500924,9 +501749,9 @@
       "url": "http://m.baoding.huatu.com/2026/0429/1707815.html"
     },
     "http://m.baoding.huatu.com/2026/0609/1711969.html": {
-      "checked_at": "2026-11-09T07:02:20",
+      "checked_at": "2026-11-09T22:39:39",
       "classification": "likely",
-      "content_hash": "23e987b654322c30b3ecb9aea4ba14b6c9ce6ec70530dfb966b73a4e247eed6f",
+      "content_hash": "b4324e8a587b4adcb385ce6b47f12098ffed0a4132f0dd127398a7a5438027d6",
       "date": "2026-06-09",
       "employment_terms": [],
       "listing_context": "2026年北京师范大学保定实验学校选聘教师30名（事业编）公告 2026年北京师范大学保定实验学校选聘教师30名（事业编）公告",
@@ -500977,9 +501802,9 @@
       "url": "http://m.baoding.huatu.com/2026/0609/1711969.html"
     },
     "http://m.baoding.huatu.com/2026/0709/1712444.html": {
-      "checked_at": "2026-11-09T07:02:19",
+      "checked_at": "2026-11-09T22:39:38",
       "classification": "confirmed",
-      "content_hash": "7de47bf7cb88b488cd67baa9a3bd108e47904c3bb75a515314fe3b15e8a79fd6",
+      "content_hash": "3eec0b197db3e1ba8686f9c478d34f3314140615be292df17c5531687cf6b071",
       "date": "2026-07-09",
       "employment_terms": [],
       "listing_context": "2026年河北阜平中学公开选聘高中教师10名公告 2026年河北阜平中学公开选聘高中教师10名公告",
@@ -501028,9 +501853,9 @@
       "url": "http://m.baoding.huatu.com/2026/0709/1712444.html"
     },
     "http://m.baoding.huatu.com/2026/0811/1712938.html": {
-      "checked_at": "2026-11-09T07:02:18",
+      "checked_at": "2026-11-09T22:39:37",
       "classification": "likely",
-      "content_hash": "beb3b8988f661ed694a43375797e6c3424ed771f39d026e284407418a69c1c09",
+      "content_hash": "c4f8621819c50d845145081ac8114262f4023e2c78859c63014a8a592bb25066",
       "date": "2026-08-11",
       "employment_terms": [],
       "listing_context": "2026年保定安国市、定兴县公开选聘高中教师28名公告 2026年保定安国市、定兴县公开选聘高中教师28名公告",
@@ -501219,6 +502044,7 @@
       ],
       "school_names": [],
       "source": "保定本地宝－事业单位招聘",
+      "source_temporarily_unavailable": true,
       "source_type": "aggregator",
       "source_url": "https://m.bd.bendibao.com/job/shiyedangweizhaopin/",
       "subjects": [],
@@ -501245,6 +502071,7 @@
       ],
       "school_names": [],
       "source": "保定本地宝－事业单位招聘",
+      "source_temporarily_unavailable": true,
       "source_type": "aggregator",
       "source_url": "https://m.bd.bendibao.com/job/shiyedangweizhaopin/",
       "subjects": [],
@@ -501271,6 +502098,7 @@
       ],
       "school_names": [],
       "source": "保定本地宝－事业单位招聘",
+      "source_temporarily_unavailable": true,
       "source_type": "aggregator",
       "source_url": "https://m.bd.bendibao.com/job/shiyedangweizhaopin/",
       "subjects": [],
@@ -501312,6 +502140,7 @@
         "培智学校"
       ],
       "source": "保定本地宝－事业单位招聘",
+      "source_temporarily_unavailable": true,
       "source_type": "aggregator",
       "source_url": "https://m.bd.bendibao.com/job/shiyedangweizhaopin/",
       "subjects": [
@@ -501378,6 +502207,7 @@
         "河北祖冲之中学"
       ],
       "source": "保定本地宝－事业单位招聘",
+      "source_temporarily_unavailable": true,
       "source_type": "aggregator",
       "source_url": "https://m.bd.bendibao.com/job/shiyedangweizhaopin/",
       "subjects": [
@@ -501391,7 +502221,7 @@
     },
     "https://rsj.baoding.gov.cn/sydwzp?noticeId=96#/examinee/mobileHostPage/home": {
       "api_hash": "2e78e581aa7c6e3faf1627c2d6b7c421082ec77f1ffff1deb3017343d7d99ef9",
-      "checked_at": "2026-11-09T07:00:07",
+      "checked_at": "2026-11-09T22:37:12",
       "classification": "needs_review",
       "content_hash": "2e78e581aa7c6e3faf1627c2d6b7c421082ec77f1ffff1deb3017343d7d99ef9",
       "date": "2026-09-24",
@@ -501946,9 +502776,9 @@
       "url": "https://www.163hebei.com/article/5987.html"
     },
     "https://www.gaoxiaojob.com/announcement/detail/164229.html": {
-      "checked_at": "2026-11-09T07:02:08",
+      "checked_at": "2026-11-09T22:39:27",
       "classification": "likely",
-      "content_hash": "2ae4145e6005d8e9f8bb3e9875b557a922764368e16cf8c28506b0a2dc47adea",
+      "content_hash": "27fc3bb48aeeaec23b657668bbb85bd7ea89fb0fab36a4fc7e9f343cd580e934",
       "date": "2023-11-23",
       "employment_terms": [],
       "listing_context": "已下线 河北省保定市市直普通高中2023年11月公开选聘63名教师公告 共2个职位 招若干人 2023-11-23发布 保定 已下线 河北省保定市市直普通高中2023年11月公开选聘63名教师公告 共2个职位 招若干人 2023-11-23发布 保定",
@@ -501962,6 +502792,7 @@
         "公示",
         "报名",
         "招聘工作人员",
+        "招聘教师",
         "拟聘用",
         "考察",
         "选聘教师",
@@ -501983,9 +502814,9 @@
       "url": "https://www.gaoxiaojob.com/announcement/detail/164229.html"
     },
     "https://www.gaoxiaojob.com/announcement/detail/406939.html": {
-      "checked_at": "2026-11-09T07:02:07",
-      "classification": "likely",
-      "content_hash": "a9898e232dd5803436c4dc9cc1411e5f7a7c2323667b192f75f3d02e31730a08",
+      "checked_at": "2026-11-09T22:39:27",
+      "classification": "uncertain",
+      "content_hash": "4701841a08a37c82b0e2490cbb9c6d86c60c21aab58d593f8d5aa3319f42a6cb",
       "date": "2026-06-09",
       "employment_terms": [],
       "listing_context": "已下线 河北省保定市教育局14家市直教育事业单位2026年选聘教师公告 共6个职位 招若干人 06-09发布 保定 已下线 河北省保定市教育局14家市直教育事业单位2026年选聘教师公告 共6个职位 招若干人 06-09发布 保定",
@@ -502003,6 +502834,7 @@
         "拟聘用",
         "教育事业单位",
         "考察",
+        "聘用制",
         "资格复审",
         "选聘教师",
         "递补",
@@ -502023,9 +502855,9 @@
       "url": "https://www.gaoxiaojob.com/announcement/detail/406939.html"
     },
     "https://www.gaoxiaojob.com/announcement/detail/422778.html": {
-      "checked_at": "2026-11-09T07:02:06",
+      "checked_at": "2026-11-09T22:39:26",
       "classification": "likely",
-      "content_hash": "0ca0ba82b94d080fe6e17664ba8df1057c7878fccf9080be7bacc2c0550c79df",
+      "content_hash": "58b0cd5ddea09344dfbbfd921632e55a73db1b0f8ab039423493e97d8b07270b",
       "date": "2026-08-12",
       "employment_terms": [],
       "listing_context": "河北省安国市、定兴县2026年8月公开选聘28名高中教师公告 已下线 高中英语教师-定兴县第三中学 08-12发布 本科 招2人 面议 河北-保定 河北省安国市、定兴县2026年8月公开选聘28名高中教师公告",
@@ -502041,6 +502873,7 @@
         "办理聘用手续",
         "报名",
         "招聘工作人员",
+        "招聘教师",
         "拟聘用",
         "考察",
         "资格复审",
@@ -502063,7 +502896,7 @@
       "url": "https://www.gaoxiaojob.com/announcement/detail/422778.html"
     },
     "https://www.gaoxiaojob.com/job/detail/2298235.html": {
-      "checked_at": "2026-11-09T07:02:13",
+      "checked_at": "2026-11-09T22:39:32",
       "classification": "needs_review",
       "content_hash": "624b16cb55afff5eda54e4dde5976e699f56adc9f82661e99a2d0e8e4448805f",
       "date": "2026-08-12",
@@ -502093,7 +502926,7 @@
       "url": "https://www.gaoxiaojob.com/job/detail/2298235.html"
     },
     "https://www.gaoxiaojob.com/job/detail/2298236.html": {
-      "checked_at": "2026-11-09T07:02:12",
+      "checked_at": "2026-11-09T22:39:31",
       "classification": "needs_review",
       "content_hash": "9156333ff564975e6439f9d42edae30e7fa679fcfdd425454c3e9004512d58f0",
       "date": "2026-08-12",
@@ -502123,7 +502956,7 @@
       "url": "https://www.gaoxiaojob.com/job/detail/2298236.html"
     },
     "https://www.gaoxiaojob.com/job/detail/2298237.html": {
-      "checked_at": "2026-11-09T07:02:11",
+      "checked_at": "2026-11-09T22:39:31",
       "classification": "needs_review",
       "content_hash": "e8db1870ac2e01b1bc5606a4a8ac65ba962407c4a02deeb4f505b635d2a5f0c4",
       "date": "2026-08-12",
@@ -502153,7 +502986,7 @@
       "url": "https://www.gaoxiaojob.com/job/detail/2298237.html"
     },
     "https://www.gaoxiaojob.com/job/detail/2298238.html": {
-      "checked_at": "2026-11-09T07:02:11",
+      "checked_at": "2026-11-09T22:39:30",
       "classification": "needs_review",
       "content_hash": "245f7268d93e3bb2f527075b1b6b229d56b8318254bf9b3cb96b4bf70bef682d",
       "date": "2026-08-12",
@@ -502183,7 +503016,7 @@
       "url": "https://www.gaoxiaojob.com/job/detail/2298238.html"
     },
     "https://www.gaoxiaojob.com/job/detail/2298239.html": {
-      "checked_at": "2026-11-09T07:02:10",
+      "checked_at": "2026-11-09T22:39:29",
       "classification": "needs_review",
       "content_hash": "5d9856928f607dde0d74a27191c08399b621ddc3dea0765a58aec269ed2211a2",
       "date": "2026-08-12",
@@ -502213,7 +503046,7 @@
       "url": "https://www.gaoxiaojob.com/job/detail/2298239.html"
     },
     "https://www.gaoxiaojob.com/job/detail/2298240.html": {
-      "checked_at": "2026-11-09T07:02:09",
+      "checked_at": "2026-11-09T22:39:29",
       "classification": "needs_review",
       "content_hash": "1dc2efd06ef241fbc120043ee00a7337ae05e7c9aa40692c4236dc8444727fd8",
       "date": "2026-08-12",
@@ -502243,7 +503076,7 @@
       "url": "https://www.gaoxiaojob.com/job/detail/2298240.html"
     },
     "https://www.gaoxiaojob.com/job/detail/2298241.html": {
-      "checked_at": "2026-11-09T07:02:08",
+      "checked_at": "2026-11-09T22:39:28",
       "classification": "needs_review",
       "content_hash": "5c26344faa91ea27b984e10a7bb5c933299072ba65465b432de2bd5ca97c42f5",
       "date": "2026-08-12",
@@ -502273,5 +503106,5 @@
       "url": "https://www.gaoxiaojob.com/job/detail/2298241.html"
     }
   },
-  "last_run": "2026-11-09T07:02:34"
+  "last_run": "2026-11-09T22:39:54"
 }
